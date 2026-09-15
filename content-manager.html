@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeygold Corbett - Content & Database Manager</title>
+    
+    <!-- Bootstrap CSS & FontAwesome -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    
+    <style>
+        :root {
+            --hg-orange: #FD7E21;
+            --hg-green: #63AB45;
+            --hg-dark: #151515;
+            --hg-light: #F8F9FA;
+            --hg-border: #E0E0E0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .admin-navbar {
+            background-color: #fff;
+            border-bottom: 1px solid var(--hg-border);
+            padding: 12px 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+        }
+        .stat-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 18px 20px;
+            border: 1px solid var(--hg-border);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-2px);
+        }
+        .stat-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .nav-tabs-custom {
+            border-bottom: 2px solid #ddd;
+            gap: 5px;
+        }
+        .nav-tabs-custom .nav-link {
+            border: none;
+            color: #666;
+            font-weight: 600;
+            padding: 12px 20px;
+            border-radius: 8px 8px 0 0;
+            background: transparent;
+            font-size: 14.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-tabs-custom .nav-link:hover {
+            color: var(--hg-orange);
+            background: rgba(253, 126, 33, 0.05);
+        }
+        .nav-tabs-custom .nav-link.active {
+            color: #fff !important;
+            background-color: var(--hg-orange) !important;
+            border-bottom: 2px solid var(--hg-orange);
+        }
+        .table-container {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid var(--hg-border);
+            padding: 22px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            margin-top: 15px;
+        }
+        .table-custom {
+            margin-bottom: 0;
+            vertical-align: middle;
+        }
+        .table-custom thead th {
+            background: #f8f9fa;
+            color: #555;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #eee;
+            padding: 12px 14px;
+            white-space: nowrap;
+        }
+        .table-custom tbody td {
+            padding: 12px 14px;
+            font-size: 13.5px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .table-custom tbody tr:hover {
+            background-color: #fafbfc;
+        }
+        .badge-zone {
+            background: #eef7ee;
+            color: #246824;
+            font-weight: 700;
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .badge-tier {
+            background: #fff5ed;
+            color: #e66d13;
+            font-weight: 700;
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .badge-status-new {
+            background: #e3f2fd;
+            color: #0d47a1;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11.5px;
+        }
+        .badge-status-confirmed {
+            background: #e8f5e9;
+            color: #1b5e20;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11.5px;
+        }
+        .btn-action {
+            padding: 4px 8px;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background: #fff;
+            color: #555;
+            transition: all 0.2s;
+        }
+        .btn-action:hover {
+            background: #f0f0f0;
+            color: #111;
+        }
+        .btn-action-delete:hover {
+            background: #ffebee;
+            color: #c62828;
+            border-color: #ffcdd2;
+        }
+        .btn-action-edit:hover {
+            background: #e3f2fd;
+            color: #1565c0;
+            border-color: #bbdefb;
+        }
+        .search-box {
+            position: relative;
+            max-width: 320px;
+        }
+        .search-box input {
+            padding-left: 35px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        .search-box i {
+            position: absolute;
+            left: 12px;
+            top: 10px;
+            color: #888;
+        }
+        .hotel-thumb {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #eee;
+        }
+        .room-chip-admin {
+            background: #f1f3f5;
+            color: #495057;
+            font-size: 11px;
+            padding: 2px 7px;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Admin Navbar -->
+    <nav class="admin-navbar d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+            <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                <img src="https://www.honeygoldindia.com/img/logo2.png" alt="Honeygold" style="height: 36px;">
+                <span style="font-size: 18px; font-weight: 800; color: var(--hg-dark);">Corbett</span>
+            </a>
+            <span class="badge bg-dark text-white px-2 py-1" style="font-size: 11px; letter-spacing: 0.5px;">SQL CONTENT MANAGER</span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <a href="hotel.html" target="_blank" class="btn btn-sm btn-outline-secondary">
+                <i class="fa-solid fa-eye me-1"></i> View Stays
+            </a>
+            <a href="index.html" target="_blank" class="btn btn-sm btn-outline-secondary">
+                <i class="fa-solid fa-house me-1"></i> View Website
+            </a>
+            <button id="btn-export-sql" class="btn btn-sm btn-success text-white fw-bold">
+                <i class="fa-solid fa-file-export me-1"></i> Export to SQL
+            </button>
+            <button id="btn-export-json" class="btn btn-sm btn-primary text-white fw-bold">
+                <i class="fa-solid fa-download me-1"></i> Export JSON
+            </button>
+            <button id="btn-reset-db" class="btn btn-sm btn-outline-danger" title="Restore default dataset">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container-fluid px-4 py-4">
+
+        <!-- Top Statistics Grid -->
+        <div class="row g-3 mb-4">
+            <div class="col-xl-3 col-sm-6">
+                <div class="stat-card d-flex align-items-center justify-content-between">
+                    <div>
+                        <div class="text-muted small fw-bold text-uppercase">Hotels & Resorts</div>
+                        <h3 class="fw-bold mb-0 mt-1" id="stat-hotels-count">30</h3>
+                        <small class="text-success"><i class="fa-solid fa-check-circle me-1"></i>Mapped to Corbett</small>
+                    </div>
+                    <div class="stat-icon bg-warning bg-opacity-10 text-warning">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="stat-card d-flex align-items-center justify-content-between">
+                    <div>
+                        <div class="text-muted small fw-bold text-uppercase">RM Categories</div>
+                        <h3 class="fw-bold mb-0 mt-1" id="stat-rooms-count">92</h3>
+                        <small class="text-success"><i class="fa-solid fa-bed me-1"></i>Exact prompt types</small>
+                    </div>
+                    <div class="stat-icon bg-primary bg-opacity-10 text-primary">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="stat-card d-flex align-items-center justify-content-between">
+                    <div>
+                        <div class="text-muted small fw-bold text-uppercase">Corbett Safari Zones</div>
+                        <h3 class="fw-bold mb-0 mt-1" id="stat-zones-count">8</h3>
+                        <small class="text-success"><i class="fa-solid fa-shield-cat me-1"></i>Core & Buffer gates</small>
+                    </div>
+                    <div class="stat-icon bg-success bg-opacity-10 text-success">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="stat-card d-flex align-items-center justify-content-between">
+                    <div>
+                        <div class="text-muted small fw-bold text-uppercase">Registered Tickets</div>
+                        <h3 class="fw-bold mb-0 mt-1" id="stat-tickets-count">5</h3>
+                        <small class="text-primary"><i class="fa-brands fa-whatsapp me-1"></i>WhatsApp synced</small>
+                    </div>
+                    <div class="stat-icon bg-danger bg-opacity-10 text-danger">
+                        <i class="fa-solid fa-ticket"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs nav-tabs-custom" id="managerTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-hotels-btn" data-bs-toggle="tab" data-bs-target="#tab-hotels" type="button" role="tab">
+                    <i class="fa-solid fa-hotel"></i> Hotels & Resorts (<span id="badge-count-hotels">30</span>)
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-rooms-btn" data-bs-toggle="tab" data-bs-target="#tab-rooms" type="button" role="tab">
+                    <i class="fa-solid fa-bed"></i> Room Categories (<span id="badge-count-rooms">92</span>)
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-tickets-btn" data-bs-toggle="tab" data-bs-target="#tab-tickets" type="button" role="tab">
+                    <i class="fa-solid fa-ticket"></i> Booking Tickets (<span id="badge-count-tickets">5</span>)
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-safaris-btn" data-bs-toggle="tab" data-bs-target="#tab-safaris" type="button" role="tab">
+                    <i class="fa-solid fa-compass"></i> Safari Zones (<span id="badge-count-zones">8</span>)
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-content-btn" data-bs-toggle="tab" data-bs-target="#tab-content" type="button" role="tab">
+                    <i class="fa-solid fa-pen-to-square"></i> Site Content (<span id="badge-count-content">5</span>)
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab Contents -->
+        <div class="tab-content" id="managerTabContent">
+
+            <!-- TAB 1: HOTELS & RESORTS -->
+            <div class="tab-pane fade show active" id="tab-hotels" role="tabpanel">
+                <div class="table-container">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="search-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-hotels" class="form-control" placeholder="Search hotel name or zone...">
+                            </div>
+                            <select id="filter-hotels-zone" class="form-select form-select-sm" style="max-width: 190px;">
+                                <option value="">All Corbett Zones</option>
+                                <option value="dhikuli">Dhikuli</option>
+                                <option value="mohaan">Mohaan</option>
+                                <option value="marchula">Marchula Valley</option>
+                                <option value="dhela">Dhela</option>
+                                <option value="kyari">Kyari & Patkot</option>
+                                <option value="semalkhaliya">Semalkhaliya</option>
+                                <option value="ramnagar">Ramnagar</option>
+                                <option value="dhikala">Dhikala Core</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn btn-sm btn-primary fw-bold" id="btn-add-hotel">
+                                <i class="fa-solid fa-plus me-1"></i> Add New Resort
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-custom table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Image</th>
+                                    <th>Resort / Hotel Name</th>
+                                    <th>Corbett Area / Zone</th>
+                                    <th>Category & Tier</th>
+                                    <th>Starting Price</th>
+                                    <th>Room Categories</th>
+                                    <th class="text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="hotels-table-body">
+                                <!-- Populated dynamically by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: ROOM CATEGORIES -->
+            <div class="tab-pane fade" id="tab-rooms" role="tabpanel">
+                <div class="table-container">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="search-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-rooms" class="form-control" placeholder="Search room category...">
+                            </div>
+                            <select id="filter-rooms-hotel" class="form-select form-select-sm" style="max-width: 250px;">
+                                <option value="">All Hotels / Resorts</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn btn-sm btn-primary fw-bold" id="btn-add-room">
+                                <i class="fa-solid fa-plus me-1"></i> Add Room Category
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-custom table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Hotel / Resort</th>
+                                    <th>RM Category Name</th>
+                                    <th>Pax Capacity</th>
+                                    <th>Base Rate / Night</th>
+                                    <th>Description</th>
+                                    <th class="text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="rooms-table-body">
+                                <!-- Populated dynamically by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: BOOKING INQUIRIES & TICKETS -->
+            <div class="tab-pane fade" id="tab-tickets" role="tabpanel">
+                <div class="table-container">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="search-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-tickets" class="form-control" placeholder="Search ticket #, guest or phone...">
+                            </div>
+                            <select id="filter-tickets-status" class="form-select form-select-sm" style="max-width: 170px;">
+                                <option value="">All Statuses</option>
+                                <option value="New">New</option>
+                                <option value="Confirmed">Confirmed</option>
+                                <option value="Completed">Completed</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn btn-sm btn-primary fw-bold" id="btn-add-ticket">
+                                <i class="fa-solid fa-plus me-1"></i> Create Ticket
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-custom table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Ticket #</th>
+                                    <th>Guest Details</th>
+                                    <th>Check-In</th>
+                                    <th>Guests</th>
+                                    <th>Selected Resort</th>
+                                    <th>RM Category</th>
+                                    <th>Status</th>
+                                    <th class="text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tickets-table-body">
+                                <!-- Populated dynamically by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 4: SAFARI ZONES -->
+            <div class="tab-pane fade" id="tab-safaris" role="tabpanel">
+                <div class="table-container">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="fw-bold mb-0">Jim Corbett Safari Zones & Gates</h5>
+                        <button class="btn btn-sm btn-primary fw-bold" id="btn-add-safari">
+                            <i class="fa-solid fa-plus me-1"></i> Add Safari Zone
+                        </button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-custom table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Zone Name</th>
+                                    <th>Entry Gate</th>
+                                    <th>Zone Type</th>
+                                    <th>Morning Slots</th>
+                                    <th>Evening Slots</th>
+                                    <th>Gypsy Rate</th>
+                                    <th>Canter Rate</th>
+                                    <th>Max Gypsies</th>
+                                    <th>Season</th>
+                                    <th class="text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="safaris-table-body">
+                                <!-- Populated dynamically by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 5: SITE CONTENT -->
+            <div class="tab-pane fade" id="tab-content" role="tabpanel">
+                <div class="table-container">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="fw-bold mb-0">Website Static Content & Brand Texts</h5>
+                        <button class="btn btn-sm btn-primary fw-bold" id="btn-add-content">
+                            <i class="fa-solid fa-plus me-1"></i> Add Content Block
+                        </button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-custom table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Section Key</th>
+                                    <th>Page</th>
+                                    <th>Title</th>
+                                    <th>Subtitle</th>
+                                    <th>Content Preview</th>
+                                    <th class="text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="content-table-body">
+                                <!-- Populated dynamically by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Generic Edit/Add Modal -->
+    <div class="modal fade" id="adminModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="adminModalTitle">Edit Record</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="adminModalBody">
+                    <!-- Injected dynamically based on current entity -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary fw-bold" id="adminModalSaveBtn">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/booking.js"></script>
+    <script src="assets/js/corbett-data.js"></script>
+
+    <script>
+    // ========================================================
+    // Content & Database Manager Application Logic
+    // Handles in-memory & localStorage tables, live searching,
+    // Add/Edit/Delete modals, and SQL dump generation.
+    // ========================================================
+
+    const STORAGE_KEY = "hg_corbett_db_v3";
+
+    // Initial Seed Data (from synchronized corbett-data.js or fallback)
+    const DEFAULT_DB = (window.CORBETT_INITIAL_DB && window.CORBETT_INITIAL_DB.rooms && window.CORBETT_INITIAL_DB.rooms.length > 0) 
+        ? JSON.parse(JSON.stringify(window.CORBETT_INITIAL_DB)) 
+        : {
+        hotels: [
+            { id: 1, name: "Paatlidun Safari Lodge", slug: "paatlidun-safari-lodge", zone: "mohaan", zone_label: "Mohaan / Bakrakot, Corbett", category: "5-star", tier_badge: "5-Star Luxury Wildlife Lodge", price: 24000, rating: 4.9, image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80", amenities: "pool,riverfront,spa,plunge_pool", description: "Nestled on the edge of Corbett park along the Kumaon foothills, Paatlidun features private plunge pools, open-air star-beds on terraces, and handcrafted stone cottages steeped in rustic wildlife heritage." },
+            { id: 2, name: "Saraca Resort Corbett (Lebua)", slug: "saraca-resort-corbett-lebua", zone: "mohaan", zone_label: "Mohaan / Bakrakot, Corbett", category: "5-star", tier_badge: "5-Star Luxury Eco-Resort", price: 18500, rating: 4.8, image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80", amenities: "pool,spa,balcony", description: "Spread across 9 acres of dense green foliage adjacent to the reserve forest, Saraca offers luxurious suites with panoramic views of landscaped ponds and thick woodland." },
+            { id: 3, name: "Namah Resort Corbett", slug: "namah-resort-corbett", zone: "dhikuli", zone_label: "Dhikuli, Jim Corbett", category: "5-star", tier_badge: "5-Star Riverside Sanctuary", price: 14500, rating: 4.8, image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80", amenities: "pool,riverfront,spa,balcony", description: "Surrounded by natural beauty and lush greenery, Namah sits directly along the tranquil Kosi riverbanks with grand riverview balconies and expansive ballroom facilities." },
+            { id: 4, name: "The Corbett Hideaway by Leisure", slug: "the-corbett-hideaway-by-leisure", zone: "dhikuli", zone_label: "Dhikuli, Jim Corbett", category: "4-star", tier_badge: "4-Star Heritage Forest Hideaway", price: 11000, rating: 4.7, image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80", amenities: "pool,riverfront,spa", description: "A charming hideaway nestled inside mango orchards along the Kosi river. Provides authentic thatched roofs, warm timber cottages, and intimate jungle hospitality." },
+            { id: 5, name: "The Riverview Retreat", slug: "the-riverview-retreat", zone: "dhikuli", zone_label: "Dhikuli, Jim Corbett", category: "4-star", tier_badge: "4-Star Riverfront Retreat", price: 9500, rating: 4.8, image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80", amenities: "pool,riverfront,spa,balcony", description: "Sprawled over 8 acres along the banks of River Kosi, this retreat features sloping tiled roofs, cool stone floors, and private garden sit-outs ideal for large families." },
+            { id: 6, name: "Bellmont Caves Resort", slug: "bellmont-caves-resort", zone: "mohaan", zone_label: "Mohaan, Corbett", category: "mid-range", tier_badge: "Boutique Cave-Themed Resort", price: 6000, rating: 4.4, image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80", amenities: "pool,balcony", description: "A unique architectural stay carved with rustic cave motifs and stone textures, offering scenic valley views and thrilling campfire evenings." },
+            { id: 7, name: "ZANA Resort Jim Corbett", slug: "zana-resort-jim-corbett", zone: "mohaan", zone_label: "Mohaan / Kosi Valley", category: "5-star", tier_badge: "5-Star Luxury Boutique Retreat", price: 17000, rating: 4.9, image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80", amenities: "pool,riverfront,spa,balcony", description: "Curated luxury offering vintage architecture, private garden fireplaces, bespoke riverside picnic experiences, and spacious suites tailored for discerning wildlife travelers." },
+            { id: 8, name: "Lemon Tree Premier Corbett", slug: "lemon-tree-premier-corbett", zone: "mohaan", zone_label: "Mohaan, Corbett", category: "4-star", tier_badge: "4-Star Upscale Riverside Resort", price: 10500, rating: 4.6, image: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80", amenities: "pool,riverfront,spa", description: "Overlooking the meandering Kosi River, Lemon Tree Premier blends contemporary flair with scenic natural vistas, featuring outdoor lawns and wellness spas." },
+            { id: 9, name: "The Solluna Resort", slug: "the-solluna-resort", zone: "marchula", zone_label: "Marchula Valley, Ramganga", category: "5-star", tier_badge: "5-Star Eco-Luxury Resort", price: 10500, rating: 4.7, image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80", amenities: "pool,riverfront,spa,balcony", description: "Situated in the scenic Marchula valley along the Ramganga riverbed, Solluna offers presidential and fragrance cottages, open-air amphitheatre, rain dance, and starry night dining." },
+            { id: 10, name: "Club Mahindra Corbett", slug: "club-mahindra-corbett", zone: "mohaan", zone_label: "Mohaan, Corbett", category: "4-star", tier_badge: "4-Star Family Jungle Resort", price: 8500, rating: 4.6, image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80", amenities: "pool,spa,balcony", description: "Designed for wholesome family getaways with manicured gardens, indoor recreational zones, guided jungle safaris, and comfortable cottage suites." },
+            { id: 11, name: "La Pearle River Resort", slug: "la-pearle-river-resort", zone: "dhikuli", zone_label: "Dhikuli, Jim Corbett", category: "mid-range", tier_badge: "3-Star Riverfront Stay", price: 4500, rating: 4.3, image: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80", amenities: "pool,riverfront", description: "Perched on the rim of River Kosi in Dhikuli village, La Pearle offers budget-conscious travelers picturesque waterside views and tranquil green courtyards." },
+            { id: 12, name: "Mango Bloom River Resort", slug: "mango-bloom-river-resort", zone: "mohaan", zone_label: "Mohaan, Corbett", category: "mid-range", tier_badge: "3-Star River Retreat", price: 4800, rating: 4.2, image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80", amenities: "pool,riverfront", description: "Set amidst shady mango groves alongside shimmering mountain waters, Mango Bloom is ideal for nature walks, birdwatching, and riverside tea sessions." },
+            { id: 13, name: "Excel Resort Corbett", slug: "excel-resort-corbett", zone: "mohaan", zone_label: "Mohaan / Ramnagar", category: "budget", tier_badge: "Economy Forest Stay", price: 3500, rating: 4.0, image: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80", amenities: "pool", description: "Comfortable, economical rooms with prompt safari assistance, outdoor parking, and friendly service for backpackers and wildlife tour groups." },
+            { id: 14, name: "Corbett River Creek Resort & Spa", slug: "corbett-river-creek-resort-spa", zone: "marchula", zone_label: "Marchula, Ramganga", category: "4-star", tier_badge: "4-Star Riverview Lodge & Spa", price: 9000, rating: 4.7, image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80", amenities: "pool,riverfront,spa,balcony", description: "Surrounded on three sides by dense Sal forest and the Ramganga creek, this scenic lodge features glass-front river cottages and rejuvenating spa therapies." },
+            { id: 15, name: "Corbett The Baagh Spa & Resort", slug: "corbett-the-baagh-spa-resort", zone: "kyari", zone_label: "Patkot Valley, Corbett", category: "5-star", tier_badge: "5-Star Mountain & Valley Resort", price: 13500, rating: 4.8, image: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80", amenities: "pool,spa,balcony", description: "Hidden away in the serene Patkot valley, The Baagh provides magnificent 360-degree Himalayan and jungle foothill views, cat-themed luxury suites, and an infinity pool." },
+            { id: 16, name: "Bela Monde Riverside Resort", slug: "bela-monde-riverside-resort", zone: "dhikuli", zone_label: "Dhikuli, Jim Corbett", category: "4-star", tier_badge: "4-Star Boutique Riverside Resort", price: 8000, rating: 4.5, image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80", amenities: "pool,riverfront,balcony", description: "Located directly on the Kosi riverbed in Dhikuli, Bela Monde offers spacious rooms with private riverside balconies, evening music, and campfire lawns." },
+            { id: 17, name: "Tarangi Resort & Spa", slug: "tarangi-resort-spa", zone: "dhikuli", zone_label: "Dhikuli, Jim Corbett", category: "5-star", tier_badge: "5-Star Riverview Spa & Villa Resort", price: 16000, rating: 4.9, image: "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80", amenities: "pool,riverfront,spa,plunge_pool,balcony", description: "One of Corbett's premier luxury addresses. Features riverside Sarang rooms, private Jal pool villas, an opulent Sanskriti spa, and grand lawns for destination weddings." },
+            { id: 18, name: "Tarangi Ramganga Resort", slug: "tarangi-ramganga-resort", zone: "marchula", zone_label: "Marchula Valley, Ramganga", category: "4-star", tier_badge: "4-Star Riverside Wilderness Resort", price: 9500, rating: 4.7, image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80", amenities: "pool,riverfront,balcony", description: "A historic property on the banks of River Ramganga, famed for Mahseer angling, riverside cottage duplexes, and quiet forest valley escapes." },
+            { id: 19, name: "Alaya Resort", slug: "alaya-resort", zone: "kyari", zone_label: "Kyari Village, Corbett", category: "mid-range", tier_badge: "Eco-Heritage Village Resort", price: 5500, rating: 4.4, image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&q=80", amenities: "pool,balcony", description: "Situated in scenic Kyari village amidst agricultural fields and dense Sal forest, Alaya delivers village-style serenity, organic cuisine, and cycling tours." },
+            { id: 20, name: "Country Inn Riverside Resort", slug: "country-inn-riverside-resort", zone: "dhikuli", zone_label: "Dhikuli, Jim Corbett", category: "4-star", tier_badge: "4-Star Luxury Cottage Resort", price: 10000, rating: 4.6, image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80", amenities: "pool,riverfront,spa,plunge_pool,balcony", description: "Known for its sprawling botanical grounds, standalone Jim's cottages with terraces, and exclusive suites featuring private plunge pools overlooking river rocks." },
+            { id: 21, name: "The Golden Tusk", slug: "the-golden-tusk", zone: "dhela", zone_label: "Dhela (Near Jhirna Gate)", category: "5-star", tier_badge: "5-Star Forest & Safari Resort", price: 14000, rating: 4.8, image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80", amenities: "pool,spa,balcony", description: "Set along the Dhela River countryside just 5 minutes from Dhela and Jhirna safari gates. Boasts lavish suites, luxury safari tents, multi-cuisine dining, and swimming pools." },
+            { id: 22, name: "jüSTa Lazy Haven Corbett", slug: "justa-lazy-haven-corbett", zone: "ramnagar", zone_label: "Chhoi / Ramnagar", category: "4-star", tier_badge: "4-Star Boutique Art Resort", price: 7500, rating: 4.5, image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80", amenities: "pool,balcony", description: "Art-inspired boutique stay nestled amongst lush flora. Each room opens into a spacious balcony overlooking forested hills and landscaped gardens." },
+            { id: 23, name: "Shervani Pebbles & Pines", slug: "shervani-pebbles-pines", zone: "dhikuli", zone_label: "Dhikuli, Jim Corbett", category: "4-star", tier_badge: "4-Star Premium Jacuzzi Resort", price: 8500, rating: 4.6, image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80", amenities: "pool,spa,jacuzzi,balcony", description: "Boasts designer rooms equipped with private outdoor Jacuzzis, manicured lawns, and close proximity to the famous Bijrani safari gate." },
+            { id: 24, name: "Sterling Corbett", slug: "sterling-corbett", zone: "marchula", zone_label: "Marchula Valley, Ramganga", category: "4-star", tier_badge: "4-Star Hillside Riverside Resort", price: 8000, rating: 4.5, image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80", amenities: "pool,riverfront,balcony", description: "Perched on a hillside overlooking the sparkling Ramganga River. Features river-facing stargazing platforms, evening barbecue, and adventure trails." },
+            { id: 25, name: "Silvanza Resort", slug: "silvanza-resort", zone: "mohaan", zone_label: "Mohaan, Corbett", category: "mid-range", tier_badge: "3-Star Eco-Forest Stay", price: 4200, rating: 4.1, image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80", amenities: "pool,balcony", description: "A tranquil haven tucked into the woods of Mohaan. Offers clean, modern Origin & Breeze cottages with personal verandas and garden swings." },
+            { id: 26, name: "Sterling Corbett Quinta", slug: "sterling-corbett-quinta", zone: "dhikuli", zone_label: "Dhikuli, Jim Corbett", category: "4-star", tier_badge: "4-Star Contemporary Safari Stay", price: 7800, rating: 4.4, image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80", amenities: "pool,balcony", description: "Conveniently located along the main Dhikuli safari corridor. Features quick safari dispatch, cozy bedding, and multi-cuisine buffet spreads." },
+            { id: 27, name: "Aura by Xperience Corbett", slug: "aura-by-xperience-corbett", zone: "semalkhaliya", zone_label: "Semalkhaliya, Bailparao", category: "4-star", tier_badge: "4-Star Plunge Pool & Mud Cottages", price: 9200, rating: 4.7, image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80", amenities: "pool,spa,plunge_pool,balcony", description: "A boutique eco-retreat featuring rustic mud architecture, elegant private plunge pool villas, and large family accommodation blocks." },
+            { id: 28, name: "The Cloyster Resort & Spa", slug: "the-cloyster-resort-spa", zone: "mohaan", zone_label: "Mohaan / Dhikuli Border", category: "4-star", tier_badge: "4-Star Hill Facing Luxury Resort", price: 8200, rating: 4.5, image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80", amenities: "pool,spa,balcony", description: "Framed by dramatic Kumaon mountain cliffs. Offers luxury hill-facing balconies, swimming pool, and easy access to both Sitabani and Bijrani safari zones." },
+            { id: 29, name: "Anantum Gateway Resorts & Spa", slug: "anantum-gateway-resorts-spa", zone: "semalkhaliya", zone_label: "Semalkhaliya, Bailparao", category: "5-star", tier_badge: "5-Star Luxury Destination Resort", price: 12500, rating: 4.8, image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80", amenities: "pool,spa,plunge_pool,balcony", description: "One of Corbett's largest luxury wedding and leisure properties, boasting private plunge pool cottages, grand banquets, adventure parks, and wellness spas." },
+            { id: 30, name: "Dhikala Forest Rest House", slug: "dhikala-forest-rest-house", zone: "dhikala", zone_label: "Dhikala Core Wildlife Zone", category: "core", tier_badge: "Government Core FRH (Deep Jungle)", price: 5000, rating: 4.9, image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&q=80", amenities: "riverfront,balcony", description: "The crown jewel of Indian wildlife tourism. An authentic 100-year-old British colonial forest lodge located deep inside the core tiger reserve, overlooking the Ramganga reservoir." }
+        ],
+        rooms: [],
+        safaris: [
+            { id: 1, name: "Dhikala Zone", gate: "Dhangarhi Gate", type: "Core", morning: "06:00 AM - 09:30 AM", evening: "03:00 PM - 06:30 PM", gypsy: 6500, canter: 2200, max: 32, season: "15 Nov - 15 June" },
+            { id: 2, name: "Bijrani Zone", gate: "Amdanda Gate", type: "Core", morning: "06:00 AM - 09:30 AM", evening: "02:30 PM - 06:00 PM", gypsy: 4500, canter: 0, max: 30, season: "15 Oct - 30 June" },
+            { id: 3, name: "Jhirna Zone", gate: "Dhela Gate", type: "Buffer/Core", morning: "06:00 AM - 09:30 AM", evening: "02:30 PM - 06:00 PM", gypsy: 4500, canter: 0, max: 30, season: "Open Round the Year" },
+            { id: 4, name: "Dhela Zone", gate: "Dhela Gate", type: "Eco-Tourism", morning: "06:00 AM - 09:30 AM", evening: "02:30 PM - 06:00 PM", gypsy: 4200, canter: 0, max: 15, season: "Open Round the Year" },
+            { id: 5, name: "Durga Devi Zone", gate: "Durga Devi Gate", type: "Hilly Core", morning: "06:00 AM - 09:30 AM", evening: "02:30 PM - 06:00 PM", gypsy: 4800, canter: 0, max: 15, season: "15 Nov - 15 June" },
+            { id: 6, name: "Sitabani Zone", gate: "Ramnagar Gate", type: "Landscape", morning: "06:00 AM - 09:30 AM", evening: "02:30 PM - 06:00 PM", gypsy: 4000, canter: 0, max: 50, season: "Open Round the Year" },
+            { id: 7, name: "Garjiya Zone", gate: "Garjiya Gate", type: "Core", morning: "06:00 AM - 09:30 AM", evening: "02:30 PM - 06:00 PM", gypsy: 4600, canter: 0, max: 30, season: "15 Oct - 30 June" },
+            { id: 8, name: "Phato Zone", gate: "Maldhan Gate", type: "Eco-Tourism", morning: "06:00 AM - 09:30 AM", evening: "02:30 PM - 06:00 PM", gypsy: 4200, canter: 0, max: 30, season: "Open Round the Year" }
+        ],
+        tickets: [
+            { id: 1, number: "HG-CORBETT-94821", guest: "Vikramaditya Roy", phone: "+91 98112 34567", email: "vikram.roy@example.com", date: "2026-10-18", guests: "2 Adults", service: "Hotel Lodge Stay", hotel: "Paatlidun Safari Lodge", room: "Bush Cottage", status: "Confirmed" },
+            { id: 2, number: "HG-CORBETT-77291", guest: "Priya Kulkarni", phone: "+91 98201 88290", email: "priya.k@example.com", date: "2026-11-04", guests: "3 Adults", service: "Hotel Lodge Stay", hotel: "Tarangi Resort & Spa", room: "Jal Pool Villa", status: "New" },
+            { id: 3, number: "HG-CORBETT-63104", guest: "Dr. Amitava Ghosh", phone: "+91 94330 19283", email: "amitava.ghosh@hospital.org", date: "2026-11-20", guests: "2 Adults", service: "Hotel Lodge Stay", hotel: "The Golden Tusk", room: "Pool View Suite", status: "New" },
+            { id: 4, number: "HG-CORBETT-51928", guest: "Rohit Malhotra", phone: "+91 98710 44556", email: "rohit.m@delhi.com", date: "2026-12-10", guests: "4+ Adults", service: "Hotel Lodge Stay", hotel: "Saraca Resort Corbett (Lebua)", room: "Two Bedroom Forest View", status: "Confirmed" },
+            { id: 5, number: "HG-CORBETT-43019", guest: "Ananya Deshmukh", phone: "+91 97654 32100", email: "ananya.d@gmail.com", date: "2026-12-28", guests: "2 Adults", service: "Hotel Lodge Stay", hotel: "The Solluna Resort", room: "Premier", status: "New" }
+        ],
+        content: [
+            { id: 1, key: "brand_header", page: "global", title: "Honeygold India - Corbett Initiative", subtitle: "Domestic Tourism Initiative", content: "Book forest resorts, reserve safaris, and arrange wilderness destination weddings in Jim Corbett National Park." },
+            { id: 2, key: "hero_banner", page: "index", title: "Uncover the Wilderness of Jim Corbett", subtitle: "India's Oldest & Most Prestigious Wildlife Sanctuary", content: "Experience nature in its rawest form. Book luxury forest resorts, adventure river safaris, and host unforgettable wilderness weddings in Corbett's magical ecosystem." },
+            { id: 3, key: "about_heritage", page: "about", title: "The Historic Journey of Hailey to Corbett", subtitle: "Founded 1936 | Project Tiger 1973", content: "Established in 1936 as Hailey National Park, Jim Corbett National Park stands as India's oldest wildlife reserve. Renamed in honor of legendary hunter-turned-conservationist Jim Corbett, it remains the crown jewel of tiger conservation." },
+            { id: 4, key: "contact_srinagar", page: "global", title: "Srinagar Head Office", subtitle: "Rather Complex, Top Floor, Near New Era School, RajBagh, Srinagar", content: "Ph: 0194-2310736, 2310270 | Mobile: +91 9419045656" },
+            { id: 5, key: "contact_delhi", page: "global", title: "New Delhi Corporate Office", subtitle: "B1/36, Ashok Vihar Phase II, New Delhi - 110052", content: "Ph: 011-47145656 | Toll Free: 1800 891 7626" }
+        ]
+    };
+
+    // Seed room categories from window.CORBETT_HOTEL_ROOMS
+    let roomIdCounter = 1;
+    if (window.CORBETT_HOTEL_ROOMS) {
+        Object.keys(window.CORBETT_HOTEL_ROOMS).forEach(hotelName => {
+            const hotel = DEFAULT_DB.hotels.find(h => h.name.toLowerCase() === hotelName.toLowerCase());
+            const hid = hotel ? hotel.id : 0;
+            const hPrice = hotel ? hotel.price : 5000;
+            window.CORBETT_HOTEL_ROOMS[hotelName].forEach(rm => {
+                DEFAULT_DB.rooms.push({
+                    id: roomIdCounter++,
+                    hotel_id: hid,
+                    hotel_name: hotelName,
+                    name: rm,
+                    pax: "2 Adults + 1 Child",
+                    price: hPrice,
+                    description: `${rm} at ${hotelName} offering authentic wildlife vistas.`
+                });
+            });
+        });
+    }
+
+    // Load or initialize DB
+    function loadDB() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                return JSON.parse(saved);
+            } catch(e) {
+                console.error("Failed to parse stored DB, resetting to default.", e);
+            }
+        }
+        saveDB(DEFAULT_DB);
+        return DEFAULT_DB;
+    }
+
+    function saveDB(db) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
+    }
+
+    let DB = loadDB();
+
+    // ==========================================
+    // Render Functions
+    // ==========================================
+
+    function updateStats() {
+        $('#stat-hotels-count, #badge-count-hotels').text(DB.hotels.length);
+        $('#stat-rooms-count, #badge-count-rooms').text(DB.rooms.length);
+        $('#stat-zones-count, #badge-count-zones').text(DB.safaris.length);
+        $('#stat-tickets-count, #badge-count-tickets').text(DB.tickets.length);
+        $('#badge-count-content').text(DB.content.length);
+    }
+
+    function renderHotelsTable() {
+        const search = ($('#search-hotels').val() || '').toLowerCase();
+        const zoneFilter = ($('#filter-hotels-zone').val() || '').toLowerCase();
+        const tbody = $('#hotels-table-body');
+        tbody.empty();
+
+        const filtered = DB.hotels.filter(h => {
+            const matchSearch = !search || h.name.toLowerCase().includes(search) || h.zone_label.toLowerCase().includes(search);
+            const matchZone = !zoneFilter || h.zone.toLowerCase() === zoneFilter;
+            return matchSearch && matchZone;
+        });
+
+        if (filtered.length === 0) {
+            tbody.append(`<tr><td colspan="8" class="text-center py-4 text-muted">No hotels matching criteria found.</td></tr>`);
+            return;
+        }
+
+        filtered.forEach(h => {
+            const roomCategories = DB.rooms.filter(r => r.hotel_id === h.id || r.hotel_name === h.name);
+            const roomBadges = roomCategories.map(r => `<span class="room-chip-admin">${r.name}</span>`).join(' ');
+
+            tbody.append(`
+                <tr data-id="${h.id}">
+                    <td class="text-muted fw-bold">#${h.id}</td>
+                    <td>
+                        <img src="${h.image}" class="hotel-thumb" alt="${h.name}" onerror="this.src='assets/img/inner-page/hotel/01.jpg'">
+                    </td>
+                    <td>
+                        <strong class="d-block text-dark" style="font-size: 14.5px;">${h.name}</strong>
+                        <small class="text-muted">${h.slug}</small>
+                    </td>
+                    <td>
+                        <span class="badge-zone"><i class="fa-solid fa-location-dot me-1"></i>${h.zone_label}</span>
+                    </td>
+                    <td>
+                        <span class="badge-tier">${h.tier_badge}</span>
+                    </td>
+                    <td>
+                        <strong class="text-success">₹${Number(h.price).toLocaleString()}</strong> <small class="text-muted">/ night</small>
+                    </td>
+                    <td style="max-width: 250px;">
+                        <div>${roomBadges || '<span class="text-muted small">None</span>'}</div>
+                        <small class="text-muted">(${roomCategories.length} categories)</small>
+                    </td>
+                    <td class="text-end text-nowrap">
+                        <button class="btn-action btn-action-edit btn-edit-hotel" data-id="${h.id}" title="Edit Hotel">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn-action btn-action-delete btn-delete-hotel" data-id="${h.id}" title="Delete Hotel">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `);
+        });
+    }
+
+    function renderRoomsTable() {
+        const search = ($('#search-rooms').val() || '').toLowerCase();
+        const hotelFilter = ($('#filter-rooms-hotel').val() || '').toLowerCase();
+        const tbody = $('#rooms-table-body');
+        tbody.empty();
+
+        const filtered = DB.rooms.filter(r => {
+            const matchSearch = !search || r.name.toLowerCase().includes(search) || (r.hotel_name || '').toLowerCase().includes(search);
+            const matchHotel = !hotelFilter || (r.hotel_name || '').toLowerCase() === hotelFilter;
+            return matchSearch && matchHotel;
+        });
+
+        if (filtered.length === 0) {
+            tbody.append(`<tr><td colspan="7" class="text-center py-4 text-muted">No room categories matching criteria found.</td></tr>`);
+            return;
+        }
+
+        filtered.forEach(r => {
+            tbody.append(`
+                <tr data-id="${r.id}">
+                    <td class="text-muted fw-bold">#${r.id}</td>
+                    <td><strong class="text-dark">${r.hotel_name || 'N/A'}</strong></td>
+                    <td><span class="badge bg-light text-dark border px-2 py-1">${r.name}</span></td>
+                    <td><span class="text-muted"><i class="fa-solid fa-user-group me-1"></i>${r.pax}</span></td>
+                    <td><strong class="text-success">₹${Number(r.price).toLocaleString()}</strong></td>
+                    <td class="text-muted small">${r.description || ''}</td>
+                    <td class="text-end text-nowrap">
+                        <button class="btn-action btn-action-edit btn-edit-room" data-id="${r.id}" title="Edit Room">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn-action btn-action-delete btn-delete-room" data-id="${r.id}" title="Delete Room">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `);
+        });
+    }
+
+    function renderTicketsTable() {
+        const search = ($('#search-tickets').val() || '').toLowerCase();
+        const statusFilter = ($('#filter-tickets-status').val() || '');
+        const tbody = $('#tickets-table-body');
+        tbody.empty();
+
+        const filtered = DB.tickets.filter(t => {
+            const matchSearch = !search || t.number.toLowerCase().includes(search) || t.guest.toLowerCase().includes(search) || t.phone.includes(search);
+            const matchStatus = !statusFilter || t.status === statusFilter;
+            return matchSearch && matchStatus;
+        });
+
+        if (filtered.length === 0) {
+            tbody.append(`<tr><td colspan="8" class="text-center py-4 text-muted">No tickets matching criteria found.</td></tr>`);
+            return;
+        }
+
+        filtered.forEach(t => {
+            const statusClass = t.status === 'Confirmed' ? 'badge-status-confirmed' : 'badge-status-new';
+            const waText = encodeURIComponent(`Hello ${t.guest}, thank you for contacting Honeygold India regarding your Corbett stay at ${t.hotel} (${t.room}). Your Ticket ID is ${t.number}.`);
+            const waUrl = `https://wa.me/${t.phone.replace(/[^0-9]/g, '')}?text=${waText}`;
+
+            tbody.append(`
+                <tr data-id="${t.id}">
+                    <td><strong class="text-primary">${t.number}</strong></td>
+                    <td>
+                        <strong class="text-dark d-block">${t.guest}</strong>
+                        <small class="text-muted"><i class="fa-solid fa-phone me-1"></i>${t.phone}</small>
+                    </td>
+                    <td>${t.date}</td>
+                    <td>${t.guests}</td>
+                    <td><strong>${t.hotel}</strong></td>
+                    <td><span class="badge bg-warning bg-opacity-10 text-dark border border-warning">${t.room}</span></td>
+                    <td><span class="${statusClass}">${t.status}</span></td>
+                    <td class="text-end text-nowrap">
+                        <a href="${waUrl}" target="_blank" class="btn btn-sm btn-success py-1 px-2 text-white" title="Open WhatsApp Chat">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <button class="btn-action btn-action-edit btn-edit-ticket" data-id="${t.id}" title="Edit Ticket">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn-action btn-action-delete btn-delete-ticket" data-id="${t.id}" title="Delete Ticket">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `);
+        });
+    }
+
+    function renderSafarisTable() {
+        const tbody = $('#safaris-table-body');
+        tbody.empty();
+
+        DB.safaris.forEach(s => {
+            tbody.append(`
+                <tr data-id="${s.id}">
+                    <td><strong class="text-dark">${s.name}</strong></td>
+                    <td><span class="badge-zone">${s.gate}</span></td>
+                    <td><span class="badge bg-secondary text-white">${s.type}</span></td>
+                    <td><small>${s.morning}</small></td>
+                    <td><small>${s.evening}</small></td>
+                    <td><strong class="text-success">₹${s.gypsy}</strong></td>
+                    <td><strong class="${s.canter > 0 ? 'text-primary' : 'text-muted'}">${s.canter > 0 ? '₹' + s.canter : 'N/A'}</strong></td>
+                    <td>${s.max} Gypsies</td>
+                    <td><small class="text-muted">${s.season}</small></td>
+                    <td class="text-end text-nowrap">
+                        <button class="btn-action btn-action-edit btn-edit-safari" data-id="${s.id}" title="Edit Safari Zone">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn-action btn-action-delete btn-delete-safari" data-id="${s.id}" title="Delete Zone">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `);
+        });
+    }
+
+    function renderContentTable() {
+        const tbody = $('#content-table-body');
+        tbody.empty();
+
+        DB.content.forEach(c => {
+            tbody.append(`
+                <tr data-id="${c.id}">
+                    <td><code>${c.key}</code></td>
+                    <td><span class="badge bg-light text-dark border">${c.page}</span></td>
+                    <td><strong class="text-dark">${c.title}</strong></td>
+                    <td><small class="text-muted">${c.subtitle || '-'}</small></td>
+                    <td style="max-width: 300px;"><small class="text-muted">${c.content.substring(0, 110)}...</small></td>
+                    <td class="text-end text-nowrap">
+                        <button class="btn-action btn-action-edit btn-edit-content" data-id="${c.id}" title="Edit Content Block">
+                            <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn-action btn-action-delete btn-delete-content" data-id="${c.id}" title="Delete Content">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `);
+        });
+    }
+
+    function populateHotelDropdowns() {
+        const select = $('#filter-rooms-hotel');
+        select.empty().append(`<option value="">All Hotels / Resorts</option>`);
+        DB.hotels.forEach(h => {
+            select.append(`<option value="${h.name.toLowerCase()}">${h.name}</option>`);
+        });
+    }
+
+    function renderAll() {
+        updateStats();
+        populateHotelDropdowns();
+        renderHotelsTable();
+        renderRoomsTable();
+        renderTicketsTable();
+        renderSafarisTable();
+        renderContentTable();
+    }
+
+    // ==========================================
+    // Event Handlers (Search & Filters)
+    // ==========================================
+
+    $('#search-hotels, #filter-hotels-zone').on('input change', renderHotelsTable);
+    $('#search-rooms, #filter-rooms-hotel').on('input change', renderRoomsTable);
+    $('#search-tickets, #filter-tickets-status').on('input change', renderTicketsTable);
+
+    // ==========================================
+    // Modals & Entity Forms
+    // ==========================================
+
+    let currentEditingEntity = null;
+    let currentEditingId = null;
+
+    // Hotel Add / Edit
+    $('#btn-add-hotel').on('click', function () {
+        currentEditingEntity = 'hotel';
+        currentEditingId = null;
+        $('#adminModalTitle').text("Add New Resort / Hotel");
+        $('#adminModalBody').html(`
+            <form id="form-hotel">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Hotel / Resort Name *</label>
+                        <input type="text" name="name" class="form-control" required placeholder="e.g. Corbett Wilderness Retreat">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Corbett Zone *</label>
+                        <select name="zone" class="form-select" required>
+                            <option value="dhikuli">Dhikuli</option>
+                            <option value="mohaan">Mohaan</option>
+                            <option value="marchula">Marchula Valley</option>
+                            <option value="dhela">Dhela</option>
+                            <option value="kyari">Kyari & Patkot</option>
+                            <option value="semalkhaliya">Semalkhaliya</option>
+                            <option value="ramnagar">Ramnagar</option>
+                            <option value="dhikala">Dhikala Core</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Zone Label *</label>
+                        <input type="text" name="zone_label" class="form-control" required placeholder="e.g. Dhikuli, Jim Corbett">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Tier & Star Category *</label>
+                        <input type="text" name="tier_badge" class="form-control" required placeholder="e.g. 5-Star Luxury Wildlife Lodge">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Category Selector</label>
+                        <select name="category" class="form-select">
+                            <option value="5-star">5-Star Luxury</option>
+                            <option value="4-star">4-Star Premium</option>
+                            <option value="mid-range">Mid-Range / Boutique</option>
+                            <option value="budget">Budget / Eco</option>
+                            <option value="core">Core Forest Rest House</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Starting Price (₹/Night) *</label>
+                        <input type="number" name="price" class="form-control" required placeholder="12000">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label fw-bold">Main Image URL</label>
+                        <input type="url" name="image" class="form-control" placeholder="https://..." value="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label fw-bold">Description</label>
+                        <textarea name="description" class="form-control" rows="3" placeholder="Overview of the lodge, ambiance, setting..."></textarea>
+                    </div>
+                </div>
+            </form>
+        `);
+        new bootstrap.Modal('#adminModal').show();
+    });
+
+    $(document).on('click', '.btn-edit-hotel', function () {
+        const id = parseInt($(this).data('id'));
+        const h = DB.hotels.find(x => x.id === id);
+        if (!h) return;
+
+        currentEditingEntity = 'hotel';
+        currentEditingId = id;
+        $('#adminModalTitle').text(`Edit Resort: ${h.name}`);
+        $('#adminModalBody').html(`
+            <form id="form-hotel">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Hotel / Resort Name *</label>
+                        <input type="text" name="name" class="form-control" required value="${h.name}">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Corbett Zone *</label>
+                        <select name="zone" class="form-select" required>
+                            <option value="dhikuli" ${h.zone==='dhikuli'?'selected':''}>Dhikuli</option>
+                            <option value="mohaan" ${h.zone==='mohaan'?'selected':''}>Mohaan</option>
+                            <option value="marchula" ${h.zone==='marchula'?'selected':''}>Marchula Valley</option>
+                            <option value="dhela" ${h.zone==='dhela'?'selected':''}>Dhela</option>
+                            <option value="kyari" ${h.zone==='kyari'?'selected':''}>Kyari & Patkot</option>
+                            <option value="semalkhaliya" ${h.zone==='semalkhaliya'?'selected':''}>Semalkhaliya</option>
+                            <option value="ramnagar" ${h.zone==='ramnagar'?'selected':''}>Ramnagar</option>
+                            <option value="dhikala" ${h.zone==='dhikala'?'selected':''}>Dhikala Core</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Zone Label *</label>
+                        <input type="text" name="zone_label" class="form-control" required value="${h.zone_label}">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Tier & Star Category *</label>
+                        <input type="text" name="tier_badge" class="form-control" required value="${h.tier_badge}">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Category Selector</label>
+                        <select name="category" class="form-select">
+                            <option value="5-star" ${h.category==='5-star'?'selected':''}>5-Star Luxury</option>
+                            <option value="4-star" ${h.category==='4-star'?'selected':''}>4-Star Premium</option>
+                            <option value="mid-range" ${h.category==='mid-range'?'selected':''}>Mid-Range / Boutique</option>
+                            <option value="budget" ${h.category==='budget'?'selected':''}>Budget / Eco</option>
+                            <option value="core" ${h.category==='core'?'selected':''}>Core Forest Rest House</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Starting Price (₹/Night) *</label>
+                        <input type="number" name="price" class="form-control" required value="${h.price}">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label fw-bold">Main Image URL</label>
+                        <input type="url" name="image" class="form-control" value="${h.image}">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label fw-bold">Description</label>
+                        <textarea name="description" class="form-control" rows="3">${h.description}</textarea>
+                    </div>
+                </div>
+            </form>
+        `);
+        new bootstrap.Modal('#adminModal').show();
+    });
+
+    $(document).on('click', '.btn-delete-hotel', function () {
+        const id = parseInt($(this).data('id'));
+        const h = DB.hotels.find(x => x.id === id);
+        if (!h) return;
+        if (confirm(`Are you sure you want to delete resort "${h.name}" and its associated room categories?`)) {
+            DB.hotels = DB.hotels.filter(x => x.id !== id);
+            DB.rooms = DB.rooms.filter(x => x.hotel_id !== id && x.hotel_name !== h.name);
+            saveDB(DB);
+            renderAll();
+        }
+    });
+
+    // Room Category Add / Edit
+    $('#btn-add-room').on('click', function () {
+        currentEditingEntity = 'room';
+        currentEditingId = null;
+        $('#adminModalTitle').text("Add New Room Category");
+        const hotelOptions = DB.hotels.map(h => `<option value="${h.name}">${h.name}</option>`).join('');
+        $('#adminModalBody').html(`
+            <form id="form-room">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Hotel / Resort *</label>
+                        <select name="hotel_name" class="form-select" required>
+                            ${hotelOptions}
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">RM Category Name *</label>
+                        <input type="text" name="name" class="form-control" required placeholder="e.g. Bush Cottage, Jal Pool Villa...">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Pax Capacity</label>
+                        <input type="text" name="pax" class="form-control" value="2 Adults + 1 Child">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Base Price (₹/Night)</label>
+                        <input type="number" name="price" class="form-control" value="8000">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label fw-bold">Description</label>
+                        <textarea name="description" class="form-control" rows="2" placeholder="Room amenities, bed type, river/forest view..."></textarea>
+                    </div>
+                </div>
+            </form>
+        `);
+        new bootstrap.Modal('#adminModal').show();
+    });
+
+    $(document).on('click', '.btn-delete-room', function () {
+        const id = parseInt($(this).data('id'));
+        if (confirm("Delete this room category?")) {
+            DB.rooms = DB.rooms.filter(x => x.id !== id);
+            saveDB(DB);
+            renderAll();
+        }
+    });
+
+    // Ticket Add / Status Change
+    $('#btn-add-ticket').on('click', function () {
+        currentEditingEntity = 'ticket';
+        currentEditingId = null;
+        $('#adminModalTitle').text("Create Booking Ticket");
+        const hotelOptions = DB.hotels.map(h => `<option value="${h.name}">${h.name}</option>`).join('');
+        $('#adminModalBody').html(`
+            <form id="form-ticket">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Guest Full Name *</label>
+                        <input type="text" name="guest" class="form-control" required placeholder="e.g. Amit Sharma">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">WhatsApp Phone *</label>
+                        <input type="tel" name="phone" class="form-control" required placeholder="+91 99999 99999">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Email Address</label>
+                        <input type="email" name="email" class="form-control" placeholder="guest@example.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Check-In Date *</label>
+                        <input type="date" name="date" class="form-control" required value="${new Date().toISOString().split('T')[0]}">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Selected Resort *</label>
+                        <select name="hotel" id="ticket-modal-hotel" class="form-select" required>
+                            ${hotelOptions}
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Room Category *</label>
+                        <input type="text" name="room" class="form-control" required placeholder="e.g. Deluxe, Luxury Cottage...">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Guests Count</label>
+                        <select name="guests" class="form-select">
+                            <option value="1 Adult">1 Adult</option>
+                            <option value="2 Adults" selected>2 Adults</option>
+                            <option value="3 Adults">3 Adults</option>
+                            <option value="4+ Adults">4+ Adults</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Status</label>
+                        <select name="status" class="form-select">
+                            <option value="New">New</option>
+                            <option value="Confirmed">Confirmed</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        `);
+        new bootstrap.Modal('#adminModal').show();
+    });
+
+    $(document).on('click', '.btn-delete-ticket', function () {
+        const id = parseInt($(this).data('id'));
+        if (confirm("Delete this booking ticket?")) {
+            DB.tickets = DB.tickets.filter(x => x.id !== id);
+            saveDB(DB);
+            renderAll();
+        }
+    });
+
+    // Save Generic Modal
+    $('#adminModalSaveBtn').on('click', function () {
+        if (currentEditingEntity === 'hotel') {
+            const form = $('#form-hotel');
+            const name = form.find('input[name="name"]').val().trim();
+            if (!name) return alert("Please specify Hotel Name");
+
+            const zone = form.find('select[name="zone"]').val();
+            const zone_label = form.find('input[name="zone_label"]').val().trim();
+            const tier_badge = form.find('input[name="tier_badge"]').val().trim();
+            const category = form.find('select[name="category"]').val();
+            const price = parseFloat(form.find('input[name="price"]').val()) || 0;
+            const image = form.find('input[name="image"]').val().trim() || 'assets/img/inner-page/hotel/01.jpg';
+            const description = form.find('textarea[name="description"]').val().trim();
+            const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+            if (currentEditingId) {
+                // Update
+                const item = DB.hotels.find(x => x.id === currentEditingId);
+                if (item) {
+                    item.name = name;
+                    item.zone = zone;
+                    item.zone_label = zone_label;
+                    item.tier_badge = tier_badge;
+                    item.category = category;
+                    item.price = price;
+                    item.image = image;
+                    item.description = description;
+                }
+            } else {
+                // Insert
+                const newId = DB.hotels.length > 0 ? Math.max(...DB.hotels.map(x => x.id)) + 1 : 1;
+                DB.hotels.push({
+                    id: newId,
+                    name,
+                    slug,
+                    zone,
+                    zone_label,
+                    category,
+                    tier_badge,
+                    price,
+                    rating: 4.8,
+                    image,
+                    description
+                });
+            }
+            saveDB(DB);
+            bootstrap.Modal.getInstance('#adminModal').hide();
+            renderAll();
+        } else if (currentEditingEntity === 'room') {
+            const form = $('#form-room');
+            const name = form.find('input[name="name"]').val().trim();
+            const hotel_name = form.find('select[name="hotel_name"]').val();
+            if (!name) return alert("Please specify Room Category Name");
+
+            const pax = form.find('input[name="pax"]').val().trim();
+            const price = parseFloat(form.find('input[name="price"]').val()) || 0;
+            const description = form.find('textarea[name="description"]').val().trim();
+            const hotel = DB.hotels.find(h => h.name === hotel_name);
+            const hotel_id = hotel ? hotel.id : 0;
+
+            const newId = DB.rooms.length > 0 ? Math.max(...DB.rooms.map(x => x.id)) + 1 : 1;
+            DB.rooms.push({
+                id: newId,
+                hotel_id,
+                hotel_name,
+                name,
+                pax,
+                price,
+                description
+            });
+            saveDB(DB);
+            bootstrap.Modal.getInstance('#adminModal').hide();
+            renderAll();
+        } else if (currentEditingEntity === 'ticket') {
+            const form = $('#form-ticket');
+            const guest = form.find('input[name="guest"]').val().trim();
+            const phone = form.find('input[name="phone"]').val().trim();
+            if (!guest || !phone) return alert("Guest Name and WhatsApp Phone are required.");
+
+            const email = form.find('input[name="email"]').val().trim();
+            const date = form.find('input[name="date"]').val();
+            const hotel = form.find('select[name="hotel"]').val();
+            const room = form.find('input[name="room"]').val().trim();
+            const guests = form.find('select[name="guests"]').val();
+            const status = form.find('select[name="status"]').val();
+            const randNum = Math.floor(10000 + Math.random() * 90000);
+            const number = `HG-CORBETT-${randNum}`;
+
+            const newId = DB.tickets.length > 0 ? Math.max(...DB.tickets.map(x => x.id)) + 1 : 1;
+            DB.tickets.push({
+                id: newId,
+                number,
+                guest,
+                phone,
+                email,
+                date,
+                guests,
+                service: "Hotel Lodge Stay",
+                hotel,
+                room,
+                status
+            });
+            saveDB(DB);
+            bootstrap.Modal.getInstance('#adminModal').hide();
+            renderAll();
+        }
+    });
+
+    // ==========================================
+    // Export to SQL File Generator
+    // ==========================================
+
+    $('#btn-export-sql').on('click', function () {
+        let sql = `-- ==========================================================\n`;
+        sql += `-- Honeygold Corbett Exported SQL Dump\n`;
+        sql += `-- Generated on: ${new Date().toISOString()}\n`;
+        sql += `-- ==========================================================\n\n`;
+
+        sql += `-- HOTELS TABLE\n`;
+        DB.hotels.forEach(h => {
+            const n = h.name.replace(/'/g, "''");
+            const t = h.tier_badge.replace(/'/g, "''");
+            const d = (h.description || '').replace(/'/g, "''");
+            sql += `INSERT INTO hotels (id, name, slug, zone, zone_label, category, tier_badge, starting_price, main_image, description) VALUES (${h.id}, '${n}', '${h.slug}', '${h.zone}', '${h.zone_label}', '${h.category}', '${t}', ${h.price}, '${h.image}', '${d}');\n`;
+        });
+
+        sql += `\n-- ROOM CATEGORIES TABLE\n`;
+        DB.rooms.forEach(r => {
+            const rn = r.name.replace(/'/g, "''");
+            const rd = (r.description || '').replace(/'/g, "''");
+            sql += `INSERT INTO room_categories (id, hotel_id, category_name, description, pax_capacity, base_price) VALUES (${r.id}, ${r.hotel_id}, '${rn}', '${rd}', '${r.pax}', ${r.price});\n`;
+        });
+
+        sql += `\n-- SAFARI ZONES TABLE\n`;
+        DB.safaris.forEach(s => {
+            sql += `INSERT INTO safari_zones (id, zone_name, gate_name, zone_type, morning_timings, evening_timings, gypsy_price, canter_price, max_vehicles, best_season) VALUES (${s.id}, '${s.name}', '${s.gate}', '${s.type}', '${s.morning}', '${s.evening}', ${s.gypsy}, ${s.canter}, ${s.max}, '${s.season}');\n`;
+        });
+
+        sql += `\n-- INQUIRIES & TICKETS TABLE\n`;
+        DB.tickets.forEach(t => {
+            const g = t.guest.replace(/'/g, "''");
+            const h = t.hotel.replace(/'/g, "''");
+            const r = (t.room || '').replace(/'/g, "''");
+            sql += `INSERT INTO inquiries_tickets (ticket_number, guest_name, phone, email, check_in_date, guests_count, service_type, hotel_name, room_category, status) VALUES ('${t.number}', '${g}', '${t.phone}', '${t.email || ''}', '${t.date}', '${t.guests}', '${t.service}', '${h}', '${r}', '${t.status}');\n`;
+        });
+
+        const blob = new Blob([sql], { type: 'text/sql' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `corbett_export_${Date.now()}.sql`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
+
+    // Export to JSON
+    $('#btn-export-json').on('click', function () {
+        const jsonStr = JSON.stringify(DB, null, 2);
+        const blob = new Blob([jsonStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `corbett_db_dump_${Date.now()}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
+
+    // Reset DB
+    $('#btn-reset-db').on('click', function () {
+        if (confirm("Reset database to initial seed data? This will clear any manual test entries.")) {
+            localStorage.removeItem(STORAGE_KEY);
+            DB = loadDB();
+            renderAll();
+            alert("Database reset to defaults.");
+        }
+    });
+
+    // Initialize UI
+    $(document).ready(function () {
+        renderAll();
+    });
+    </script>
+</body>
+</html>
