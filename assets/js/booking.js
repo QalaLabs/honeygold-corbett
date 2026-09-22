@@ -440,37 +440,154 @@ Please confirm availability and share the best package rates. Thank you!`;
     // Jim Corbett Hotels & Room Categories Data
     // ==========================================
     window.CORBETT_HOTEL_ROOMS = {
-        "Paatlidun Safari Lodge": ["Bush Cottage", "Luxury Cottage", "Premium Cottage"],
-        "Saraca Resort Corbett (Lebua)": ["Premium Room", "Family Cottage", "Premium Suite One Bedroom", "Two Bedroom Forest View", "Two Bedroom Pond View"],
-        "Namah Resort Corbett": ["Superior", "Premium"],
-        "The Corbett Hideaway by Leisure": ["Deluxe", "Superior"],
-        "The Riverview Retreat": ["Deluxe", "Deluxe Cottage", "Superior", "Duplex", "Suite", "Premium"],
-        "Bellmont Caves Resort": ["Deluxe", "Executive"],
-        "ZANA Resort Jim Corbett": ["Classic", "Riverview", "Tiger Tales Suite", "Luxury Cottage with Fireplace"],
-        "Lemon Tree Premier Corbett": ["Double"],
-        "The Solluna Resort": ["Superior", "Deluxe", "Premier"],
-        "Club Mahindra Corbett": ["Superior"],
-        "La Pearle River Resort": ["Std"],
-        "Mango Bloom River Resort": ["Std"],
-        "Excel Resort Corbett": ["Std"],
-        "Corbett River Creek Resort & Spa": ["Creek", "Premium", "Creek Luxury"],
-        "Corbett The Baagh Spa & Resort": ["Jungle Cat", "Spotted Cat", "Leopard Cat", "Leopard Suite"],
-        "Bela Monde Riverside Resort": ["Std", "Deluxe"],
-        "Tarangi Resort & Spa": ["Sarang", "Luxury Cottage", "River View Cottage", "Jal Pool Villa", "Whispering 4 Bedroom"],
-        "Tarangi Ramganga Resort": ["Deluxe Cottage", "Super Dlx Cottage", "Ramganga Suite", "Pine Cottage", "Duplex Cottage", "River Facing Family Cottage"],
-        "Alaya Resort": ["Double"],
-        "Country Inn Riverside Resort": ["Jungle View", "Jims Cottage", "Cottage with Terrace", "Cottage with Garden", "Cottage with Plunge Pool"],
-        "The Golden Tusk": ["Garden Suite", "Nature View / Luxury Tents", "Pool View Suite", "Corbett Suite", "Villa", "Villa Grande", "Tusk Suite", "Tiger Suite (4 Pax)"],
-        "jüSTa Lazy Haven Corbett": ["Superior with Balcony", "Deluxe with Balcony"],
-        "Shervani Pebbles & Pines": ["Deluxe Garden View", "Premium Garden", "Superior with Jacuzzi"],
-        "Sterling Corbett": ["Classic", "Premier"],
-        "Silvanza Resort": ["Origin", "Breeze"],
-        "Sterling Corbett Quinta": ["Classic", "Premier"],
-        "Aura by Xperience Corbett": ["Deluxe Cottage", "Mud Cottage", "Premium", "Elegant Plunge Pool", "Family Villa 4 Pax"],
-        "The Cloyster Resort & Spa": ["Deluxe Garden View", "Premium Jungle View", "Luxury Hill Facing", "Pool View"],
-        "Anantum Gateway Resorts & Spa": ["Deluxe", "Executive", "Plunge Pool Cottage"],
-        "Dhikala Forest Rest House": ["Dhikala Forest Cabin", "Hutment", "New Forest Rest House Room"]
-    };
+    "Paatlidun Safari Lodge": [
+        "Bush Cottage",
+        "Luxury Cottage",
+        "Premium Cottage"
+    ],
+    "Saraca Resort Corbett (Lebua)": [
+        "Premium room",
+        "Family Cottage",
+        "Premium Suite one bedroom",
+        "Two bedroom Forest view",
+        "Two bedroom Pond view"
+    ],
+    "Namah Resort Corbett": [
+        "Superior",
+        "Premium"
+    ],
+    "The Corbett Hideaway by Leisure": [
+        "Deluxe",
+        "Superior"
+    ],
+    "The Riverview Retreat": [
+        "Deluxe",
+        "Deluxe cottage",
+        "Superior",
+        "Duplex",
+        "Suite",
+        "Premium"
+    ],
+    "Bellmont Caves Resort": [
+        "Deluxe",
+        "Executive"
+    ],
+    "ZANA Resort Jim Corbett": [
+        "Classic",
+        "Riverview",
+        "Tiger  Tales Suite",
+        "Luxury cottage with Fireplace"
+    ],
+    "Lemon Tree Premier Corbett": [
+        "Double"
+    ],
+    "The Solluna Resort": [
+        "Superior",
+        "Deluxe",
+        "Premier"
+    ],
+    "Club Mahindra Corbett": [
+        "Superior"
+    ],
+    "La Pearle River Resort": [
+        "Std"
+    ],
+    "Mango Bloom River Resort": [
+        "Std"
+    ],
+    "Excel Resort Corbett": [
+        "Std"
+    ],
+    "Corbett River Creek Resort & Spa": [
+        "Creek",
+        "Premium",
+        "Creek Luxury"
+    ],
+    "Corbett The Baagh Spa & Resort": [
+        "Jungle Cat",
+        "Spotted Cat",
+        "Leopard Cat",
+        "Leopard Suite"
+    ],
+    "Bela Monde Riverside Resort": [
+        "Std",
+        "Deluxe"
+    ],
+    "Tarangi Resort & Spa": [
+        "Sarang",
+        "Luxury Cottage",
+        "Jal The Pool Villa"
+    ],
+    "Tarangi Ramganga Resort": [
+        "Deluxe",
+        "Superior Deluxe",
+        "Club",
+        "Suite"
+    ],
+    "Alaya Resort": [
+        "Standard",
+        "Deluxe",
+        "Executive"
+    ],
+    "Country Inn Tarika Riverside Resort": [
+        "Tree Top Cottage",
+        "Luxury Cottage",
+        "Deluxe Room",
+        "Superior Room"
+    ],
+    "The Golden Tusk": [
+        "Nature View",
+        "Forest View",
+        "Villa",
+        "Suite",
+        "Luxury Tent"
+    ],
+    "j\u00fcSTa Lazy Haven Corbett": [
+        "Superior",
+        "Deluxe",
+        "Suite"
+    ],
+    "Shervani Pebbles & Pines": [
+        "Deluxe",
+        "Superior",
+        "Suite"
+    ],
+    "Sterling Corbett": [
+        "Classic Room",
+        "Premier Room",
+        "Privilege Suite"
+    ],
+    "Silvanza Resort": [
+        "Deluxe",
+        "Executive",
+        "Family Suite"
+    ],
+    "Sterling Corbett Quinta": [
+        "Classic Room",
+        "Premier Room",
+        "Privilege Suite"
+    ],
+    "Aura by Xperience Corbett": [
+        "Deluxe Room",
+        "Super Deluxe",
+        "Executive Room"
+    ],
+    "The Cloyster Resort & Spa": [
+        "Deluxe",
+        "Luxury",
+        "Family Suite"
+    ],
+    "Anantum Gateway Resorts & Spa": [
+        "Deluxe Room",
+        "Luxury Cottage",
+        "Pool Villa"
+    ],
+    "Dhikala Forest Rest House": [
+        "Forest Rest House Room",
+        "Dormitory Bed",
+        "Hutment Room"
+    ]
+};
 
     function updateStayRoomDropdown(hotelName, selectedRoom) {
         const rmSelect = $('#room_category');

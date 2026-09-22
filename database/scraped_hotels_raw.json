@@ -1,0 +1,917 @@
+[
+  {
+    "id": 1,
+    "name": "Paatlidun Safari Lodge",
+    "slug": "paatlidun-safari-lodge",
+    "url": "https://www.paatlidun.com/",
+    "zone": "mohaan",
+    "zone_label": "Mohaan / Bakrakot, Corbett",
+    "category": "luxury",
+    "tier_badge": "5-Star Ultra Luxury Wildlife Lodge",
+    "price": 24000,
+    "rooms": [
+      "Bush Cottage",
+      "Luxury Cottage",
+      "Premium Cottage"
+    ],
+    "amenities": [
+      "Private Plunge Pool",
+      "Open-Air Star Bed",
+      "Arijana Wellness Spa",
+      "Kumaoni Fine Dining",
+      "Chahi Wildlife Library"
+    ],
+    "scraped_title": "5 Star Luxury Resorts in Jim Corbett Uttarakhand | Five Star Hotel in Jim Corbett - Paatlidun Safari Lodge",
+    "scraped_description": "",
+    "scraped_paragraphs": [
+      "Wildlife Resorts around Jim Corbett National Park Are here to Give You Unique Experiences Read More",
+      "This Lodge Near Jim Corbett National Park Is The Perfect Diwali Getaway Read More",
+      "7 Reasons Why You Should Plan a Trip to This Unique Village in Corbett National Park Read More",
+      "Paatlidun Safari Lodge In Jim Corbett Lets You Sleep Under Open Skies & Relax In A Private Pool Read More",
+      "Uttarakhand�??s Paatlidun Safari Lodge Emerges as a Top Choice for Celebrity Vacations Read More"
+    ],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 2,
+    "name": "Saraca Resort Corbett (Lebua)",
+    "slug": "saraca-resort-corbett-lebua",
+    "url": "https://saraca.in/corbett/",
+    "zone": "mohaan",
+    "zone_label": "Mohaan / Bakrakot, Corbett",
+    "category": "luxury",
+    "tier_badge": "5-Star Luxury Eco-Resort",
+    "price": 16500,
+    "rooms": [
+      "Premium Room",
+      "Family Cottage",
+      "Premium Suite One Bedroom",
+      "Two Bedroom Forest View",
+      "Two Bedroom Pond View"
+    ],
+    "amenities": [
+      "Infinity Pool",
+      "Saraca Spa & Ayurveda",
+      "Horse Riding & Stables",
+      "Azrak Multi-Cuisine",
+      "Panoramic Pond View"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 3,
+    "name": "Namah Resort Corbett",
+    "slug": "namah-resort-corbett",
+    "url": "https://www.namah.in/",
+    "zone": "dhikuli",
+    "zone_label": "Dhikuli, Jim Corbett (Kosi Riverbank)",
+    "category": "luxury",
+    "tier_badge": "5-Star Riverside Sanctuary",
+    "price": 13500,
+    "rooms": [
+      "Superior",
+      "Premium"
+    ],
+    "amenities": [
+      "Kosi Riverfront",
+      "Pratha All-Day Dining",
+      "Boond Bar",
+      "Spa & Fitness Center",
+      "Grand Ballroom"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 4,
+    "name": "The Corbett Hideaway by Leisure",
+    "slug": "the-corbett-hideaway-by-leisure",
+    "url": "https://www.leisurehotels.co.in/the-corbett-hideaway/",
+    "zone": "dhikuli",
+    "zone_label": "Dhikuli, Jim Corbett",
+    "category": "premium",
+    "tier_badge": "4-Star Heritage Forest Hideaway",
+    "price": 11000,
+    "rooms": [
+      "Deluxe",
+      "Superior"
+    ],
+    "amenities": [
+      "Mango Orchard Setting",
+      "Kosi Riverside Sit-out",
+      "Outdoor Swimming Pool",
+      "The Den Wilderness Spa",
+      "Safari Desk"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 5,
+    "name": "The Riverview Retreat",
+    "slug": "the-riverview-retreat",
+    "url": "https://www.leisurehotels.co.in/the-riverview-retreat-corbett-resort/",
+    "zone": "dhikuli",
+    "zone_label": "Dhikuli, Jim Corbett (Kosi Riverfront)",
+    "category": "premium",
+    "tier_badge": "4-Star Riverfront Retreat",
+    "price": 9500,
+    "rooms": [
+      "Deluxe",
+      "Deluxe Cottage",
+      "Superior",
+      "Duplex",
+      "Suite",
+      "Premium"
+    ],
+    "amenities": [
+      "8-Acre Riverfront Lawns",
+      "Gurney House Restaurant",
+      "Jim’s Bar",
+      "Swimming Pool with Kids Pool",
+      "River Rafting Assistance"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 6,
+    "name": "Bellmont Caves Resort",
+    "slug": "bellmont-caves-resort",
+    "url": "https://bellmontcaves.com/",
+    "zone": "mohaan",
+    "zone_label": "Mohaan, Corbett",
+    "category": "mid",
+    "tier_badge": "Boutique Cave-Themed Resort",
+    "price": 5500,
+    "rooms": [
+      "Deluxe",
+      "Executive"
+    ],
+    "amenities": [
+      "Unique Stone Cave Architecture",
+      "Valley View Decks",
+      "Campfire & Acoustic Evenings",
+      "Outdoor Pool",
+      "Multi-Cuisine Cafe"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 7,
+    "name": "ZANA Resort Jim Corbett",
+    "slug": "zana-resort-jim-corbett",
+    "url": "https://www.zanaresorts.com/zana-forest-resort-corbett/",
+    "zone": "mohaan",
+    "zone_label": "Mohaan / Kosi Valley",
+    "category": "luxury",
+    "tier_badge": "5-Star Luxury Boutique Retreat",
+    "price": 17000,
+    "rooms": [
+      "Classic",
+      "Riverview",
+      "Tiger Tales Suite",
+      "Luxury Cottage with Fireplace"
+    ],
+    "amenities": [
+      "Private Fireplaces",
+      "Bespoke River Dining",
+      "Heated Outdoor Pool",
+      "Curated Safari Botanist",
+      "Artisanal Bar"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 8,
+    "name": "Lemon Tree Premier Corbett",
+    "slug": "lemon-tree-premier-corbett",
+    "url": "https://www.lemontreehotels.com/lemon-tree-premier/jim-corbett/resort-corbett",
+    "zone": "mohaan",
+    "zone_label": "Mohaan, Corbett",
+    "category": "premium",
+    "tier_badge": "4-Star Upscale Riverside Resort",
+    "price": 10500,
+    "rooms": [
+      "Double"
+    ],
+    "amenities": [
+      "Citrus Cafe",
+      "Fresco Spa & Wellness",
+      "Outdoor Swimming Pool",
+      "Slak Bar",
+      "Riverside Walking Trails"
+    ],
+    "scraped_title": "Lemon Tree Hotels | Official Online Hotel Booking Website – Chain of Hotels & Resorts",
+    "scraped_description": "Book directly on the official Lemon Tree Hotels website for exclusive offers and loyalty rewards at our chain of hotels & resorts across India, Nepal, UAE, and Bhutan.",
+    "scraped_paragraphs": [
+      "Request a Proposal City Select City Agra Ahmedabad Ajmer Aligarh Alleppey Alwar Amritsar Aurangabad Baddi Bandhavgarh Banswara Bengaluru Bharuch Bhiwadi Bhopal Bhubaneswar Chandausi Chandigarh Chennai Chirang Coimbatore Corbett Dapoli Dehradun Delhi Dwarka Gangtok Goa Gurugram Haridwar Hisar Hyderabad Indore Jabalpur Jaipur Jammu Jamnagar Jamshedpur Jhansi Kasauli Katra Kochi Kolkata Kota Kozhikode Kufri Kumbhalgarh Lucknow Ludhiana McLeodganj Moga Morbi Motihari Mukteshwar Mumbai Mussoorie Nepal Noida Patna Portblair Pune Rajkot Ranchi Rishikesh Siliguri Somnath Sonmarg SriGanganagar Srinagar Thekkady Thimphu Thiruvananthapuram Tiruchirappalli Tirupati Udaipur Vadodara Vijayawada Visakhapatnam Hotel Select hotel First Name Last Name Phone Email Event Date Event Type: --None-- Wedding Series MICE City Event Birthday Anniversary Other No. of Guest Room's Required? Select No Yes No. of Rooms Check In Check Out Submit",
+      "YOUR STAY Room 1: 1 Adult Classic Accessible Room Best Available Rate - Room Only £199.00 Rate Details Price £199.00 Room 1 22 Jan 2025 £199.00 Total Amount Payable at Hotel £199.00 *Inclusive of all Taxes Cancellation Policy Free cancellation by 2PM - 1 day prior to arrival to avoid a penalty of 1 night charge plus any applicable taxes & fees. Next Title Mr Ms Mrs Miss Dr Prof I have read and agree to the Privacy Policy and Terms & Conditions Pay Now Select Card Type Visa MasterCard American Express Discover Submit Booking Confirmed Awesome! Your rooms are booked! We sent you a confirmation email with all the details.",
+      "KEYS PRIMA NASIK × Name : Keys Prima Nasik Address : CTS No.725/1, Lotus Capital, Gangapur Road, Ashok Stambh, Nashik, Maharashtra - 422001 No of Rooms : 45 Facilities : Keys Café, Fitness Center, Chambers Banquet",
+      "LEMON TREE RESORT, SANKHWAS GARH × Name : Lemon Tree Resort, Sankhwas Garh Address : Vill: Sankhwas, Teh: Mundwa, Dist: Nagaur, Rajasthan - 341028 No of Rooms : 51 Facilities : Citrus Café, Fitness Center, Refresh Recreation Room, Swimming Pool",
+      "LEMON TREE HOTEL, GOMTI NAGAR, LUCKNOW × Name : Lemon Tree Hotel, Gomti Nagar, Lucknow Address : TC-12 Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh - 226010 No of Rooms : 72 Facilities : Citrus Café, Fitness Center, Banquet"
+    ],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 9,
+    "name": "The Solluna Resort",
+    "slug": "the-solluna-resort",
+    "url": "https://www.sollunaresort.com/",
+    "zone": "marchula",
+    "zone_label": "Marchula Valley, Ramganga",
+    "category": "luxury",
+    "tier_badge": "5-Star Eco-Luxury Resort",
+    "price": 10500,
+    "rooms": [
+      "Superior",
+      "Deluxe",
+      "Premier"
+    ],
+    "amenities": [
+      "Ramganga Riverbed Setting",
+      "Open-Air Amphitheatre",
+      "Rain Dance & Star Gazing",
+      "Presidential Cottages",
+      "Natural Pebble Beach"
+    ],
+    "scraped_title": "Best Resorts in Corbett | Luxury Resort in Jim Corbett",
+    "scraped_description": "The Solluna Resort is one of the Best Luxury Resorts in Corbett National Park. It is strategically situated in Marchula, along the banks of River Ramganga.",
+    "scraped_paragraphs": [
+      "About Us The Solluna Resort Is Situated In The Fabulous Valley Of Marchula, It Is 35 K.M. Away From Ramnagar Railway Station. It Incorporates The Beauty Of The Sun (Sol) As Well As The Moon (Luna) As These Are Together Visible At The Same Time At The Dusk. The Resort Being Situated In A Valley On The Bank Of River Ramganga Gives Birth To A Micro-Climate Of Its Own.",
+      "Cottages Check out our cottage amenities & Services to book your stay today! See Details →",
+      "Safari We provide facilities for arranging Jungle Safari for our guests. See Details →",
+      "Things to do Mountain Climbing, Rappelling & what not! Explore More See Details →",
+      "Nothing can be more refreshing than staying close to nature The word \"Solluna\" depicts the captivating beauty of the sun (sol) and the moon (Luna) being observed at the same time at the dusk. A striking blend of nature's ecstasy and great luxury at the Solluna Resort is a flawlessly planned and built top Luxury Resort in Jim Corbett for the visitors needing to invest energy in the midst of peacefulness and serenity of the wildlife and forest. The Solluna Best Resort in Jim Corbett is in a magnificent and sumptuous valley of Marchula which is 35 km away from Ramnagar railway station. FEEL THE NEW YOU, FEEL THE DIFFERENCE BECAUSE YOU HAVE LOT MORE TO DO!! We offer fun-filled adventure sports for all age groups like hiking, flying fox, trekking, rappelling, mountain climbing, gypsy drive, sightseeing, monkey crawling and many more which will not only improve your risk-taking capability but also take you out form your comfort zone and hence fill you with positivity. Jungle safari in Corbett is the best way to explore the abundant wildlife hidden in the jungle. These safaris will take you through the buffer zone of the Jim Corbett while covering the central areas of the park. With the stay at luxurious and 5-star resort in Corbett, the visit to the jungle with all the adventure activities doubles the fun and excitement of the holiday. Among all top resorts in Corbett, Solluna is perfectly situated in a valley on the banks of Ramganga. It originates a micro-climate of its own, arousing one's senses and helping find inner peace. The valley appears to be wrapping the whole resort in its arms facilitating the guests to become an integral part of nature. HAVE A LOOK AT WHAT ALL YOU WILL GAIN AFTER VISITING THIS 5 STAR RESORT IN JIM CORBETT Physical, Mental and Emotional Wellness. Increased concentration level in children due to outdoor education. Refreshed Mind, Body, and Soul. Inner peace and a Cheerful you filled with positivity Our resort is among the only few resorts in Corbett that has been planned and executed according to our basic five senses namely Vision, Smell, Taste, Touch, and Hearing and also the five elements namely Earth, Water, Sky, Fire and Air. A perfect union of all the five senses and the five elements at one place allows our resort to stand alone as the 5-star luxury resort in Corbett. The Solluna Resort imparts a serene haven and a luxurious territory where one can adore the magnificent view of the wee hours of the dawn, the sun soaking beyond the horizon at the dusk and the clear sky full of stars as the night approaches. Furnished with lavishly delegated facilities and a thriving scenic beauty, this resort entitles itself to be one of the best 5-star luxury resorts in Jim Corbett. Our enhanced quality services, surrounding's exquisiteness, warm ambience, and the artistic vision of the valley marks its uniqueness among other resorts in Corbett. The resort assures to deliver a rejuvenating experience to create memories that will last forever. Read More"
+    ],
+    "scraped_image": "https://www.sollunaresort.com/images/banner/Home-page-og-image.jpg",
+    "success": true
+  },
+  {
+    "id": 10,
+    "name": "Club Mahindra Corbett",
+    "slug": "club-mahindra-corbett",
+    "url": "https://www.clubmahindra.com/our-resorts/club-mahindra-corbett-uttarakhand",
+    "zone": "mohaan",
+    "zone_label": "Mohaan, Corbett",
+    "category": "premium",
+    "tier_badge": "4-Star Family Jungle Resort",
+    "price": 8500,
+    "rooms": [
+      "Superior"
+    ],
+    "amenities": [
+      "Family Adventure Hub",
+      "Machan Multi-Cuisine",
+      "Swimming Pool",
+      "Indoor Play Arena",
+      "Guided Nature Walks"
+    ],
+    "scraped_title": "Holiday at 140+ Resorts in India and Abroad with Club Mahindra",
+    "scraped_description": "Invest in a lifetime of wonderful holiday memories and get access to 140+ resorts across India and the world with Club Mahindra. Join The Club Now!",
+    "scraped_paragraphs": [
+      "Know More AboutKeystone Programme × Name Mobile City Age Age Group <24 25-28 29-35 36-49 50-55 >55 Email ID I agree to be contacted by Club Mahindra regarding my interest via phone call, WhatsApp or any other medium. I hereby provide my consent as per the T&C and Declaration. Submit SUBMIT",
+      "I agree to be contacted by Club Mahindra regarding my interest via phone call, WhatsApp or any other medium. I hereby provide my consent as per the T&C and Declaration.",
+      "× We've just sent an OTP Enter the OTP sent via SMS on +91-9168345432 ✎ Save 🕑 30 | Resend OTP ⟳ Validate OTP",
+      "Select no. of family members ▼ Unmarried Married Married & 2 Kids Married & more than 2 Kids Married With 2 kids and Parents",
+      "Spacious, premium stays for families Thoughtfully crafted experiences Peaceful escapes with vibrant views Access to 5000+ resorts worldwide"
+    ],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 11,
+    "name": "La Pearle River Resort",
+    "slug": "la-pearle-river-resort",
+    "url": "https://lapearleriverresort.com/",
+    "zone": "dhikuli",
+    "zone_label": "Dhikuli, Jim Corbett",
+    "category": "mid",
+    "tier_badge": "3-Star Riverfront Stay",
+    "price": 4500,
+    "rooms": [
+      "Std"
+    ],
+    "amenities": [
+      "Direct Kosi Riverbank Access",
+      "Swimming Pool",
+      "Riverview Dining Lawn",
+      "Bonfire Pit",
+      "Safari Booking Desk"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 12,
+    "name": "Mango Bloom River Resort",
+    "slug": "mango-bloom-river-resort",
+    "url": "https://www.mangobloomresort.com/",
+    "zone": "mohaan",
+    "zone_label": "Mohaan, Corbett",
+    "category": "mid",
+    "tier_badge": "3-Star River Retreat",
+    "price": 4800,
+    "rooms": [
+      "Std"
+    ],
+    "amenities": [
+      "Shaded Mango Grove Lawns",
+      "Mountain Stream Frontage",
+      "Outdoor Pool",
+      "Adventure Obstacle Course",
+      "Riverside Tea Terrace"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 13,
+    "name": "Excel Resort Corbett",
+    "slug": "excel-resort-corbett",
+    "url": "http://excelresortcorbett.com/",
+    "zone": "mohaan",
+    "zone_label": "Mohaan / Ramnagar",
+    "category": "budget",
+    "tier_badge": "Economy Forest Stay",
+    "price": 3500,
+    "rooms": [
+      "Std"
+    ],
+    "amenities": [
+      "Economical AC Cottages",
+      "Lush Garden Sitting",
+      "Outdoor Swimming Pool",
+      "Group Safari Planning",
+      "In-House Dining"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 14,
+    "name": "Corbett River Creek Resort & Spa",
+    "slug": "corbett-river-creek-resort-spa",
+    "url": "https://www.corbettrivercreek.com/",
+    "zone": "marchula",
+    "zone_label": "Marchula, Ramganga",
+    "category": "premium",
+    "tier_badge": "4-Star Riverview Lodge & Spa",
+    "price": 9000,
+    "rooms": [
+      "Creek",
+      "Premium",
+      "Creek Luxury"
+    ],
+    "amenities": [
+      "Ramganga Creek Confluence",
+      "Glass-Front River Suites",
+      "Ayurvedic Wellness Spa",
+      "Infinity Pool",
+      "Angling Assistance"
+    ],
+    "scraped_title": "Riverside Resorts in Corbett | Best Luxury Resort in Jim Corbett",
+    "scraped_description": "Experience Corbett River Creek Resort & Spa, one of the best riverside resorts in Corbett. Enjoy nature and a memorable stay in Jim Corbett.",
+    "scraped_paragraphs": [
+      "Home Rooms Dining Conference and Events Activities & Facilities Wedding Gallery Contact",
+      "Rainforestproperty overviewPure Beauty of NatureRainforestCreek Pool VillaPerfect blend of luxury and wildernessRainforestproperty overview2-sides of River AccessRainforestluxurious experienceCreate Unforgettable MemoriesMountainactivitiesUnwind and Rejuvenate A Luxury Riverside Resort in Jim CorbettCorbett River Creek Resort and SpaA luxury riverside resort in Jim Corbett where nature, comfort, and memorable experiences come together. Nestled amidst the scenic wilderness and close to the Ramganga River, our resort offers the perfect escape for families, couples, and corporate groups seeking a peaceful stay in Corbett.Whether you are planning a relaxing family holiday, a romantic getaway, a destination wedding, or an adventure-filled trip, Corbett River Creek Resort and Spa offers spacious accommodations, modern amenities, riverside experiences, delicious dining, and warm hospitality.Looking for one of the best resorts in Jim Corbett?Experience the perfect blend of luxury, nature, and comfort at Corbett River Creek Resort and Spa. Make your stay memorableCreek Pool VillaRoyal RoomLuxury RoomFamily SuiteFamily RoomCreek RoomCreek Pool VillaCreek Pool VillaThe Villa boasts a spacious layout with 3 bedrooms, all equipped with modern amenities and a contemporary look. Step outside and you'll find expansive garden areas to relax in. Enjoy a dip in the private pool, perfect for spending quality time with your loved ones in complete privacy. Royal RoomRoyal RoomOur Royal rooms are on the ground and first floor and open out to large garden spaces, offering a panoramic view of the majestic mountains, the serene Ramganga river and the lush, blooming gardens. They have a separate dressing area and a washroom having a Jaccuzzi and an enclosed shower cubicle.Luxury RoomLuxury RoomOur Luxury rooms are on the ground and first floor and open out to large garden spaces, offering a panoramic view of the majestic mountains, the serene Ramganga river and the lush, blooming gardens. They have a separate dressing area and a washroom having an enclosed shower cubicle.Family SuiteFamily SuiteFamily Suite are thoughtfully designed for larger families and groups seeking a comfortable and spacious stay. These suites feature two well-appointed bedrooms with two attached washrooms and a cozy living space, offering privacy and convenience for all guests.Family RoomFamily RoomOur Family rooms are on the ground floor and open out to large garden spaces, offering a panoramic view of the majestic mountains, easy accessibility to the river and the lush, blooming gardens. They have a sit in area, and a kids room attached to the main bedroom and two washrooms both having an enclosed shower cubicle.Creek RoomCreek RoomOur Creek rooms are on first floor and open out to large garden spaces, offering a panoramic view of the majestic mountains, easy accessibility to the river and the lush, blooming gardens, and a washroom having an enclosed shower cubicle. Wedding & PartiesA destination wedding in Jim Corbett for you and your guests who love nature and forest and want to incorporate its unique elements!READ MOREConference & EventsThe conference hall at Corbett River Creek Hotel Resort and Spa gives seminars and conferences a wild make overREAD MORERecreational FacilitiesThe resort has a swimming pool, Spa with Steam & Sauna, other recreational facilities like indoor games room and outdoor adventure activities & games.READ MORE Overall Rating4.7 Based on 2,656 ReviewsWrite a ReviewCorbett River Creek Resort & Spahttps://www.tripadvisor.com/Hotel_Review-g3581633-d3665036-Reviews-Corbett_River_Creek_Resort_&_Spa-Marchula_Jim_Corbett_National_Park.html?m=70260Corbett River Creek - Luxury Resorts In Jim Corbetthttps://search.google.com/local/writereview?placeid=ChIJt8d5Ak8ZCjkR15UNKEpcYm0 google Suhail & Rakesh Ji very cooperative & provide excellent services home finance September 14, 2026 google Food and service are good . Location very good .. Himanshu verma September 14, 2026 google Pooja served us very well food is delicious Farmeet Bhatia September 14, 2026 google Excellent Restaurant and Service. Mr. Heera Bhandari Restaurant Manager is super host , takes care of personal choices. He and his team serves customised dishes. Great experience. Krishan Sharma September 14, 2026 google Very nice food experience Staff is good pooja & lalit Thanks All ,👌 vijay kashyap September 14, 2026 google Best Mukesh Tomar September 14, 2026 Load More Corbett River Creek officially available on these platforms only.",
+      "Rainforestproperty overviewPure Beauty of NatureRainforestCreek Pool VillaPerfect blend of luxury and wildernessRainforestproperty overview2-sides of River AccessRainforestluxurious experienceCreate Unforgettable MemoriesMountainactivitiesUnwind and Rejuvenate",
+      "A Luxury Riverside Resort in Jim CorbettCorbett River Creek Resort and SpaA luxury riverside resort in Jim Corbett where nature, comfort, and memorable experiences come together. Nestled amidst the scenic wilderness and close to the Ramganga River, our resort offers the perfect escape for families, couples, and corporate groups seeking a peaceful stay in Corbett.Whether you are planning a relaxing family holiday, a romantic getaway, a destination wedding, or an adventure-filled trip, Corbett River Creek Resort and Spa offers spacious accommodations, modern amenities, riverside experiences, delicious dining, and warm hospitality.Looking for one of the best resorts in Jim Corbett?Experience the perfect blend of luxury, nature, and comfort at Corbett River Creek Resort and Spa.",
+      "Make your stay memorableCreek Pool VillaRoyal RoomLuxury RoomFamily SuiteFamily RoomCreek RoomCreek Pool VillaCreek Pool VillaThe Villa boasts a spacious layout with 3 bedrooms, all equipped with modern amenities and a contemporary look. Step outside and you'll find expansive garden areas to relax in. Enjoy a dip in the private pool, perfect for spending quality time with your loved ones in complete privacy. Royal RoomRoyal RoomOur Royal rooms are on the ground and first floor and open out to large garden spaces, offering a panoramic view of the majestic mountains, the serene Ramganga river and the lush, blooming gardens. They have a separate dressing area and a washroom having a Jaccuzzi and an enclosed shower cubicle.Luxury RoomLuxury RoomOur Luxury rooms are on the ground and first floor and open out to large garden spaces, offering a panoramic view of the majestic mountains, the serene Ramganga river and the lush, blooming gardens. They have a separate dressing area and a washroom having an enclosed shower cubicle.Family SuiteFamily SuiteFamily Suite are thoughtfully designed for larger families and groups seeking a comfortable and spacious stay. These suites feature two well-appointed bedrooms with two attached washrooms and a cozy living space, offering privacy and convenience for all guests.Family RoomFamily RoomOur Family rooms are on the ground floor and open out to large garden spaces, offering a panoramic view of the majestic mountains, easy accessibility to the river and the lush, blooming gardens. They have a sit in area, and a kids room attached to the main bedroom and two washrooms both having an enclosed shower cubicle.Creek RoomCreek RoomOur Creek rooms are on first floor and open out to large garden spaces, offering a panoramic view of the majestic mountains, easy accessibility to the river and the lush, blooming gardens, and a washroom having an enclosed shower cubicle."
+    ],
+    "scraped_image": "https://corbettrivercreek.com/wp-content/uploads/brizy/imgs/TA-choice-2026-Edited-213x203x5x0x203x203x1787655365.webp",
+    "success": true
+  },
+  {
+    "id": 15,
+    "name": "Corbett The Baagh Spa & Resort",
+    "slug": "corbett-the-baagh-spa-resort",
+    "url": "https://www.corbettthebaagh.com/",
+    "zone": "kyari-patkot",
+    "zone_label": "Patkot Valley, Corbett",
+    "category": "luxury",
+    "tier_badge": "5-Star Mountain & Valley Resort",
+    "price": 13500,
+    "rooms": [
+      "Jungle Cat",
+      "Spotted Cat",
+      "Leopard Cat",
+      "Leopard Suite"
+    ],
+    "amenities": [
+      "360° Himalayan Mountain Views",
+      "Cat-Themed Luxury Suites",
+      "Infinity Swimming Pool",
+      "Aranyam Wellness Spa",
+      "Organic Kitchen Garden"
+    ],
+    "scraped_title": "Best Resorts in Jim Corbett | Corbett The Baagh Spa & Resort",
+    "scraped_description": "Corbett The Baagh SPA & Resort is one of the best hotels in Jim Corbett near Ramnagar. Book our luxuries SPA resort and hotels in jim corbett national park",
+    "scraped_paragraphs": [
+      "Close Menu OFFERS | BOOK ONLINE Home Accommodation Restaurant SPA Tariffs Activities Conferences Gallery Itineraries Weddings Inhouse Activities Blog Online Booking Contact Us",
+      "GARJIA TEMPLE Places to Visit Nearby Located on a large rock in the middle of the river Kosi, the temple has many interesting facts, stories and beliefs according to the locals of the village like ‘Garjia’ is another name for goddess Parvati – daughter of Himavat, the king of the mountains. Read more SITABANI TEMPLE Places to Visit Nearby Situated at a distance of just 20 kms (1 hour) from Resorts in Ramnagar, Sitabani Temple in the Sitabani Forest is a peaceful place and a heaven for all the nature enthusiasts.. It is said that goddess Sita, wife of Lord Rama used to spend some of her days in exile here, in the forest after the \"Agni Pariksha\" with her son Luv & Kush. Read more CORBETT MUSEUM Places to Visit Nearby Corbett Museum is the former bungalow of Jim Corbett, the renowned Hunter, Naturalist and a conservationist who hunted a large number of man-eating tigers and leopards in India. The museum houses many attractive personal belongings of Jim Corbett including his Articles, Awards, Paintings, his Hunts, Guns that he used to shoot from, Manuscripts and more, Read more TREKKING Places to Visit Nearby The captivating surroundings of a serene forest with the chirping sounds of the birds make the trek very tranquil to mind and the sounds of wild Animals growling or giving an alarm call makes it an adventurous activity as well. Revive your body, mind and soul with a morning Jungle Trek and feel the enthralling effect of raw Nature. Read more NATURE WALKS AND BIRD WATCHING Places to Visit Nearby If you are bird lover then a walk into the woods will be nothing less than a heaven for you with over 700 species of Birds, local as well as Migratory. The birds that are frequently spotted near the Resorts in Ramnagar are Siberian Crane, Dove, Babbler, Kingfisher, Great Hornbill and more. Read more JUNGLE SAFARI Places to Visit Nearby The open jeep Jungle Safari is one of the Best and the Most Popular Activity to Do in Jim Corbett National Park as it helps you to explore more at an ecotourism destination with around 500 different species of verdure and diversity of wildlife in the 520sq km area of National Park. Read more",
+      "Located on a large rock in the middle of the river Kosi, the temple has many interesting facts, stories and beliefs according to the locals of the village like ‘Garjia’ is another name for goddess Parvati – daughter of Himavat, the king of the mountains.",
+      "Situated at a distance of just 20 kms (1 hour) from Resorts in Ramnagar, Sitabani Temple in the Sitabani Forest is a peaceful place and a heaven for all the nature enthusiasts.. It is said that goddess Sita, wife of Lord Rama used to spend some of her days in exile here, in the forest after the \"Agni Pariksha\" with her son Luv & Kush.",
+      "Corbett Museum is the former bungalow of Jim Corbett, the renowned Hunter, Naturalist and a conservationist who hunted a large number of man-eating tigers and leopards in India. The museum houses many attractive personal belongings of Jim Corbett including his Articles, Awards, Paintings, his Hunts, Guns that he used to shoot from, Manuscripts and more,"
+    ],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 16,
+    "name": "Bela Monde Riverside Resort",
+    "slug": "bela-monde-riverside-resort",
+    "url": "https://belamonde.in/bela-monde-riverside-resort-corbett/",
+    "zone": "dhikuli",
+    "zone_label": "Dhikuli, Jim Corbett",
+    "category": "premium",
+    "tier_badge": "4-Star Boutique Riverside Resort",
+    "price": 7500,
+    "rooms": [
+      "Std",
+      "Deluxe"
+    ],
+    "amenities": [
+      "Direct Kosi Riverbed Access",
+      "Riverside Balcony Rooms",
+      "Sparkling Swimming Pool",
+      "Evening Live Music",
+      "Barbecue & Bonfire"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 17,
+    "name": "Tarangi Resort & Spa",
+    "slug": "tarangi-resort-spa",
+    "url": "https://www.tarangiresort.com/",
+    "zone": "dhikuli",
+    "zone_label": "Dhikuli, Jim Corbett",
+    "category": "luxury",
+    "tier_badge": "5-Star Riverview Spa & Villa Resort",
+    "price": 15500,
+    "rooms": [
+      "Sarang",
+      "Luxury Cottage",
+      "River View Cottage",
+      "Jal Pool Villa",
+      "Whispering 4 Bedroom"
+    ],
+    "amenities": [
+      "Private Jal Pool Villas",
+      "Sanskriti Ayurvedic Spa",
+      "Riverfront Infinity Pool",
+      "Panorama All-Day Dining",
+      "Riverside Wedding Lawns"
+    ],
+    "scraped_title": "Tarangi Hotels & Resort – A Luxury 5 Star Riverside Retreat",
+    "scraped_description": "Experience a luxury resort in Jim Corbett, near Ramnagar. Enjoy nature, comfort, and premium stays at Tarangi Resort.",
+    "scraped_paragraphs": [
+      "Luxury In The Heart Of Wilderness On some days, we want to escape the busy city hustle! In today’s busy city life everyone seeks time to get disconnected to go spend some time with nature. The first thought remains of freeing oneself from the noise and pollution and finding some place where one can calm their restless mind and anxious heart. A Luxurious Tarangi Resort & spa offers a bunch of activities to get closer to the nature. Established in 1936, Jim Corbett is India's first national park. It was first named the Hailey National Park after William Malcolm Hailey during the British Raj. Following India's independence, it was renamed Corbett National Park in honour of Jim Corbett, a naturalist, and hunter who was instrumental in its establishment. explore More",
+      "Tarangi Ramganga The beautiful and cozy Tarangi Ramganga offers an unparalleled experience.. Visit Now",
+      "Tarangi Jim Corbett Tarangi is a Luxury Resort in Jim Corbett National Park,Near Ramnagar with all the modern amenities near Kosi River. Visit Now",
+      "Tarangi Waves Marari The beautiful and cozy Tarangi Waves Marari offers an unparalleled experience.. Visit Now",
+      "Incredible! Are you coming today Allow your senses to soak in the spirit of the Corbett National Park where the nature is at its very best as the birds sing in harmony and the only sounds you would hear are of the whispering winds and splashing water! Discover it all woven together in the architecture, food, culture, art and adventure experiences. About Us"
+    ],
+    "scraped_image": "https://www.tarangiresort.com/assets/img/explore-img.webp",
+    "success": true
+  },
+  {
+    "id": 18,
+    "name": "Tarangi Ramganga Resort",
+    "slug": "tarangi-ramganga-resort",
+    "url": "https://www.tarangiramgangaresort.com/",
+    "zone": "marchula",
+    "zone_label": "Marchula Valley, Ramganga",
+    "category": "premium",
+    "tier_badge": "4-Star Riverside Wilderness Resort",
+    "price": 9200,
+    "rooms": [
+      "Deluxe Cottage",
+      "Super Dlx Cottage",
+      "Ramganga Suite",
+      "Pine Cottage",
+      "Duplex Cottage",
+      "River Facing Family Cottage"
+    ],
+    "amenities": [
+      "Ramganga River Mahseer Angling",
+      "Helipad on Premise",
+      "Riverside Cottage Duplexes",
+      "Outdoor Pool",
+      "Riverside Dining Gazebos"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 19,
+    "name": "Alaya Resort",
+    "slug": "alaya-resort",
+    "url": "https://www.alayaresorts.com/",
+    "zone": "kyari-patkot",
+    "zone_label": "Kyari Village, Corbett",
+    "category": "mid",
+    "tier_badge": "Eco-Heritage Village Resort",
+    "price": 5200,
+    "rooms": [
+      "Double"
+    ],
+    "amenities": [
+      "Kyari Heritage Village Setting",
+      "Dense Sal Forest Canopy",
+      "Cycling & Nature Trails",
+      "Eco-Swimming Pool",
+      "Organic Farm Dining"
+    ],
+    "scraped_title": "Corbett Hotels and Resorts - Jim Corbett Resorts",
+    "scraped_description": "Jim Corbett is the ideal place to ârelax,â Get the best deal - Family Tour, Group Tour, and Corporate meetings.",
+    "scraped_paragraphs": [
+      "HOME ROOMSMenu Toggle Club Room Premium Room Attic Room Executive Suites TRIPS AND PAKAGESMenu Toggle Family Package SUMMER PACKAGES Monsoon PackagesMenu Toggle Monsoon Tariff Monsoon Echoes Independence Day Package EVENTSMenu Toggle Wedding Corporate Events School Trips EXPERIENCEMenu Toggle Adventure & Activities Birds & Animals Watching Tourist Spots Resort Tour JUNGLE BOY NATURALIST MEDIAMenu Toggle 360 VIEW RESORT GALLERY OUR GUESTS VIDEO CONTACTMenu Toggle Location How To Reach",
+      "Alaya Resorts Jim Corbett Welcome to Alaya Resorts, Kyari (Jim Corbett) amidst the Jungles of Jim Corbett National Park, Tucked in the picturesque landscape of Ramnagar. A delightful experience surrounded by the lustrous greens and dense plantations with charm of the mountains. Jim Corbett is the ideal place to ârelax,â but if you are in the mood to amble around, explore the nearby areas of Jim Corbett National Park such as Jungle walk, Jungle Safari, Elephant Safari, Water Surfing, River Crossing and many more activities, Nainital, Bhimtal, Ranikhet, Almora and many other tourist spots. The resort is a perfect weekend gateway for people who are looking for some time off from the daily hurly-burly of city life. Alaya resorts provides unique, world class, self contained accommodation in an incredibly diverse and pristine pocket of Jim Corbett. The tale of Kyari Jim Corbett National Park holds more than just Jungle Safari. It is also surrounded by several villages of the Kumaon region. One such village is Kyari Kham. It is not some unknown hamlet that is waiting to be discovered or explored. Kyari is a place rife with activities, businesses, and soul-filling comfort food. Various activities like swimming/diving in the Baur river, getting into the forests for some birdwatching or a casual tryst with a deer! There are special hot, delicious meals served amidst nature, like under a tree. Here at Alaya Resort we bring the opportunity to interact with a local family, it would also become imperative to be a part of family meals, working in an organic farm, or herding cattle. Know More Rooms & Suites While planning a trip we always like to have a classy room and all facilities must be available,here at Alaya resorts you get the most delightful experience with spacious rooms which are fully furnished. The Alaya Club Room Explore Room The Alaya Premium Room Explore Room The Alaya Attic Room Explore Room The Alaya Executive Suite Explore Room Discover All Rooms our Blog WEDDING DESTINATION Alaya Resorts team is committed toproviding exceptional travel and educational experiences for School and College Students. Read More…. PERFECT STAYCATION In the enchanting landscapes of Kyari Village, nestled within the mystical Jim Corbett jungle, a love story unfolded that would forever be remembered at Alaya Resorts. Read More…. EDUCATIONAL TRIP Alaya Resorts team is committed to providing exceptional travel and educational experiences for School and College students. Read More…. All Blog Experience Fun Activities to add a dose of excitement in your holiday! Fun Activitiesin Alaya Resorts For more fun, you can choose to go rapelling, rock climbing, trekking, picnic at river-side - as these surely will add a dose of excitement to your holiday! Ladder Climbing Rappelling Rock Climbing Trekking Self-defense training workshop Tracking with Jungle Lunch - Groups Only Body Surfing Wildlife Safari Bird Watching Wildlife Photography workshop zipline Tracking with Jungle Lunch - Groups Only Facilities in Alaya Alaya Resorts & Spa Jim Corbett offers everything that the heart may desire while looking for an ideal holiday experience in the wilderness. Indoor & Outdoor Games In-house Car parking Round the clock security Basic first aid kit Cab On Call Royal hookah on demand Railway Station Pick & Drop on Charge Barbeque Set Up Garden Area Swimming Pool Restaurant Lawn For Large Sized Events Conference Hall Spacious accommodation with balconies and private sit-out areas. LCD/ LED with satellite TV Offers everything while looking for an ideal holiday experience Amenities Everything is available at Ataya Resorts & Spa Jim Corbett. Experience a delightful stay with us for an amazing holiday! We Make Your Stay Best Holiday! Hot & Cold Water Everything you need is available here. Comfortable bedding Your comfort is our priority and we take care of that. Laundry Service On call laundry services are available. Nearby Hospital Nearest hospital is 7 Kms from resort. WiFi in Resort No need to worry about your online fun. Room A perfect room is available where you can relax. Pet Friendly Allow pets inside the property. LCD TV Enjoy your favorite channel inside the room. Weddings & Events Wedding Each culture has its own special ways to celebrate and honour the fusion of two lives, many of them rituals that have been passed on lovingly for many centuries. EXPLORE Destination Events The perfect combination of space and ideal ambience with all amenities, audio visual equipment, ensures that you and your guests have a truly extraordinary and memorable experience. Know More Corporate Just a call away - Book your amazing holiday today! Contact us for all your bookings to enjoy one of the best resorts in Jim Corbett. Our team will make sure your requirements are fulfilled. Contact Us"
+    ],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 20,
+    "name": "Country Inn Riverside Resort",
+    "slug": "country-inn-riverside-resort",
+    "url": "https://www.countryinnhotels.com/jim-corbett-resort/",
+    "zone": "dhikuli",
+    "zone_label": "Dhikuli, Jim Corbett",
+    "category": "premium",
+    "tier_badge": "4-Star Luxury Cottage Resort",
+    "price": 9800,
+    "rooms": [
+      "Jungle View",
+      "Jims Cottage",
+      "Cottage with Terrace",
+      "Cottage with Garden",
+      "Cottage with Plunge Pool"
+    ],
+    "amenities": [
+      "Private Plunge Pool Cottages",
+      "Botanical Gardens & Mango Trees",
+      "Kosi River Beach Sit-Out",
+      "Revive Spa & Pool",
+      "Aqua Bar & Buffet"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 21,
+    "name": "The Golden Tusk",
+    "slug": "the-golden-tusk",
+    "url": "https://thegoldentusk.com/",
+    "zone": "dhela",
+    "zone_label": "Dhela (Near Jhirna & Dhela Gates)",
+    "category": "luxury",
+    "tier_badge": "5-Star Forest & Safari Resort",
+    "price": 13500,
+    "rooms": [
+      "Garden Suite",
+      "Nature View / Luxury Tents",
+      "Pool View Suite",
+      "Corbett Suite",
+      "Villa",
+      "Villa Grande",
+      "Tusk Suite",
+      "Tiger Suite (4 Pax)"
+    ],
+    "amenities": [
+      "5 Mins from Jhirna & Dhela Gates",
+      "Luxury Glamping Safari Tents",
+      "Golden Pebble Spa",
+      "Two Swimming Pools",
+      "Adventure Activity Zone"
+    ],
+    "scraped_title": "Experience Unmatched Luxury: Best resort in Jim Corbett",
+    "scraped_description": "Escape to the serene embrace of nature at The Golden Tusk Resort. Book your stay now at the best resort in Corbett for an unforgettable experience",
+    "scraped_paragraphs": [
+      "THE GOLDEN TUSKBest Luxury Resort in Jim CorbettLocated besides the Reserve Forest, nestled snugly amidst 10 acres of greenery and tranquility and on the banks of the serene, soothing monsoon river Dhela, The Golden Tusk Resort in Jim Corbett is a remarkable refuge for nature lovers .With its close proximity to the Dhela and Jhirna safari zones, the resort is a dream escape for wildlife enthusiasts, families, honeymooners, and seekers of soulful experiences. At The Golden Tusk, luxury is not just seenâit is felt in the warmth of our service, the tranquillity of our landscapes, and the unforgettable memories woven into every stay. ROOMS Â Our well-appointedÂ suites, villas, and luxury tents are designed to be your sanctuary of peace and relaxation, an escape from the busyness of daily life while our friendly and courteous team is committedÂ to ensure you have a pleasant and memorable stay with us.Â This, combined with the overall warm and radiant ambience of the unique landscape of the Resort, is what makes The Golden Tusk the best luxury resort in Jim corbett.WATERHOLE - PRIVATE POOL VILLASEXPLOREJUNGLE SPRING - PRIVATE HOT TUB VILLASEXPLOREGARDEN SUITEEXPLORENATURE VIEW SUITEEXPLORELUXURY TENTEXPLOREPOOL SIDE SUITEEXPLORECORBETTÂ SUITEEXPLOREVILLAEXPLOREVILLA GRANDEEXPLORETUSK SUITEEXPLORETIGER SUITEEXPLORE NEVER A DULL MOMENTWhatâs a holiday without some fun activities? To paint every memory of your stay in happy colours, our resort in Jim Corbett has a multitude of adventure packages. From planned excursions to personalised game drives, we help you at every step in your mission to unfurl and relax. Be it horticulture or one-of-a-kind pool-side dining - we have everything covered. At The Golden Tusk, there is something exciting for everyone to uncover. There will Never be a Dull Moment during your stay near Jim Corbett National Park.RECREATIONEVENTSEXCURSIONDININGREJUVENATESAFARIRECREATIONEVENTSEXCURSIONDININGREJUVENATESAFARIGuest TestimonialsBest Resort in Jim CorbettâThe Golden TuskThe Golden Tusk is a luxurious retreat on the edge of the renowned Jim Corbett National Park, offering a perfect blend of comfort and wilderness. Surrounded by lush greenery and the serene ambiance of the park, this resort is a haven for nature lovers and adventure seekers alike.Whether you're looking to explore the rich biodiversity of the park or simply unwind in a tranquil setting, The Golden Tusk provides the ideal backdrop for an unforgettable escape. With its elegant design, modern amenities, and personalised service, the resort ensures that every guest enjoys a truly memorable experience.Unwind in Style with Exceptional Rooms at The Golden TuskAt The Golden Tusk, you'll find a range of world-class accommodation options tailored to meet the diverse needs of travellers. From luxurious villas and suites with breathtaking views to cosy cottages and tents that bring you closer to nature, each accommodation choice is designed with your comfort in mind. The resort also boasts exquisite dining experiences, a variety of recreational activities, and a commitment to sustainability, making it the perfect destination for those seeking both adventure and relaxation.WaterholeâPrivate Pool Villas Experience unparalleled luxury at The Golden Tusk, the best resort in Jim Corbett, with our Waterhole-Private Pool Villas. These exclusive villas offer a perfect blend of comfort and nature, featuring a private pool where you can relax while enjoying the serene surroundings of Jim Corbett National Park. Ideal for those seeking both adventure and tranquillity, our private pool villa in Jim Corbett provides an unforgettable stay, complete with modern amenities and breathtaking views of the natural landscape.Discover the ultimate retreat at The Golden Tusk, the best resort in Jim Corbett, where luxury meets nature in the heart of the wilderness.Jungle Spring:Private Hot Tub Villas Indulge in a luxurious escape at The Golden Tusk, the best resort in Jim Corbett, with our Jungle SpringâPrivate Hot Tub Villas. These villas offer an exclusive experience where you can unwind in your private hot tub surrounded by the tranquillity of the jungle. Perfect for couples and families alike, our private hot tub villa in Jim Corbett combines modern luxury with the serene beauty of nature, providing an ideal retreat from the hustle and bustle of everyday life. Enjoy the perfect blend of comfort, privacy, and nature at The Golden Tusk, making your stay in Jim Corbett truly unforgettable.Garden Suite: Experience the perfect blend of luxury and tranquillity at The Golden Tusk, an ideal destination for a romantic getaway in Jim Corbett. Our Garden Suite is nestled amidst beautiful gardens, offering a peaceful retreat thatâs perfect for couples looking to escape. This suite is also thoughtfully designed for families, making it a great choice for those seeking a family-friendly resort in Jim Corbett. With its spacious interiors and modern amenities, the Garden Suite ensures a delightful and relaxing stay for both couples and families. Whether youâre planning a romantic escape or a fun-filled family vacation, The Golden Tusk provides the perfect setting in Jim Corbett.Luxury Tent: Immerse yourself in the perfect blend of adventure and comfort with our luxury tent accommodation at The Golden Tusk. Designed for those who seek a unique experience, our glamping tents provide all the modern amenities while allowing you to stay close to nature.Each tent is thoughtfully furnished, offering a cosy yet luxurious stay, making it an ideal choice for those looking to enjoy the beauty of Jim Corbett without compromising on comfort. Whether youâre an adventure enthusiast or simply looking to unwind in a serene setting, our luxury tent accommodation offers a truly unforgettable glamping experience.Pool Side Suite: Enter a world of comfort and serenity with our Pool Side Suite at The Golden Tusk. These suites are crafted to offer breathtaking views of the glistening pool, creating a peaceful ambiance perfect for unwinding. The interiors are elegantly appointed, providing a spacious and luxurious setting for your stay. Whether youâre relaxing on your private balcony or enjoying the suite's modern conveniences, the Pool Side Suite ensures a refreshing and tranquil experience. Ideal for those looking to escape to a serene retreat with a touch of luxury, this suite offers the perfect getaway amidst nature.Villa: Unwind in style at The Golden Tusk, a premium villa resort offering the perfect blend of luxury and seclusion in our private villas in Jim Corbett. These villas are designed for those who crave an elegant, tranquil retreat amidst nature.With thoughtfully designed interiors, modern amenities, and a focus on comfort, each private villa provides an inviting atmosphere where you can truly relax. Whether youâre seeking a romantic hideaway or a peaceful family retreat, our premium villa resort offers an exceptional experience in the serene surroundings of Jim Corbett.Unforgettable Experiences at The Golden TuskAt The Golden Tusk, we offer a variety of experiences for every traveller. From guided nature walks and thrilling jungle safaris to yoga, meditation, and wellness therapies, there's something for everyone. Whether you're seeking adventure, relaxation, or family fun, our resort provides unforgettable moments in a serene setting.Exceptional Events and Conferences: The Golden Tusk is the ideal venue for hosting memorable events and successful conferences amidst the serene beauty of nature. Our resort offers state-of-the-art facilities, versatile spaces, and a tranquil environment, perfect for corporate meetings, weddings, and social gatherings.Whether you're planning a large-scale event or an intimate gathering, our dedicated team ensures every detail is meticulously handled, providing personalised service to make your event truly special. With the stunning backdrop of Jim Corbett and a range of recreational activities available, your guests will enjoy both productivity and relaxation during their stay.Safari Adventures: Embark on the best Jim Corbett safari experience with The Golden Tusk. Our expertly guided safaris take you deep into the heart of the Jim Corbett National Park, offering a thrilling opportunity to witness the park's diverse wildlife, including the majestic Bengal tiger, in their natural habitat. For a seamless experience, we offer convenient Jim Corbett safari booking services, ensuring you have access to the most sought-after routes and times. Whether you're a wildlife enthusiast or a first-time visitor, our safaris provide an unforgettable journey through one of India's most iconic national parks.At The Golden Tusk, we are committed to providing you with an unforgettable experience in the heart of Jim Corbett. Whether you're here to embark on the best Jim Corbett safari, host an event, or simply enjoy a tranquil getaway, our resort offers the perfect blend of adventure, luxury, and relaxation.With our convenient Jim Corbett safari booking services, state-of-the-art facilities, and personalised hospitality, we ensure every aspect of your stay is seamless and memorable. Come discover the beauty of nature, the thrill of the wild, and the comfort of exceptional service at The Golden Tusk.READ MOREHotel Amenities Access to Gym and Spa Various adventure and excursion activities available 2 big swimming pools along with a kids pool 25 mins from Jim Corbett National Park 27 mins from Ramnagar Railway Station Wi-Fi 2 Big Swimming Pools & Kids Pool Water Dining Pool Kids Zone SPA BAR Multicuisine & Barbeque Restaurant Daily Activities for Kids Indoor & Outdoor Recreation 24 Hour Room Service Private Pool Villas EV Charging Station Pet Friendly (T&C)",
+      "Located besides the Reserve Forest, nestled snugly amidst 10 acres of greenery and tranquility and on the banks of the serene, soothing monsoon river Dhela, The Golden Tusk Resort in Jim Corbett is a remarkable refuge for nature lovers .With its close proximity to the Dhela and Jhirna safari zones, the resort is a dream escape for wildlife enthusiasts, families, honeymooners, and seekers of soulful experiences. At The Golden Tusk, luxury is not just seenâit is felt in the warmth of our service, the tranquillity of our landscapes, and the unforgettable memories woven into every stay.",
+      "ROOMS Â Our well-appointedÂ suites, villas, and luxury tents are designed to be your sanctuary of peace and relaxation, an escape from the busyness of daily life while our friendly and courteous team is committedÂ to ensure you have a pleasant and memorable stay with us.Â This, combined with the overall warm and radiant ambience of the unique landscape of the Resort, is what makes The Golden Tusk the best luxury resort in Jim corbett.",
+      "WATERHOLE - PRIVATE POOL VILLASEXPLOREJUNGLE SPRING - PRIVATE HOT TUB VILLASEXPLOREGARDEN SUITEEXPLORENATURE VIEW SUITEEXPLORELUXURY TENTEXPLOREPOOL SIDE SUITEEXPLORECORBETTÂ SUITEEXPLOREVILLAEXPLOREVILLA GRANDEEXPLORETUSK SUITEEXPLORETIGER SUITEEXPLORE",
+      "NEVER A DULL MOMENTWhatâs a holiday without some fun activities? To paint every memory of your stay in happy colours, our resort in Jim Corbett has a multitude of adventure packages. From planned excursions to personalised game drives, we help you at every step in your mission to unfurl and relax. Be it horticulture or one-of-a-kind pool-side dining - we have everything covered. At The Golden Tusk, there is something exciting for everyone to uncover. There will Never be a Dull Moment during your stay near Jim Corbett National Park."
+    ],
+    "scraped_image": "https://assets.simplotel.com/simplotel/image/upload/x_1,y_0,w_1276,h_718,r_0,c_crop,q_85,fl_progressive/w_1650,c_fit,f_auto/the-golden-tusk-jim-corbett/CLF_Landing_hero_image_for_TGT_Website_with_contact.jpg_(1)_e1973399.jpeg",
+    "success": true
+  },
+  {
+    "id": 22,
+    "name": "jüSTa Lazy Haven Corbett",
+    "slug": "justa-lazy-haven-corbett",
+    "url": "https://www.justahotels.com/justa-lazy-haven-corbett/",
+    "zone": "ramnagar",
+    "zone_label": "Chhoi / Ramnagar",
+    "category": "premium",
+    "tier_badge": "4-Star Boutique Art Resort",
+    "price": 7200,
+    "rooms": [
+      "Superior with Balcony",
+      "Deluxe with Balcony"
+    ],
+    "amenities": [
+      "Signature Art Collection",
+      "Spacious Private Balconies",
+      "Outdoor Swimming Pool",
+      "Sabor Gourmet Restaurant",
+      "Manicured Mountain Lawns"
+    ],
+    "scraped_title": "jüSTa Lazy Haven Corbett | Wildlife Retreat near Jim Corbett National Park",
+    "scraped_description": "Discover jüSTa Lazy Haven in Corbett — a serene wildlife retreat near Jim Corbett National Park. Enjoy forest views, nature walks, comfortable lodgings & birdwatching.",
+    "scraped_paragraphs": [
+      "Login Username or E-Mail Password Forget Password? Do not have an account? Create an Account",
+      "Username or E-Mail Password Forget Password? Do not have an account? Create an Account",
+      "Sign UpAfter creating an account, you'll be able to track your payment status, track the confirmation and you can also rate the tour after you finished the tour.Username*Password*Confirm Password*First Name*Last Name*Birth Date*Date12345678910111213141516171819202122232425262728293031MonthJanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecemberYear2026202520242023202220212020201920182017201620152014201320122011201020092008200720062005200420032002200120001999199819971996199519941993199219911990198919881987198619851984198319821981198019791978197719761975197419731972197119701969196819671966196519641963196219611960195919581957195619551954195319521951195019491948194719461945194419431942194119401939193819371936193519341933193219311930192919281927192619251924192319221921192019191918191719161915191419131912191119101909190819071906Email*Phone*Country*AfghanistanAlbaniaAlgeriaAndorraAngolaAntigua and BarbudaArgentinaArmeniaAustraliaAustriaAzerbaijanBahamasBahrainBangladeshBarbadosBelarusBelgiumBelizeBeninBhutanBoliviaBosnia and HerzegovinaBotswanaBrazilBruneiBulgariaBurkina FasoBurundiCabo VerdeCambodiaCameroonCanadaCentral African Republic (CAR)ChadChileChinaColombiaComorosDemocratic Republic of the CongoRepublic of the CongoCosta RicaCote d'IvoireCroatiaCubaCyprusCzech RepublicDenmarkDjiboutiDominicaDominican RepublicEcuadorEgyptEl SalvadorEquatorial GuineaEritreaEstoniaEthiopiaFijiFinlandFranceGabonGambiaGeorgiaGermanyGhanaGreeceGrenadaGuatemalaGuineaGuinea-BissauGuyanaHaitiHondurasHungaryIcelandIndiaIndonesiaIranIraqIrelandIsraelItalyJamaicaJapanJordanKazakhstanKenyaKiribatiKosovoKuwaitKyrgyzstanLaosLatviaLebanonLesothoLiberiaLibyaLiechtensteinLithuaniaLuxembourgMacedoniaMadagascarMalawiMalaysiaMaldivesMaliMaltaMarshall IslandsMauritaniaMauritiusMexicoMicronesiaMoldovaMonacoMongoliaMontenegroMoroccoMozambiqueMyanmar (Burma)NamibiaNauruNepalNetherlandsNew ZealandNicaraguaNigerNigeriaNorth KoreaNorwayOmanPakistanPalauPalestinePanamaPapua New GuineaParaguayPeruPhilippinesPolandPortugalPuerto RicoQatarRomaniaRussiaRwandaSaint Kitts and NevisSaint LuciaSaint Vincent and the GrenadinesSamoaSan MarinoSao Tome and PrincipeSaudi ArabiaSenegalSerbiaSeychellesSierra LeoneSingaporeSlovakiaSloveniaSolomon IslandsSomaliaSouth AfricaSouth KoreaSouth SudanSpainSri LankaSudanSurinameSwazilandSwedenSwitzerlandSyriaTaiwanTajikistanTanzaniaThailandTimor-LesteTogoTongaTrinidad and TobagoTunisiaTurkeyTurkmenistanTuvaluUgandaUkraineUnited Arab Emirates (UAE)United Kingdom (UK)United States of America (USA)UruguayUzbekistanVanuatuVatican City (Holy See)VenezuelaVietnamYemenZambiaZimbabwe* Creating an account means you're okay with our Terms of Service and Privacy Statement.Please agree to all the terms and conditions before proceeding to the next stepAlready a member?Login",
+      "After creating an account, you'll be able to track your payment status, track the confirmation and you can also rate the tour after you finished the tour.Username*Password*Confirm Password*First Name*Last Name*Birth Date*Date12345678910111213141516171819202122232425262728293031MonthJanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecemberYear2026202520242023202220212020201920182017201620152014201320122011201020092008200720062005200420032002200120001999199819971996199519941993199219911990198919881987198619851984198319821981198019791978197719761975197419731972197119701969196819671966196519641963196219611960195919581957195619551954195319521951195019491948194719461945194419431942194119401939193819371936193519341933193219311930192919281927192619251924192319221921192019191918191719161915191419131912191119101909190819071906Email*Phone*Country*AfghanistanAlbaniaAlgeriaAndorraAngolaAntigua and BarbudaArgentinaArmeniaAustraliaAustriaAzerbaijanBahamasBahrainBangladeshBarbadosBelarusBelgiumBelizeBeninBhutanBoliviaBosnia and HerzegovinaBotswanaBrazilBruneiBulgariaBurkina FasoBurundiCabo VerdeCambodiaCameroonCanadaCentral African Republic (CAR)ChadChileChinaColombiaComorosDemocratic Republic of the CongoRepublic of the CongoCosta RicaCote d'IvoireCroatiaCubaCyprusCzech RepublicDenmarkDjiboutiDominicaDominican RepublicEcuadorEgyptEl SalvadorEquatorial GuineaEritreaEstoniaEthiopiaFijiFinlandFranceGabonGambiaGeorgiaGermanyGhanaGreeceGrenadaGuatemalaGuineaGuinea-BissauGuyanaHaitiHondurasHungaryIcelandIndiaIndonesiaIranIraqIrelandIsraelItalyJamaicaJapanJordanKazakhstanKenyaKiribatiKosovoKuwaitKyrgyzstanLaosLatviaLebanonLesothoLiberiaLibyaLiechtensteinLithuaniaLuxembourgMacedoniaMadagascarMalawiMalaysiaMaldivesMaliMaltaMarshall IslandsMauritaniaMauritiusMexicoMicronesiaMoldovaMonacoMongoliaMontenegroMoroccoMozambiqueMyanmar (Burma)NamibiaNauruNepalNetherlandsNew ZealandNicaraguaNigerNigeriaNorth KoreaNorwayOmanPakistanPalauPalestinePanamaPapua New GuineaParaguayPeruPhilippinesPolandPortugalPuerto RicoQatarRomaniaRussiaRwandaSaint Kitts and NevisSaint LuciaSaint Vincent and the GrenadinesSamoaSan MarinoSao Tome and PrincipeSaudi ArabiaSenegalSerbiaSeychellesSierra LeoneSingaporeSlovakiaSloveniaSolomon IslandsSomaliaSouth AfricaSouth KoreaSouth SudanSpainSri LankaSudanSurinameSwazilandSwedenSwitzerlandSyriaTaiwanTajikistanTanzaniaThailandTimor-LesteTogoTongaTrinidad and TobagoTunisiaTurkeyTurkmenistanTuvaluUgandaUkraineUnited Arab Emirates (UAE)United Kingdom (UK)United States of America (USA)UruguayUzbekistanVanuatuVatican City (Holy See)VenezuelaVietnamYemenZambiaZimbabwe* Creating an account means you're okay with our Terms of Service and Privacy Statement.Please agree to all the terms and conditions before proceeding to the next stepAlready a member?Login",
+      "HOTELS Ahmedabad Alwar Bengaluru Chittorgarh Corbett Dehradun Delhi Dharamshala Goa Gurugram Jawai Kolad Manali Mashobra Mukteshwar Mussoorie Nainital Nathdwara Palampur Rameswaram Rishikesh Shimla Srinagar Udaipur Varanasi MORE Weddings Meetings Dining Offers Contact Book Now"
+    ],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 23,
+    "name": "Shervani Pebbles & Pines",
+    "slug": "shervani-pebbles-pines",
+    "url": "https://www.shervanihotels.com/shervani-pebbles-and-pines-corbett/",
+    "zone": "dhikuli",
+    "zone_label": "Dhikuli, Jim Corbett",
+    "category": "premium",
+    "tier_badge": "4-Star Premium Jacuzzi Resort",
+    "price": 8200,
+    "rooms": [
+      "Deluxe Garden View",
+      "Premium Garden",
+      "Superior with Jacuzzi"
+    ],
+    "amenities": [
+      "Private Outdoor Jacuzzis",
+      "Bijrani Gate Proximity",
+      "Forest Spa Therapies",
+      "Swimming Pool with Sun Deck",
+      "Lush Tropical Gardens"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 24,
+    "name": "Sterling Corbett",
+    "slug": "sterling-corbett",
+    "url": "https://www.sterlingholidays.com/resorts-hotels/corbett",
+    "zone": "marchula",
+    "zone_label": "Marchula Valley, Ramganga",
+    "category": "premium",
+    "tier_badge": "4-Star Hillside Riverside Resort",
+    "price": 7800,
+    "rooms": [
+      "Classic",
+      "Premier"
+    ],
+    "amenities": [
+      "Panoramic Ramganga River Views",
+      "Hillside Stargazing Telescope",
+      "Multi-Cuisine Air-Deck Restaurant",
+      "Infinity Swimming Pool",
+      "Jungle Treks"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 25,
+    "name": "Silvanza Resort",
+    "slug": "silvanza-resort",
+    "url": "https://silvanzaresort.com/",
+    "zone": "mohaan",
+    "zone_label": "Mohaan, Corbett",
+    "category": "mid",
+    "tier_badge": "3-Star Eco-Forest Stay",
+    "price": 4200,
+    "rooms": [
+      "Origin",
+      "Breeze"
+    ],
+    "amenities": [
+      "Peaceful Mohaan Woods",
+      "Origin & Breeze Cottages",
+      "Personal Verandas & Garden Swings",
+      "Swimming Pool",
+      "Campfire Evenings"
+    ],
+    "scraped_title": "Home - Bosa Resort",
+    "scraped_description": "GET LUXURY & COMFORT Perfect Stay, Best Vacation ! Cubilia semper vulputate morbi eos nostra sollicitudin autem dapibus, tenetur ultricies pariatur! Quos aenean potenti ultrices euismod. EXPLORE MORE WATCH VIDEO About Us World Best Class Resort Near City Massa pretium aut, veritatis tenetur rhoncus lectus num quam excepturi massa quos? Morbi mus sunt eum? Voluptatem ante integer habitasse fames sunt. […]",
+    "scraped_paragraphs": [
+      "Home About Us Rooms 4.7/5 Villa Luxury Room Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $280/ per night BOOK NOW 4.9/5 Twin Villa Deluxe Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $220/ per night BOOK NOW Our Accommodation Serenity & Bliss comfort zone home Room Services Hospitalty meets home Store Luggage Hospitalty meets home Pick Up & Drop Experience elegance Blog Contact Us X BOOK NOW !",
+      "Cubilia semper vulputate morbi eos nostra sollicitudin autem dapibus, tenetur ultricies pariatur! Quos aenean potenti ultrices euismod.",
+      "Massa pretium aut, veritatis tenetur rhoncus lectus num quam excepturi massa quos? Morbi mus sunt eum? Voluptatem ante integer habitasse fames sunt.",
+      "4.7/5 Free Wi-Fi 1 Beds Attach Bath Villa Luxury Room Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $280/ per night BOOK NOW 4.9/5 Free Wi-Fi 2 Beds Attach Bath Twin Villa Deluxe Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $220/ per night BOOK NOW 4.5/5 Free Wi-Fi 1 Beds Attach Bath Presidential Villa Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $250/ per night BOOK NOW 4.9/5 Free Wi-Fi 1 Beds Attach Bath Luxury Studio Room Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $200/ per night BOOK NOW 4.6/5 Free Wi-Fi 2 Beds Attach Bath Junior Suite Room Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $190/ per night BOOK NOW 4.5/5 Free Wi-Fi 1 Beds Attach Bath Penthouse Room Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $170/ per night BOOK NOW 4.7/5 Free Wi-Fi 2 Beds Attach Bath Luxury Quad Room Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $210/ per night BOOK NOW 4.5/5 Free Wi-Fi 1 Beds Attach Bath Executive Luxury Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $195/ per night BOOK NOW 4.9/5 Free Wi-Fi 1 Beds Attach Bath Standard Luxury Room Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $180/ per night BOOK NOW 4.7/5 Free Wi-Fi 2 Beds Attach Bath King Deluxe Room Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $210/ per night BOOK NOW 4.6/5 Free Wi-Fi 1 Beds Attach Bath Deluxe Twin Luxury Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $175/ per night BOOK NOW 4.7/5 Free Wi-Fi 1 Beds Attach Bath Triple Deluxe Room Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit. $120/ per night BOOK NOW",
+      "Hac dictum ipsa quisque dolorem conubia, nemo nam class, habitant odit Hac dictum ipsa."
+    ],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 26,
+    "name": "Sterling Corbett Quinta",
+    "slug": "sterling-corbett-quinta",
+    "url": "https://www.sterlingholidays.com/resorts-hotels/corbett-quinta",
+    "zone": "dhikuli",
+    "zone_label": "Dhikuli, Jim Corbett",
+    "category": "premium",
+    "tier_badge": "4-Star Contemporary Safari Stay",
+    "price": 7500,
+    "rooms": [
+      "Classic",
+      "Premier"
+    ],
+    "amenities": [
+      "Prime Dhikuli Safari Strip",
+      "Rapid Safari Jeep Dispatch",
+      "Outdoor Swimming Pool",
+      "Contemporary Buffet Dining",
+      "Lush Forest Lawns"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 27,
+    "name": "Aura by Xperience Corbett",
+    "slug": "aura-by-xperience-corbett",
+    "url": "https://www.auracorbett.com/",
+    "zone": "semalkhaliya",
+    "zone_label": "Semalkhaliya, Bailparao",
+    "category": "premium",
+    "tier_badge": "4-Star Plunge Pool & Mud Cottages",
+    "price": 8900,
+    "rooms": [
+      "Deluxe Cottage",
+      "Mud Cottage",
+      "Premium",
+      "Elegant Plunge Pool",
+      "Family Villa 4 Pax"
+    ],
+    "amenities": [
+      "Private Plunge Pool Villas",
+      "Authentic Mud Architecture",
+      "4-Pax Family Villas",
+      "Swimming Pool & Sun Loungers",
+      "Rustic Organic Dining"
+    ],
+    "scraped_title": "Aura Corbett",
+    "scraped_description": "Aura is a family owned retreat with a peaceful healing environment for the body, mind and Spirit. We provide our guests with the opportunity to enjoy a tranquil respite from their busy worldly lives.",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 28,
+    "name": "The Cloyster Resort & Spa",
+    "slug": "the-cloyster-resort-spa",
+    "url": "https://thecloysterresort.com/",
+    "zone": "mohaan",
+    "zone_label": "Mohaan / Dhikuli Border",
+    "category": "premium",
+    "tier_badge": "4-Star Hill Facing Luxury Resort",
+    "price": 8200,
+    "rooms": [
+      "Deluxe Garden View",
+      "Premium Jungle View",
+      "Luxury Hill Facing",
+      "Pool View"
+    ],
+    "amenities": [
+      "Dramatic Kumaon Cliff Backdrop",
+      "Hill-Facing Private Balconies",
+      "Swimming Pool",
+      "Cloyster Spa Sanctuary",
+      "Multi-Cuisine Restaurant"
+    ],
+    "scraped_title": "",
+    "scraped_description": "",
+    "scraped_paragraphs": [],
+    "scraped_image": "",
+    "success": false
+  },
+  {
+    "id": 29,
+    "name": "Anantum Gateway Resorts & Spa",
+    "slug": "anantum-gateway-resorts-spa",
+    "url": "https://anantumgatewayresorts.com/",
+    "zone": "semalkhaliya",
+    "zone_label": "Semalkhaliya, Bailparao",
+    "category": "luxury",
+    "tier_badge": "5-Star Luxury Destination Resort",
+    "price": 12000,
+    "rooms": [
+      "Deluxe",
+      "Executive",
+      "Plunge Pool Cottage"
+    ],
+    "amenities": [
+      "Private Plunge Pool Cottages",
+      "Grand Destination Wedding Lawns",
+      "Luxury Spa & Sauna",
+      "Adventure Theme Park",
+      "Multiple Dining Pavilions"
+    ],
+    "scraped_title": "Resort in Ramnagar, Resorts in Jim Corbett National Park | Book Now",
+    "scraped_description": "Anantum Gateway Resorts is among top resorts in Jim Corbett. Resort in Ramnagar range from ultra-luxury wilderness lodges to family-friendly riverside retreats located around Ramnagar, Uttarakhand",
+    "scraped_paragraphs": [
+      "Resort in Jim Corbett Anantum Gateway Resorts & Spa – Offering Premium Hospitality to Create Infinite Memories JIM CORBETT NATIONAL PARK As the name says, we at Anantum Gateway Resorts & Spa believe in offering infinite reasons to our guests to make their holiday and stay memorable. Burrowed amidst the lush wilderness of Jim Corbett, our resort is known for its modern elegance, natural landscape, and regal interior. Our resort is surrounded by dense green forests and grasslands, making it an exclusive choice for nature lovers and adventure seekers. If you have been searching for leisure, serenity, and comfort, all at one place, then our resort in Jim Corbett is your perfect holiday destination.It is time you treat yourself with the finest hospitality by choosing our spacious accommodation, ranging from deluxe rooms to cozy cottages, family suites to sky view suites; all designed to serve our guests with world-class amenities along with offering complete relaxation. It is time you relish authentic cuisines at our multi-cuisine restaurant or indulge in a rejuvenating spa to unwind stress. Every corner of our resort reflects luxury and warmth, making it a perfect gateway to your most cherished memories. KNOW MORE The Anantum The Anantum – Making Infinite possibilities a reality by hosting grand wedding celebrations, offering all inclusive corporate outings, authentic dining, soothing scenic settings, rejuvenating spa experiences, and endless fun with thrilling adventure. Weddings Restaurants Private Dine Conferences & Events Wildlife & Adventure Swimming Pool Rejuvenation Wildlife & Adventure Rejuvenation Rejuvenation Wildlife Stay in Comfort, Surrounded by Nature ⬈ BOOK NOW ⇀ Deluxe Room Perfect blend of comfort & elegance 📏 400 Sq ft. 🛏 Queen Size Bed ⬈ BOOK NOW ⇀ Executive Room Stylish interiors with great comfort 📏 350 Sq ft. 🛏 King Size Bed ⬈ BOOK NOW ⇀ Premium Cottage Luxury and spacious comfort 📏 550 Sq ft. 🛏 Super King Bed ⬈ BOOK NOW ⇀ Plunge Pool Cottage Top class amenities & view 📏 550 Sq ft. 🛏 Super King Bed ⬈ BOOK NOW ⇀ Family Suite Luxury and spacious comfort 📏 650 Sq ft. 🛏 Super King Bed ⬈ BOOK NOW ⇀ Sky View Glass Suite Super Luxury and spacious comfort 📏 600 Sq ft. 🛏 Super King Bed ⬈ BOOK NOW ⇀ Machan Suite Super Luxury and spacious comfort 📏 600 Sq ft. 🛏 Super King Bed EXPLORE ALL ROOM CATEGORY Awards A-One Industries & Yes Event Management Uttarakhand Drona Ratna Award 2024 (“Role Model in Hotel Industry” under Enterprenur category to Mr. Rajesh Goyal) Indian Bodybuilders Federation (IBBF) & Uttarakhand Bodybuilding & Fitness Association Guest of Honour memento (12th Federation Cup National Championship 2023). India News (Uttar Pradesh / Uttarakhand) Kumaon Adhiveshan memento for “Best Services Resort” (December 28, 2023). KVR Hospital, Kashipur (Blood Bank) Memento and Certificate of Appreciation to Mr. Rajesh Goyal / Anantum for exemplary services in organizing a Voluntary Blood Donation Camp (June 11, 2025). RCM (Team Winner's TSK) Appreciation Award for unwavering support in Team Winners Program Season-8 (January 2024). ADTOI (Association of Domestic Tour Operators of India) Recognition/Participation Plaque. ETAA (Enterprising Travel Agents Association - North India) Felicitation Plaque to Mr. Rajesh Goyal for his kind support (March 1st to 3rd, 2024). WeddingWire.in (Wedding Awards 2026) Certificate of Recognition for being one of the most valued and recommended vendors by couples. Tourism & Hospitality Award (2026) Award under the Entrepreneur category, presented to Mr. Rajesh Goyal (Anantum Gateway Resort). UltraTech Cement (UltraTech Knights 3.0) Certificate of Appreciation for seamless co-ordination and exceptional service during the UltraTech Knights 3.0 event. FAQ's About the Resort: 1. Why Anantum Gateway Resorts & Spa is considered a top choice among resorts in Jim Corbett? Anantum Gateway Resorts & Spa is known for its luxurious amenities, scenic surroundings, and close proximity to Jim Corbett National Park. It is one of the top-rated resort in Jim Corbett which offers a unique blend of nature and comfort, making it perfect for enjoying holidays and weekend getaways. It is one such resort in Uttarakhand, which is suitable for families, couples, and adventure seekers. Whether you are planning to visit Jim Corbett for enjoying wildlife adventure or need a romantic setting to enjoy your honeymoon, this resort delivers a perfect experience for all. 2. Where exactly is Anantum Gateway Resorts & Spa situated within Corbett? Anantum Gateway Resorts & Spa is located near Jim Corbett National Park. It is in Ramnagar, Uttarakhand, surrounded by dense forest and lush greenery. It offers the authentic feel of a resort in Corbett while being easily accessible by road and rail. Accessibility & Location: 10. How far is Anantum Gateway Resorts from the nearest railway station in Ramnagar? Anantum Gateway Resorts & Spa is approximately 10 kilometers away from the Ramnagar Railway Station. It is the nearest railway station that connects Jim Corbett National Park to other nearby cities. 11. What is the distance between the resort and the main Jim Corbett Park entrance? The resort is located around 10 to 15 kilometers away from a few entry zones of Jim Corbett National Park, including Dhela Zone, Jhirna Zone, Bijrani Zone, and a few more. KNOW MORE Your Moments Our Story Your Moments Our Story",
+      "Uttarakhand Drona Ratna Award 2024 (“Role Model in Hotel Industry” under Enterprenur category to Mr. Rajesh Goyal)",
+      "Memento and Certificate of Appreciation to Mr. Rajesh Goyal / Anantum for exemplary services in organizing a Voluntary Blood Donation Camp (June 11, 2025).",
+      "Appreciation Award for unwavering support in Team Winners Program Season-8 (January 2024).",
+      "Felicitation Plaque to Mr. Rajesh Goyal for his kind support (March 1st to 3rd, 2024)."
+    ],
+    "scraped_image": "",
+    "success": true
+  },
+  {
+    "id": 30,
+    "name": "Dhikala Forest Rest House",
+    "slug": "dhikala-forest-rest-house",
+    "url": "https://www.corbettnationalpark.in/dhikala-forest-lodge.htm",
+    "zone": "dhikala",
+    "zone_label": "Dhikala Core Wildlife Zone",
+    "category": "core",
+    "tier_badge": "Government Core FRH (Deep Jungle)",
+    "price": 5000,
+    "rooms": [
+      "Dhikala Forest Cabin",
+      "Hutment",
+      "New Forest Rest House Room"
+    ],
+    "amenities": [
+      "Inside Core Tiger Reserve",
+      "Ramganga Reservoir Panorama",
+      "Deep Jungle Safari Hub",
+      "Solar-Fenced Wilderness Compound",
+      "Authentic Colonial Heritage Lodge"
+    ],
+    "scraped_title": "Dhikala Forest Lodge, Dhikala Forest Lodge Tour Packages",
+    "scraped_description": "We at CorbettNationalPark.in, offer you best affordable dhikala forest lodge booking, dhikala forest lodge tour packages, dhiakal best deal.",
+    "scraped_paragraphs": [
+      "This is not an official website of \"Corbett Tiger Reserve\". This is a Registered Private Travel Agency which organizes Hotel, Safari and Tour Packages booking in Corbett National Park.",
+      "The six different wings of the Dhikala Forest Lodge can be categorized as: Old Forest Rest House Room -05 | Dhikala Annexes Room -07 | Hutment Rooms - 06 | Cabins Rooms - 06 | New Forest Rest House Rooms - 04 | Old Range Quarters Rooms - 04 Indian and SAARC visitor Dhikala Forest Lodge 46 days in advance and the Foreigners have to book the accommodation 91 days in advance.",
+      "The lodge offers a range of activities for visitors to enjoy the wildlife and natural beauty of the area. Here are some of the activities you can engage in at Dhikala Forest Lodge: Wildlife Safari: The main attraction at Dhikala is the wildlife safari. You can embark on an adventurous jeep safari to explore the park and spot various wildlife species. Jim Corbett National Park is home to tigers, elephants, deer, leopards, sloth bears, and many other animals. Bird Watching: Dhikala is a haven for bird enthusiasts. The park boasts a diverse bird population, including both resident and migratory species. You can indulge in bird watching and catch glimpses of beautiful birds like crested serpent eagles, Himalayan griffon vultures, and the rare Bengal florican. Nature Walks: Take a guided nature walk around the lodge and its surroundings. Explore the lush forests, grasslands, and riverbanks while learning about the local flora and fauna from experienced guides. Wildlife Photography: Dhikala provides excellent opportunities for wildlife photography. Capture stunning shots of the diverse wildlife, picturesque landscapes, and vibrant birdlife that the park has to offer."
+    ],
+    "scraped_image": "",
+    "success": true
+  }
+]

@@ -12,14 +12,27 @@ window.CORBETT_INITIAL_DB = {
         "slug": "paatlidun-safari-lodge",
         "zone": "mohaan",
         "zone_label": "Mohaan / Bakrakot, Corbett",
-        "category": "5-star",
-        "tier_badge": "5-Star Luxury Wildlife Lodge",
+        "category": "luxury",
+        "tier_badge": "5-Star Ultra Luxury Wildlife Lodge",
         "price": 24000.0,
         "rating": 4.9,
-        "reviews": 128,
-        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-        "amenities": "pool,riverfront,spa,plunge_pool",
-        "description": "Nestled on the edge of Corbett park along the Kumaon foothills, Paatlidun features private plunge pools, open-air star-beds on terraces, and handcrafted stone cottages steeped in rustic wildlife heritage."
+        "reviews": 184,
+        "official_website": "https://www.paatlidun.com/",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Private Plunge Pool",
+            "Open-Air Star Bed",
+            "Arijana Wellness Spa",
+            "Kumaoni Fine Dining",
+            "Chahi Wildlife Library"
+        ],
+        "description": "Nestled on the edge of Corbett along the Kumaon foothills, Paatlidun features private plunge pools, open-air star-beds on terraces, and handcrafted stone cottages steeped in rustic wildlife heritage overlooking the river valley.",
+        "rooms": [
+            "Bush Cottage",
+            "Luxury Cottage",
+            "Premium Cottage"
+        ]
     },
     {
         "id": 2,
@@ -27,29 +40,56 @@ window.CORBETT_INITIAL_DB = {
         "slug": "saraca-resort-corbett-lebua",
         "zone": "mohaan",
         "zone_label": "Mohaan / Bakrakot, Corbett",
-        "category": "5-star",
+        "category": "luxury",
         "tier_badge": "5-Star Luxury Eco-Resort",
-        "price": 18500.0,
+        "price": 16500.0,
         "rating": 4.8,
-        "reviews": 142,
-        "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-        "amenities": "pool,spa,balcony",
-        "description": "Spread across 9 acres of dense green foliage adjacent to the reserve forest, Saraca offers luxurious suites with panoramic views of landscaped ponds and thick woodland."
+        "reviews": 210,
+        "official_website": "https://www.saracahotels.com/",
+        "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi activity parking",
+        "amenities_list": [
+            "Infinity Swimming Pool",
+            "Saraca Spa & Ayurveda",
+            "Horse Riding & Stables",
+            "Azrak Multi-Cuisine",
+            "Panoramic Pond View"
+        ],
+        "description": "Spread across 9 acres of dense green foliage adjacent to the reserve forest, Saraca Corbett offers luxurious suites and standalone cottages with panoramic views of landscaped ponds, birding trails, and horse riding facilities.",
+        "rooms": [
+            "Premium room",
+            "Family Cottage",
+            "Premium Suite one bedroom",
+            "Two bedroom Forest view",
+            "Two bedroom Pond view"
+        ]
     },
     {
         "id": 3,
         "name": "Namah Resort Corbett",
         "slug": "namah-resort-corbett",
         "zone": "dhikuli",
-        "zone_label": "Dhikuli, Jim Corbett",
-        "category": "5-star",
+        "zone_label": "Dhikuli, Jim Corbett (Kosi Riverbank)",
+        "category": "luxury",
         "tier_badge": "5-Star Riverside Sanctuary",
-        "price": 14500.0,
+        "price": 13500.0,
         "rating": 4.8,
-        "reviews": 210,
-        "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
-        "amenities": "pool,riverfront,spa,balcony",
-        "description": "Surrounded by natural beauty and lush greenery, Namah sits directly along the tranquil Kosi riverbanks with grand riverview balconies and expansive ballroom facilities."
+        "reviews": 328,
+        "official_website": "https://www.namah.in/",
+        "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Kosi Riverfront View",
+            "Pratha All-Day Dining",
+            "Boond Bar",
+            "Spa & Fitness Center",
+            "Grand Ballroom Lawns"
+        ],
+        "description": "Surrounded by natural beauty and lush greenery, Namah sits directly along the tranquil Kosi riverbanks with grand riverview balconies, expansive lush lawns, holistic wellness therapy, and direct safari desk assistance.",
+        "rooms": [
+            "Superior",
+            "Premium"
+        ]
     },
     {
         "id": 4,
@@ -57,29 +97,57 @@ window.CORBETT_INITIAL_DB = {
         "slug": "the-corbett-hideaway-by-leisure",
         "zone": "dhikuli",
         "zone_label": "Dhikuli, Jim Corbett",
-        "category": "4-star",
+        "category": "premium",
         "tier_badge": "4-Star Heritage Forest Hideaway",
         "price": 11000.0,
         "rating": 4.7,
-        "reviews": 95,
-        "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-        "amenities": "pool,riverfront,spa",
-        "description": "A charming hideaway nestled inside mango orchards along the Kosi river. Provides authentic thatched roofs, warm timber cottages, and intimate jungle hospitality."
+        "reviews": 264,
+        "official_website": "https://www.leisurehotels.co.in/the-corbett-hideaway/",
+        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Mango Orchard Setting",
+            "Kosi Riverside Sit-out",
+            "Outdoor Swimming Pool",
+            "The Den Wilderness Spa",
+            "Naturalist Safari Desk"
+        ],
+        "description": "A legendary wilderness retreat set amidst a scenic mango orchard by Leisure Hotels / IHCL SeleQtions, offering sloped-roof cottages, Kumaoni architecture, river-facing sit-outs, and birdwatching trails.",
+        "rooms": [
+            "Deluxe",
+            "Superior"
+        ]
     },
     {
         "id": 5,
         "name": "The Riverview Retreat",
         "slug": "the-riverview-retreat",
         "zone": "dhikuli",
-        "zone_label": "Dhikuli, Jim Corbett",
-        "category": "4-star",
+        "zone_label": "Dhikuli, Jim Corbett (Kosi Riverfront)",
+        "category": "premium",
         "tier_badge": "4-Star Riverfront Retreat",
         "price": 9500.0,
-        "rating": 4.8,
-        "reviews": 320,
-        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
-        "amenities": "pool,riverfront,spa,balcony",
-        "description": "Sprawled over 8 acres along the banks of River Kosi, this retreat features sloping tiled roofs, cool stone floors, and private garden sit-outs ideal for large families."
+        "rating": 4.7,
+        "reviews": 340,
+        "official_website": "https://www.leisurehotels.co.in/the-riverview-retreat-corbett-resort/",
+        "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "8-Acre Riverfront Lawns",
+            "Gurney House Restaurant",
+            "Jim's Bar",
+            "Large Swimming Pool",
+            "Nature Walking Trails"
+        ],
+        "description": "Spread across 8 lush acres on the banks of the Kosi River, featuring charming stone cottages, duplex villas, multi-cuisine dining at Gurney House, riverside lawns, and swimming pools framed by forested hills.",
+        "rooms": [
+            "Deluxe",
+            "Deluxe cottage",
+            "Superior",
+            "Duplex",
+            "Suite",
+            "Premium"
+        ]
     },
     {
         "id": 6,
@@ -87,74 +155,135 @@ window.CORBETT_INITIAL_DB = {
         "slug": "bellmont-caves-resort",
         "zone": "mohaan",
         "zone_label": "Mohaan, Corbett",
-        "category": "mid-range",
+        "category": "mid",
         "tier_badge": "Boutique Cave-Themed Resort",
-        "price": 6000.0,
-        "rating": 4.4,
-        "reviews": 68,
-        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
-        "amenities": "pool,balcony",
-        "description": "A unique architectural stay carved with rustic cave motifs and stone textures, offering scenic valley views and thrilling campfire evenings."
+        "price": 5500.0,
+        "rating": 4.5,
+        "reviews": 118,
+        "official_website": "https://bryscaves.com/",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool restaurant wifi parking activity",
+        "amenities_list": [
+            "Stone Cave Architecture",
+            "Valley View Decks",
+            "Campfire & Live Music",
+            "Outdoor Pool",
+            "Multi-Cuisine Cafe"
+        ],
+        "description": "A uniquely designed resort set among rocky foothills in Mohaan featuring cave-style rustic architecture, valley view decks, outdoor pool, campfire sessions, and authentic Himalayan hospitality.",
+        "rooms": [
+            "Deluxe",
+            "Executive"
+        ]
     },
     {
         "id": 7,
         "name": "ZANA Resort Jim Corbett",
         "slug": "zana-resort-jim-corbett",
-        "zone": "mohaan",
-        "zone_label": "Mohaan / Kosi Valley",
-        "category": "5-star",
-        "tier_badge": "5-Star Luxury Boutique Retreat",
-        "price": 17000.0,
+        "zone": "dhikuli",
+        "zone_label": "Dhikuli, Corbett (Riverview)",
+        "category": "luxury",
+        "tier_badge": "5-Star Luxury Boutique Sanctuary",
+        "price": 15000.0,
         "rating": 4.9,
-        "reviews": 84,
-        "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80",
-        "amenities": "pool,riverfront,spa,balcony",
-        "description": "Curated luxury offering vintage architecture, private garden fireplaces, bespoke riverside picnic experiences, and spacious suites tailored for discerning wildlife travelers."
+        "reviews": 165,
+        "official_website": "https://zanaresorts.com/",
+        "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "In-Room Fireplace",
+            "Riverview Lawns",
+            "Bespoke Wellness Spa",
+            "Mayfair All-Day Dining",
+            "Heated Pool Experience"
+        ],
+        "description": "A premier luxury resort by Espire Hospitality on the Corbett riverfront, boasting contemporary design cottages with fireplaces, private sit-outs, river views, tailored wildlife safaris, and fine dining.",
+        "rooms": [
+            "Classic",
+            "Riverview",
+            "Tiger  Tales Suite",
+            "Luxury cottage with Fireplace"
+        ]
     },
     {
         "id": 8,
         "name": "Lemon Tree Premier Corbett",
         "slug": "lemon-tree-premier-corbett",
         "zone": "mohaan",
-        "zone_label": "Mohaan, Corbett",
-        "category": "4-star",
-        "tier_badge": "4-Star Upscale Riverside Resort",
-        "price": 10500.0,
+        "zone_label": "Mohaan, Jim Corbett",
+        "category": "premium",
+        "tier_badge": "4-Star Contemporary Riverside Resort",
+        "price": 8500.0,
         "rating": 4.6,
-        "reviews": 240,
-        "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
-        "amenities": "pool,riverfront,spa",
-        "description": "Overlooking the meandering Kosi River, Lemon Tree Premier blends contemporary flair with scenic natural vistas, featuring outdoor lawns and wellness spas."
+        "reviews": 280,
+        "official_website": "https://www.lemontreehotels.com/lemon-tree-premier/corbett/resort-corbett",
+        "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Riverside Swimming Pool",
+            "Fresco Spa",
+            "Citrus Cafe & Slounge",
+            "Fitness Center",
+            "High-Speed Wi-Fi"
+        ],
+        "description": "Located in Mohaan right on the Kosi riverbank, Lemon Tree Premier offers vibrant contemporary styling, Citrus Cafe dining, Fresco Spa treatments, outdoor swimming pool, and easy access to Corbett safari zones.",
+        "rooms": [
+            "Double"
+        ]
     },
     {
         "id": 9,
         "name": "The Solluna Resort",
         "slug": "the-solluna-resort",
         "zone": "marchula",
-        "zone_label": "Marchula Valley, Ramganga",
-        "category": "5-star",
-        "tier_badge": "5-Star Eco-Luxury Resort",
-        "price": 10500.0,
-        "rating": 4.7,
-        "reviews": 190,
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
-        "amenities": "pool,riverfront,spa,balcony",
-        "description": "Situated in the scenic Marchula valley along the Ramganga riverbed, Solluna offers presidential and fragrance cottages, open-air amphitheatre, rain dance, and starry night dining."
+        "zone_label": "Marchula Valley, Corbett (Ramganga River)",
+        "category": "luxury",
+        "tier_badge": "5-Star Eco-Luxury Valley Retreat",
+        "price": 14000.0,
+        "rating": 4.8,
+        "reviews": 310,
+        "official_website": "https://www.sollunaresort.com/",
+        "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Ramganga Valley View",
+            "Pebbled Pool & Waterfall",
+            "Top-of-the-World Dining",
+            "Stargazing Decks",
+            "River Trekking Trails"
+        ],
+        "description": "Positioned in the pristine Marchula Valley where the sun and moon harmonize, Solluna provides luxury cottages themed after nature's elements, panoramic valley horizons, outdoor pool, and private river pebble access.",
+        "rooms": [
+            "Superior",
+            "Deluxe",
+            "Premier"
+        ]
     },
     {
         "id": 10,
         "name": "Club Mahindra Corbett",
         "slug": "club-mahindra-corbett",
-        "zone": "mohaan",
-        "zone_label": "Mohaan, Corbett",
-        "category": "4-star",
-        "tier_badge": "4-Star Family Jungle Resort",
-        "price": 8500.0,
+        "zone": "dhikuli",
+        "zone_label": "Dhikuli, Jim Corbett",
+        "category": "premium",
+        "tier_badge": "4-Star Family Adventure Resort",
+        "price": 9000.0,
         "rating": 4.6,
-        "reviews": 310,
-        "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
-        "amenities": "pool,spa,balcony",
-        "description": "Designed for wholesome family getaways with manicured gardens, indoor recreational zones, guided jungle safaris, and comfortable cottage suites."
+        "reviews": 420,
+        "official_website": "https://www.clubmahindra.com/our-resorts/club-mahindra-corbett-uttarakhand",
+        "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi parking activity",
+        "amenities_list": [
+            "Happy Hub Family Activity",
+            "Multi-Tier Swimming Pool",
+            "Machan Multi-Cuisine",
+            "Svaastha Spa",
+            "Curated Wilderness Excursions"
+        ],
+        "description": "A renowned family-friendly retreat set in Dhikuli, Club Mahindra Corbett features spacious studio apartments, landscaped gardens, the signature Happy Hub recreation center, pool, and comprehensive jungle safari desks.",
+        "rooms": [
+            "Superior"
+        ]
     },
     {
         "id": 11,
@@ -162,74 +291,134 @@ window.CORBETT_INITIAL_DB = {
         "slug": "la-pearle-river-resort",
         "zone": "dhikuli",
         "zone_label": "Dhikuli, Jim Corbett",
-        "category": "mid-range",
-        "tier_badge": "3-Star Riverfront Stay",
-        "price": 4500.0,
-        "rating": 4.3,
-        "reviews": 115,
-        "image": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
-        "amenities": "pool,riverfront",
-        "description": "Perched on the rim of River Kosi in Dhikuli village, La Pearle offers budget-conscious travelers picturesque waterside views and tranquil green courtyards."
+        "category": "mid",
+        "tier_badge": "Riverside Boutique Garden Resort",
+        "price": 5200.0,
+        "rating": 4.4,
+        "reviews": 175,
+        "official_website": "https://lapearleresorts.com/",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Direct River Access",
+            "7.5-Acre Fruit Orchards",
+            "Swimming Pool",
+            "Riverside Restaurant",
+            "Bonfire & Folk Performances"
+        ],
+        "description": "Set across 7.5 acres of orchards and greens touching the Kosi River, La Pearle offers cozy garden cottages, swimming pool, riverside dining, and warm hospitality at incredible value.",
+        "rooms": [
+            "Std"
+        ]
     },
     {
         "id": 12,
         "name": "Mango Bloom River Resort",
         "slug": "mango-bloom-river-resort",
         "zone": "mohaan",
-        "zone_label": "Mohaan, Corbett",
-        "category": "mid-range",
-        "tier_badge": "3-Star River Retreat",
+        "zone_label": "Mohaan, Corbett (Riverbed)",
+        "category": "mid",
+        "tier_badge": "Serene Riverside Nature Hideaway",
         "price": 4800.0,
-        "rating": 4.2,
-        "reviews": 90,
-        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
-        "amenities": "pool,riverfront",
-        "description": "Set amidst shady mango groves alongside shimmering mountain waters, Mango Bloom is ideal for nature walks, birdwatching, and riverside tea sessions."
+        "rating": 4.4,
+        "reviews": 142,
+        "official_website": "https://mangobloomcorbett.com/",
+        "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Lush Mango Groves",
+            "Pebble River Walk",
+            "Swimming Pool",
+            "Open-Air Garden Dining",
+            "Birdwatching Trails"
+        ],
+        "description": "A peaceful hideaway nestled inside dense mango groves along the riverbed near Mohaan. Perfect for birdwatchers and nature enthusiasts seeking tranquility and authentic mountain breezes.",
+        "rooms": [
+            "Std"
+        ]
     },
     {
         "id": 13,
         "name": "Excel Resort Corbett",
         "slug": "excel-resort-corbett",
-        "zone": "mohaan",
-        "zone_label": "Mohaan / Ramnagar",
+        "zone": "dhikuli",
+        "zone_label": "Dhikuli / Ramnagar, Corbett",
         "category": "budget",
-        "tier_badge": "Economy Forest Stay",
+        "tier_badge": "Budget Comfort Wildlife Stay",
         "price": 3500.0,
-        "rating": 4.0,
-        "reviews": 55,
-        "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80",
-        "amenities": "pool",
-        "description": "Comfortable, economical rooms with prompt safari assistance, outdoor parking, and friendly service for backpackers and wildlife tour groups."
+        "rating": 4.3,
+        "reviews": 98,
+        "official_website": "https://excelhotelandresort.com/",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool restaurant wifi parking",
+        "amenities_list": [
+            "Free High-Speed Wi-Fi",
+            "Outdoor Pool",
+            "Multi-Cuisine Dining",
+            "Ample Free Parking",
+            "24/7 Room Service"
+        ],
+        "description": "An economical yet comfortable getaway located conveniently in Dhikuli with air-conditioned accommodations, swimming pool, fast access to safari pickup gates, and attentive service.",
+        "rooms": [
+            "Std"
+        ]
     },
     {
         "id": 14,
         "name": "Corbett River Creek Resort & Spa",
         "slug": "corbett-river-creek-resort-spa",
         "zone": "marchula",
-        "zone_label": "Marchula, Ramganga",
-        "category": "4-star",
-        "tier_badge": "4-Star Riverview Lodge & Spa",
-        "price": 9000.0,
+        "zone_label": "Marchula, Jim Corbett",
+        "category": "premium",
+        "tier_badge": "4-Star River Confluence Resort",
+        "price": 8500.0,
         "rating": 4.7,
-        "reviews": 165,
-        "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80",
-        "amenities": "pool,riverfront,spa,balcony",
-        "description": "Surrounded on three sides by dense Sal forest and the Ramganga creek, this scenic lodge features glass-front river cottages and rejuvenating spa therapies."
+        "reviews": 215,
+        "official_website": "https://www.corbettrivercreek.com/",
+        "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Ramganga & Creek Confluence",
+            "Ayur Van Healing Spa",
+            "Vadilal Creek View Dining",
+            "Riverside Pool",
+            "River Angling & Trekking"
+        ],
+        "description": "Perched along the confluence of the Ramganga River and a forested creek in Marchula, offering creek-facing stone cottages, lush gardens, rejuvenating Ayurvedic massages, and jungle safaris.",
+        "rooms": [
+            "Creek",
+            "Premium",
+            "Creek Luxury"
+        ]
     },
     {
         "id": 15,
         "name": "Corbett The Baagh Spa & Resort",
         "slug": "corbett-the-baagh-spa-resort",
-        "zone": "kyari",
-        "zone_label": "Patkot Valley, Corbett",
-        "category": "5-star",
-        "tier_badge": "5-Star Mountain & Valley Resort",
-        "price": 13500.0,
+        "zone": "sitabani",
+        "zone_label": "Patkot, Corbett (Nainital Foothills)",
+        "category": "luxury",
+        "tier_badge": "5-Star Valley & Forest Resort",
+        "price": 13000.0,
         "rating": 4.8,
-        "reviews": 178,
-        "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80",
-        "amenities": "pool,spa,balcony",
-        "description": "Hidden away in the serene Patkot valley, The Baagh provides magnificent 360-degree Himalayan and jungle foothill views, cat-themed luxury suites, and an infinity pool."
+        "reviews": 275,
+        "official_website": "https://www.corbettthebaagh.com/",
+        "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi parking activity",
+        "amenities_list": [
+            "360\u00b0 Valley & Forest Panoramas",
+            "The Baagh Luxury Spa",
+            "Nazaara Multi-Cuisine Fine Dining",
+            "Infinity Hill Pool",
+            "Adventure Activity Zone"
+        ],
+        "description": "Surrounded by untouched reserved forest in Patkot near Sitabani, Corbett The Baagh delivers 5-star luxury with majestic hill backdrops, expansive suites, wellness spa treatments, and exquisite culinary spreads.",
+        "rooms": [
+            "Jungle Cat",
+            "Spotted Cat",
+            "Leopard Cat",
+            "Leopard Suite"
+        ]
     },
     {
         "id": 16,
@@ -237,44 +426,83 @@ window.CORBETT_INITIAL_DB = {
         "slug": "bela-monde-riverside-resort",
         "zone": "dhikuli",
         "zone_label": "Dhikuli, Jim Corbett",
-        "category": "4-star",
-        "tier_badge": "4-Star Boutique Riverside Resort",
-        "price": 8000.0,
+        "category": "mid",
+        "tier_badge": "Riverside Boutique Retreat",
+        "price": 5800.0,
         "rating": 4.5,
-        "reviews": 88,
-        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
-        "amenities": "pool,riverfront,balcony",
-        "description": "Located directly on the Kosi riverbed in Dhikuli, Bela Monde offers spacious rooms with private riverside balconies, evening music, and campfire lawns."
+        "reviews": 134,
+        "official_website": "https://bellamonderiverside.com/",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool restaurant wifi riverfront parking",
+        "amenities_list": [
+            "Direct Kosi River Deck",
+            "Outdoor Swimming Pool",
+            "Riverside Diner",
+            "Sunloungers & Gardens",
+            "High-Speed Wi-Fi"
+        ],
+        "description": "Positioned gracefully on the river banks of Kosi in Dhikuli, Bel-La Monde offers tastefully crafted riverside rooms and deluxe cottages, scenic sunrise views, open gardens, and evening music sessions.",
+        "rooms": [
+            "Std",
+            "Deluxe"
+        ]
     },
     {
         "id": 17,
         "name": "Tarangi Resort & Spa",
         "slug": "tarangi-resort-spa",
         "zone": "dhikuli",
-        "zone_label": "Dhikuli, Jim Corbett",
-        "category": "5-star",
-        "tier_badge": "5-Star Riverview Spa & Villa Resort",
-        "price": 16000.0,
+        "zone_label": "Dhikuli, Jim Corbett (Kosi Waterfront)",
+        "category": "luxury",
+        "tier_badge": "5-Star Riverfront Luxury Resort",
+        "price": 15500.0,
         "rating": 4.9,
         "reviews": 380,
-        "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80",
-        "amenities": "pool,riverfront,spa,plunge_pool,balcony",
-        "description": "One of Corbett's premier luxury addresses. Features riverside Sarang rooms, private Jal pool villas, an opulent Sanskriti spa, and grand lawns for destination weddings."
+        "official_website": "https://www.tarangiresort.com/",
+        "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Private Pool Villas (Jal)",
+            "Sansa Ayurvedic Spa",
+            "Panorama Riverfront Diner",
+            "Whispering River Decks",
+            "Destination Wedding Lawns"
+        ],
+        "description": "A premier 5-star riverfront haven spreading across 13 verdant acres beside the Kosi River. Features private pool villas (Jal), Sarang cottages, Sansa Ayurvedic Spa, and spectacular hill vistas.",
+        "rooms": [
+            "Sarang",
+            "Luxury Cottage",
+            "Jal The Pool Villa"
+        ]
     },
     {
         "id": 18,
         "name": "Tarangi Ramganga Resort",
         "slug": "tarangi-ramganga-resort",
         "zone": "marchula",
-        "zone_label": "Marchula Valley, Ramganga",
-        "category": "4-star",
-        "tier_badge": "4-Star Riverside Wilderness Resort",
-        "price": 9500.0,
-        "rating": 4.7,
-        "reviews": 130,
-        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
-        "amenities": "pool,riverfront,balcony",
-        "description": "A historic property on the banks of River Ramganga, famed for Mahseer angling, riverside cottage duplexes, and quiet forest valley escapes."
+        "zone_label": "Marchula, Corbett (Ramganga River)",
+        "category": "premium",
+        "tier_badge": "4-Star Riverview Wilderness Lodge",
+        "price": 7800.0,
+        "rating": 4.6,
+        "reviews": 188,
+        "official_website": "https://tarangiramganga.com/",
+        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Direct Ramganga Riverfront",
+            "Scenic Swimming Pool",
+            "The Riverview Restaurant",
+            "Wilderness Trekking",
+            "Evening Bonfire Sessions"
+        ],
+        "description": "Tucked away in the serene Marchula valley directly beside the emerald waters of the Ramganga River, offering deluxe and club rooms, safari connections, swimming pool, and pristine natural solitude.",
+        "rooms": [
+            "Deluxe",
+            "Superior Deluxe",
+            "Club",
+            "Suite"
+        ]
     },
     {
         "id": 19,
@@ -282,59 +510,114 @@ window.CORBETT_INITIAL_DB = {
         "slug": "alaya-resort",
         "zone": "kyari",
         "zone_label": "Kyari Village, Corbett",
-        "category": "mid-range",
-        "tier_badge": "Eco-Heritage Village Resort",
-        "price": 5500.0,
+        "category": "mid",
+        "tier_badge": "Eco-Village Nature Resort",
+        "price": 4800.0,
         "rating": 4.4,
-        "reviews": 75,
-        "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&q=80",
-        "amenities": "pool,balcony",
-        "description": "Situated in scenic Kyari village amidst agricultural fields and dense Sal forest, Alaya delivers village-style serenity, organic cuisine, and cycling tours."
+        "reviews": 122,
+        "official_website": "https://alayaresorts.com/",
+        "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool restaurant wifi parking activity",
+        "amenities_list": [
+            "Eco-Village Heritage Setting",
+            "Outdoor Swimming Pool",
+            "Farm-to-Fork Organic Dining",
+            "Village Walks & Cycling",
+            "Bonfire & Acoustic Music"
+        ],
+        "description": "Experience authentic Kumaoni village life in Kyari with rustic eco-cottages, organic cuisine, swimming pool, cycling tours, village heritage walks, and peace far from city traffic.",
+        "rooms": [
+            "Standard",
+            "Deluxe",
+            "Executive"
+        ]
     },
     {
         "id": 20,
-        "name": "Country Inn Riverside Resort",
-        "slug": "country-inn-riverside-resort",
+        "name": "Country Inn Tarika Riverside Resort",
+        "slug": "country-inn-tarika-riverside-resort",
         "zone": "dhikuli",
         "zone_label": "Dhikuli, Jim Corbett",
-        "category": "4-star",
-        "tier_badge": "4-Star Luxury Cottage Resort",
-        "price": 10000.0,
+        "category": "premium",
+        "tier_badge": "4-Star Riverside Cottage Resort",
+        "price": 8000.0,
         "rating": 4.6,
-        "reviews": 215,
-        "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
-        "amenities": "pool,riverfront,spa,plunge_pool,balcony",
-        "description": "Known for its sprawling botanical grounds, standalone Jim's cottages with terraces, and exclusive suites featuring private plunge pools overlooking river rocks."
+        "reviews": 230,
+        "official_website": "https://countryinn.in/",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Unique Tree Top Cottages",
+            "Riverside Promenade",
+            "Swimming Pool",
+            "Multi-Cuisine Flavours",
+            "Ayurvedic Spa Therapies"
+        ],
+        "description": "Famous for its charming tree-top cottages and expansive riverside lawns in Dhikuli, Country Inn Tarika delivers family-centric luxury, open swimming pool, Ayurvedic rejuvenation, and wildlife excursions.",
+        "rooms": [
+            "Tree Top Cottage",
+            "Luxury Cottage",
+            "Deluxe Room",
+            "Superior Room"
+        ]
     },
     {
         "id": 21,
         "name": "The Golden Tusk",
         "slug": "the-golden-tusk",
         "zone": "dhela",
-        "zone_label": "Dhela (Near Jhirna Gate)",
-        "category": "5-star",
-        "tier_badge": "5-Star Forest & Safari Resort",
-        "price": 14000.0,
+        "zone_label": "Dhela / Jhirna, Corbett",
+        "category": "luxury",
+        "tier_badge": "5-Star Forest Eco-Resort",
+        "price": 12500.0,
         "rating": 4.8,
-        "reviews": 290,
-        "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80",
-        "amenities": "pool,spa,balcony",
-        "description": "Set along the Dhela River countryside just 5 minutes from Dhela and Jhirna safari gates. Boasts lavish suites, luxury safari tents, multi-cuisine dining, and swimming pools."
+        "reviews": 345,
+        "official_website": "https://thegoldentusk.com/",
+        "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi parking activity",
+        "amenities_list": [
+            "Luxury Glamping Tents",
+            "Dual Swimming Pools",
+            "The Golden Flower Spa",
+            "Golden Forest Fine Dining",
+            "Forest Cycling Trails"
+        ],
+        "description": "Set amidst 10 acres of landscaped greenery on the Dhela river banks close to Jhirna and Dhela safari gates, featuring luxury tents, nature suites, dual swimming pools, and customized wildlife trails.",
+        "rooms": [
+            "Nature View",
+            "Forest View",
+            "Villa",
+            "Suite",
+            "Luxury Tent"
+        ]
     },
     {
         "id": 22,
         "name": "j\u00fcSTa Lazy Haven Corbett",
         "slug": "justa-lazy-haven-corbett",
-        "zone": "ramnagar",
-        "zone_label": "Chhoi / Ramnagar",
-        "category": "4-star",
-        "tier_badge": "4-Star Boutique Art Resort",
-        "price": 7500.0,
-        "rating": 4.5,
-        "reviews": 110,
-        "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
-        "amenities": "pool,balcony",
-        "description": "Art-inspired boutique stay nestled amongst lush flora. Each room opens into a spacious balcony overlooking forested hills and landscaped gardens."
+        "zone": "bijrani",
+        "zone_label": "Bijrani Zone / Chhoi, Corbett",
+        "category": "luxury",
+        "tier_badge": "5-Star Boutique Wilderness Retreat",
+        "price": 11500.0,
+        "rating": 4.8,
+        "reviews": 160,
+        "official_website": "https://www.justahotels.com/corbett-resorts/",
+        "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi parking activity",
+        "amenities_list": [
+            "Art-Inspired Modern Suites",
+            "Central Swimming Pool",
+            "Sabor Artisan Cuisine",
+            "Signature Spa Care",
+            "Private Forest Decks"
+        ],
+        "description": "An exquisite boutique haven blending artistic architecture with wilderness serenity, offering handcrafted luxury interiors, Sabor fine dining, lush gardens, outdoor pool, and proximity to Bijrani safari gate.",
+        "rooms": [
+            "Superior",
+            "Deluxe",
+            "Suite"
+        ]
     },
     {
         "id": 23,
@@ -342,119 +625,223 @@ window.CORBETT_INITIAL_DB = {
         "slug": "shervani-pebbles-pines",
         "zone": "dhikuli",
         "zone_label": "Dhikuli, Jim Corbett",
-        "category": "4-star",
-        "tier_badge": "4-Star Premium Jacuzzi Resort",
-        "price": 8500.0,
+        "category": "premium",
+        "tier_badge": "4-Star Boutique Forest Haven",
+        "price": 7500.0,
         "rating": 4.6,
-        "reviews": 145,
-        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-        "amenities": "pool,spa,jacuzzi,balcony",
-        "description": "Boasts designer rooms equipped with private outdoor Jacuzzis, manicured lawns, and close proximity to the famous Bijrani safari gate."
+        "reviews": 140,
+        "official_website": "https://www.shervanihotels.com/shervani-pebbles-pines-corbett/",
+        "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi parking activity",
+        "amenities_list": [
+            "Pine & Sal Woodland Setting",
+            "Swimming Pool",
+            "Pebbles Multi-Cuisine",
+            "Relaxation Therapy",
+            "Evening Campfire"
+        ],
+        "description": "A tranquil boutique retreat in Dhikuli surrounded by pine trees and pebbles, featuring tasteful rooms, relaxing pool, delectable dining, and easy access to both Bijrani and Dhikala safari zones.",
+        "rooms": [
+            "Deluxe",
+            "Superior",
+            "Suite"
+        ]
     },
     {
         "id": 24,
         "name": "Sterling Corbett",
         "slug": "sterling-corbett",
         "zone": "marchula",
-        "zone_label": "Marchula Valley, Ramganga",
-        "category": "4-star",
-        "tier_badge": "4-Star Hillside Riverside Resort",
-        "price": 8000.0,
+        "zone_label": "Marchula / Ramganga, Corbett",
+        "category": "premium",
+        "tier_badge": "4-Star Riverview Leisure Resort",
+        "price": 7200.0,
         "rating": 4.5,
-        "reviews": 185,
-        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
-        "amenities": "pool,riverfront,balcony",
-        "description": "Perched on a hillside overlooking the sparkling Ramganga River. Features river-facing stargazing platforms, evening barbecue, and adventure trails."
+        "reviews": 295,
+        "official_website": "https://www.sterlingholidays.com/resorts-hotels/corbett",
+        "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi riverfront parking activity",
+        "amenities_list": [
+            "Panoramic River Valley Views",
+            "Outdoor Swimming Pool",
+            "Machan Multi-Cuisine",
+            "Subuthi Spa",
+            "Holiday Activity Centre"
+        ],
+        "description": "Overlooking the meandering Ramganga River with breathtaking views of the Shivalik hills, Sterling Corbett offers classic rooms, spacious suites, multi-cuisine dining, swimming pool, and activity hubs.",
+        "rooms": [
+            "Classic Room",
+            "Premier Room",
+            "Privilege Suite"
+        ]
     },
     {
         "id": 25,
         "name": "Silvanza Resort",
         "slug": "silvanza-resort",
-        "zone": "mohaan",
-        "zone_label": "Mohaan, Corbett",
-        "category": "mid-range",
-        "tier_badge": "3-Star Eco-Forest Stay",
-        "price": 4200.0,
-        "rating": 4.1,
-        "reviews": 60,
-        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
-        "amenities": "pool,balcony",
-        "description": "A tranquil haven tucked into the woods of Mohaan. Offers clean, modern Origin & Breeze cottages with personal verandas and garden swings."
+        "zone": "ramnagar",
+        "zone_label": "Bailparao / Ramnagar, Corbett",
+        "category": "mid",
+        "tier_badge": "Modern Comfort Eco-Resort",
+        "price": 5000.0,
+        "rating": 4.5,
+        "reviews": 110,
+        "official_website": "https://www.silvanzaresort.com/",
+        "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool restaurant wifi parking activity",
+        "amenities_list": [
+            "Large Swimming Pool",
+            "Flavors Multi-Cuisine Diner",
+            "Lush Green Party Lawns",
+            "High-Speed Wi-Fi",
+            "Spacious Secure Parking"
+        ],
+        "description": "A modern resort surrounded by lush farmland and orchard groves in Bailparao near Ramnagar, offering comfortable family suites, sprawling green lawns, outdoor swimming pool, and safari booking desks.",
+        "rooms": [
+            "Deluxe",
+            "Executive",
+            "Family Suite"
+        ]
     },
     {
         "id": 26,
         "name": "Sterling Corbett Quinta",
         "slug": "sterling-corbett-quinta",
         "zone": "dhikuli",
-        "zone_label": "Dhikuli, Jim Corbett",
-        "category": "4-star",
-        "tier_badge": "4-Star Contemporary Safari Stay",
-        "price": 7800.0,
-        "rating": 4.4,
-        "reviews": 92,
-        "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80",
-        "amenities": "pool,balcony",
-        "description": "Conveniently located along the main Dhikuli safari corridor. Features quick safari dispatch, cozy bedding, and multi-cuisine buffet spreads."
+        "zone_label": "Dhikuli / Garjiya, Corbett",
+        "category": "premium",
+        "tier_badge": "4-Star Forest-Fringe Haven",
+        "price": 7000.0,
+        "rating": 4.5,
+        "reviews": 155,
+        "official_website": "https://www.sterlingholidays.com/resorts-hotels/corbett",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi parking activity",
+        "amenities_list": [
+            "Outdoor Swimming Pool",
+            "Quinta All-Day Diner",
+            "Scenic Garden Lawns",
+            "Safari Booking Desk",
+            "Evening Bonfire Gatherings"
+        ],
+        "description": "Nestled along the Dhikuli forest perimeter, Sterling Quinta brings warm hospitality, expansive lawns, swimming pool, fine local and continental gastronomy, and quick access to Corbett National Park gates.",
+        "rooms": [
+            "Classic Room",
+            "Premier Room",
+            "Privilege Suite"
+        ]
     },
     {
         "id": 27,
         "name": "Aura by Xperience Corbett",
         "slug": "aura-by-xperience-corbett",
-        "zone": "semalkhaliya",
-        "zone_label": "Semalkhaliya, Bailparao",
-        "category": "4-star",
-        "tier_badge": "4-Star Plunge Pool & Mud Cottages",
-        "price": 9200.0,
-        "rating": 4.7,
-        "reviews": 105,
-        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
-        "amenities": "pool,spa,plunge_pool,balcony",
-        "description": "A boutique eco-retreat featuring rustic mud architecture, elegant private plunge pool villas, and large family accommodation blocks."
+        "zone": "dhikuli",
+        "zone_label": "Dhikuli, Corbett",
+        "category": "mid",
+        "tier_badge": "Boutique Riverside Getaway",
+        "price": 4600.0,
+        "rating": 4.4,
+        "reviews": 92,
+        "official_website": "https://aurabyxperience.com/",
+        "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool restaurant wifi parking activity",
+        "amenities_list": [
+            "Swimming Pool",
+            "Multi-Cuisine Cafe",
+            "Free High-Speed Wi-Fi",
+            "Garden Sit-outs",
+            "Jeep Safari Assistance"
+        ],
+        "description": "A refreshing boutique experience in Dhikuli offering stylish modern rooms, prompt service, sparkling swimming pool, multi-cuisine dining, and friendly guidance for jungle safaris.",
+        "rooms": [
+            "Deluxe Room",
+            "Super Deluxe",
+            "Executive Room"
+        ]
     },
     {
         "id": 28,
         "name": "The Cloyster Resort & Spa",
         "slug": "the-cloyster-resort-spa",
-        "zone": "mohaan",
-        "zone_label": "Mohaan / Dhikuli Border",
-        "category": "4-star",
-        "tier_badge": "4-Star Hill Facing Luxury Resort",
-        "price": 8200.0,
+        "zone": "dhela",
+        "zone_label": "Sawaldey / Dhela, Corbett",
+        "category": "premium",
+        "tier_badge": "4-Star Wellness & Safari Retreat",
+        "price": 6500.0,
         "rating": 4.5,
-        "reviews": 118,
-        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
-        "amenities": "pool,spa,balcony",
-        "description": "Framed by dramatic Kumaon mountain cliffs. Offers luxury hill-facing balconies, swimming pool, and easy access to both Sitabani and Bijrani safari zones."
+        "reviews": 148,
+        "official_website": "https://thecloysterresort.in/",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi parking activity",
+        "amenities_list": [
+            "The Cloyster Wellness Spa",
+            "Swimming Pool with Sun Deck",
+            "Forest View Dining Hall",
+            "Landscaped Botanical Gardens",
+            "Evening Campfire & Music"
+        ],
+        "description": "Located in Sawaldey adjacent to the Dhela safari corridor, The Cloyster offers serene botanical settings, rejuvenating spa treatments, family suites, and seamless safari transfers.",
+        "rooms": [
+            "Deluxe",
+            "Luxury",
+            "Family Suite"
+        ]
     },
     {
         "id": 29,
         "name": "Anantum Gateway Resorts & Spa",
         "slug": "anantum-gateway-resorts-spa",
-        "zone": "semalkhaliya",
-        "zone_label": "Semalkhaliya, Bailparao",
-        "category": "5-star",
+        "zone": "pawalgarh",
+        "zone_label": "Pawalgarh / Bailparao, Corbett",
+        "category": "luxury",
         "tier_badge": "5-Star Luxury Destination Resort",
-        "price": 12500.0,
+        "price": 14500.0,
         "rating": 4.8,
-        "reviews": 230,
-        "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
-        "amenities": "pool,spa,plunge_pool,balcony",
-        "description": "One of Corbett's largest luxury wedding and leisure properties, boasting private plunge pool cottages, grand banquets, adventure parks, and wellness spas."
+        "reviews": 320,
+        "official_website": "https://anantumgatewayresorts.com/",
+        "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
+        "amenities": "pool spa restaurant wifi parking activity",
+        "amenities_list": [
+            "Private Pool Villas",
+            "Anantum Rejuvenation Spa",
+            "Grand Multi-Cuisine Banquets",
+            "Massive Wedding Lawns",
+            "Indoor & Outdoor Sports Arena"
+        ],
+        "description": "Spread across expansive acres against the Pawalgarh forest backdrop, Anantum Gateway boasts private pool villas, grand ballrooms, luxury spa therapies, children's recreation zones, and royal hospitality.",
+        "rooms": [
+            "Deluxe Room",
+            "Luxury Cottage",
+            "Pool Villa"
+        ]
     },
     {
         "id": 30,
         "name": "Dhikala Forest Rest House",
         "slug": "dhikala-forest-rest-house",
         "zone": "dhikala",
-        "zone_label": "Dhikala Core Wildlife Zone",
-        "category": "core",
-        "tier_badge": "Government Core FRH (Deep Jungle)",
-        "price": 5000.0,
+        "zone_label": "Dhikala Core Zone, Corbett Tiger Reserve",
+        "category": "premium",
+        "tier_badge": "Govt Core Forest Heritage Lodge",
+        "price": 6500.0,
         "rating": 4.9,
-        "reviews": 450,
-        "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&q=80",
-        "amenities": "riverfront,balcony",
-        "description": "The crown jewel of Indian wildlife tourism. An authentic 100-year-old British colonial forest lodge located deep inside the core tiger reserve, overlooking the Ramganga reservoir."
+        "reviews": 560,
+        "official_website": "https://www.corbettonline.uk.gov.in/",
+        "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80",
+        "amenities": "restaurant riverfront activity",
+        "amenities_list": [
+            "Direct Core Tiger Reserve Access",
+            "Ramganga Reservoir Watchtower",
+            "KMVN Forest Canteen Dining",
+            "Exclusive Core Zone Gypsy Safaris",
+            "Historic 1890s Colonial Heritage"
+        ],
+        "description": "The iconic heart of Jim Corbett Tiger Reserve, Dhikala FRH offers rare deep-forest night stays overlooking the Ramganga reservoir with immediate access to raw wildlife activity and grasslands.",
+        "rooms": [
+            "Forest Rest House Room",
+            "Dormitory Bed",
+            "Hutment Room"
+        ]
     }
 ],
     rooms: [
