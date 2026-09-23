@@ -13,9 +13,7 @@
     font-family: "flaticon";
     src: url("../flacticon/flaticon.woff2?aa544ecf36a50e010c42c095dbaaca90") format("woff2"),
 url("../flacticon/flaticon.woff?aa544ecf36a50e010c42c095dbaaca90") format("woff"),
-url("../flacticon/flaticon.eot?aa544ecf36a50e010c42c095dbaaca90#iefix") format("embedded-opentype"),
-url("../flacticon/flaticon.ttf?aa544ecf36a50e010c42c095dbaaca90") format("truetype"),
-url("../flacticon/flaticon.svg?aa544ecf36a50e010c42c095dbaaca90#flaticon_roavio") format("svg")
+url("../flacticon/flaticon.eot?aa544ecf36a50e010c42c095dbaaca90#iefix") format("embedded-opentype");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
