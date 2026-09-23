@@ -589,6 +589,7 @@ Please confirm availability and share the best package rates. Thank you!`;
     ]
 };
 
+
     function updateStayRoomDropdown(hotelName, selectedRoom) {
         const rmSelect = $('#room_category');
         if (!rmSelect.length) return;

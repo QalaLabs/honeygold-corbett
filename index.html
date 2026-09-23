@@ -7,10 +7,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Honeygold India">
-        <meta name="description" content="Honeygold India - Premium Tour Booking for Jim Corbett National Park. Book resorts, jungle safaris, and wilderness destination weddings.">
+        <meta name="description" content="Honeygold India - Premier Jim Corbett National Park Tourism Portal. Book 30+ handpicked luxury resorts, authorized core safari permits (Dhikala, Bijrani, Jhirna), and forest destination weddings.">
         
         <!-- ======== Page title ============ -->
-        <title>Jim Corbett National Park Tourism - Honeygold India</title>
+        <title>Jim Corbett National Park - Resorts, Safaris & Tour Packages | Honeygold India</title>
         
         <!--<< Favicon >>-->
         <link rel="shortcut icon" href="assets/img/favicon.svg">
@@ -32,11 +32,133 @@
         <link rel="stylesheet" href="assets/css/flacticon.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
+        <style>
+            .hero-search-box {
+                background: #ffffff;
+                border-radius: 16px;
+                box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+                padding: 24px;
+                margin-top: -60px;
+                position: relative;
+                z-index: 20;
+                border: 1px solid rgba(0,0,0,0.05);
+            }
+            .search-field-label {
+                font-size: 12px;
+                font-weight: 700;
+                color: #555;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 6px;
+                display: block;
+            }
+            .stat-badge-box {
+                background: #fff;
+                border-radius: 12px;
+                padding: 20px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+                border-bottom: 3px solid #63AB45;
+                transition: transform 0.3s ease;
+            }
+            .stat-badge-box:hover {
+                transform: translateY(-5px);
+            }
+            .resort-preview-card {
+                border-radius: 14px;
+                overflow: hidden;
+                background: #fff;
+                box-shadow: 0 6px 22px rgba(0,0,0,0.07);
+                transition: all 0.35s ease;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .resort-preview-card:hover {
+                transform: translateY(-7px);
+                box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+            }
+            .resort-preview-img-wrap {
+                height: 230px;
+                position: relative;
+                overflow: hidden;
+            }
+            .resort-preview-img-wrap img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+            .resort-preview-card:hover .resort-preview-img-wrap img {
+                transform: scale(1.06);
+            }
+            .zone-grid-card {
+                border-radius: 14px;
+                overflow: hidden;
+                position: relative;
+                height: 280px;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            }
+            .zone-grid-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.6s ease;
+            }
+            .zone-grid-card:hover img {
+                transform: scale(1.08);
+            }
+            .zone-grid-overlay {
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.05) 100%);
+                padding: 22px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                color: #fff;
+            }
+            .itinerary-card {
+                background: #fff;
+                border-radius: 14px;
+                overflow: hidden;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+                border-top: 4px solid #FD7E21;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                transition: transform 0.3s ease;
+            }
+            .itinerary-card:hover {
+                transform: translateY(-6px);
+            }
+            .badge-verified-hg {
+                background: #e8f5e9;
+                color: #2e7d32;
+                font-size: 11px;
+                font-weight: 700;
+                padding: 3px 8px;
+                border-radius: 4px;
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+            }
+            .room-pill-chip {
+                background: #f4f6f8;
+                color: #2b3445;
+                font-size: 11.5px;
+                font-weight: 600;
+                padding: 2px 9px;
+                border-radius: 12px;
+                border: 1px solid #e2e7ec;
+                display: inline-block;
+            }
+        </style>
     </head>
     <body>
 
         <!-- Preloader Start -->
-         <div id="preloader" class="preloader">
+        <div id="preloader" class="preloader">
             <div class="animation-preloader">
                 <div class="spinner"></div>
                 <div class="txt-loading">
@@ -67,7 +189,7 @@
         <div class="mouseCursor cursor-inner"></div>
 
         <!-- Offcanvas Mobile Menu Wrapper -->
-         <div class="fix-area">
+        <div class="fix-area">
             <div class="offcanvas__info">
                 <div class="offcanvas__wrapper">
                     <div class="offcanvas__content">
@@ -83,7 +205,7 @@
                             </div>
                         </div>
                         <p class="text d-none d-xl-block">
-                            Explore the wild heart of India at Jim Corbett National Park. Plan stays, safaris, and stunning jungle destination weddings with Honeygold India.
+                            Explore India's premier tiger reserve at Jim Corbett National Park. Handpicked wilderness resorts, authorized government safari permits, and bespoke wildlife itineraries managed by Honeygold India since 1996.
                         </p>
                         <div class="mobile-menu fix mb-3"></div>
                         <div class="offcanvas__contact">
@@ -104,7 +226,7 @@
         <div class="header-top-section">
             <div class="container-fluid">
                 <div class="header-top-wrapper">
-                    <p>Domestic Tourism Initiative by <a href="https://www.honeygoldindia.com/" target="_blank" style="color: #FD7E21; font-weight: 700;">Honeygold India</a> | Explore Jim Corbett</p>
+                    <p>Domestic Tourism Initiative by <a href="https://www.honeygoldindia.com/" target="_blank" style="color: #FD7E21; font-weight: 700;">Honeygold India</a> | 28+ Years of Tourism Pedigree</p>
                     <div class="header-right">
                         <ul class="header-list">
                             <li>
@@ -112,8 +234,12 @@
                                 <a href="mailto:honeygold.sxr@gmail.com">honeygold.sxr@gmail.com</a>
                             </li>
                             <li>
-                               <i class="fa-solid fa-phone-flip"></i>
+                                <i class="fa-solid fa-phone-flip"></i>
                                 <a href="tel:+919419045656">Call: +91 9419045656</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-headset text-warning"></i>
+                                <a href="tel:18008917626">Toll Free: 1800 891 7626</a>
                             </li>
                         </ul>
                     </div>
@@ -122,7 +248,7 @@
         </div>
         
         <!-- Header Section Start -->
-         <header id="header-sticky" class="header-1">
+        <header id="header-sticky" class="header-1">
             <div class="container-fluid">
                 <div class="mega-menu-wrapper">
                     <div class="header-main">
@@ -139,7 +265,7 @@
                                         <ul>
                                             <li class="active"><a href="index.html">Home</a></li>
                                             <li><a href="about.html">About Us</a></li>
-                                            <li><a href="hotel.html">Hotels & Stays</a></li>
+                                            <li><a href="hotel.html">Hotels & Stays (30)</a></li>
                                             <li><a href="weddings.html">Weddings</a></li>
                                             <li><a href="activities.html">Activities & Safaris</a></li>
                                             <li><a href="stories.html">Stories</a></li>
@@ -156,7 +282,7 @@
                         </div>
                         <div class="header-right d-flex align-items-center justify-content-end">
                             <div class="header-button">
-                                <a href="#custom-trip-modal" class="theme-btn custom-trip-btn">Book Custom Corbett Trip</a>
+                                <a href="#quick-booking" class="theme-btn">Book Corbett Trip</a>
                             </div>
                             <div class="sidebar__toggle d-xl-none">
                                 <i class="fa-solid fa-bars"></i>
@@ -165,69 +291,44 @@
                     </div>
                 </div>
             </div>
-         </header>
+        </header>
 
         <!-- Hero Section Start -->
-        <section class="hero-1">
-            <div class="hero-bg" style="background-image: url('assets/img/hero/hero-bg.jpg'); background-color: #1a331e;"></div>
+        <section class="hero-1" style="padding-bottom: 90px;">
+            <div class="hero-bg" style="background-image: linear-gradient(rgba(13, 26, 17, 0.72), rgba(13, 26, 17, 0.85)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&q=85'); background-size: cover; background-position: center;"></div>
             <div class="container-fluid">
                 <div class="row align-items-center g-4">
                     <div class="col-lg-7">
                         <div class="hero-content">
-                            <h1 class="wow fadeInUp" data-wow-delay=".3s" style="font-size: 56px; color: #fff; font-weight: 800; line-height: 1.2;">
-                                Uncover the Wilderness of <span style="color: #FD7E21;">Jim Corbett</span>
+                            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3" style="background: rgba(253, 126, 33, 0.2); border: 1px solid #FD7E21; border-radius: 20px;">
+                                <i class="fa-solid fa-paw" style="color: #FD7E21;"></i>
+                                <span style="color: #fff; font-size: 13px; font-weight: 700; text-transform: uppercase;">Uttarakhand Domestic Wildlife Gateway</span>
+                            </div>
+                            <h1 class="wow fadeInUp" data-wow-delay=".3s" style="font-size: 54px; color: #fff; font-weight: 800; line-height: 1.18;">
+                                Discover the Wild Realm of <span style="color: #FD7E21;">Jim Corbett</span>
                             </h1>
-                            <p class="wow fadeInUp" data-wow-delay=".5s">
-                                Experience nature in its rawest form. Book luxury forest resorts, adventure river safaris, and host unforgettable wilderness weddings in Corbett's magical ecosystem.
+                            <p class="wow fadeInUp" data-wow-delay=".5s" style="font-size: 16px; color: #e0e0e0; max-width: 620px; line-height: 1.7; margin: 20px 0 28px;">
+                                India's first national park and the legendary cradle of Project Tiger. Reserve 30+ verified wilderness resorts, authorized government safari permits in Dhikala & Bijrani, and plan forest destination weddings.
                             </p>
-                            <div class="hero-button wow fadeInUp" data-wow-delay=".7s">
-                                <a href="#custom-trip-modal" class="theme-btn custom-trip-btn me-3">Book Custom Trip</a>
-                                <a href="activities.html" class="theme-btn style-2" style="background: rgba(255,255,255,0.2); color: #fff; border: 1px solid #fff;">Explore Safaris</a>
+                            <div class="hero-button wow fadeInUp d-flex flex-wrap gap-3" data-wow-delay=".7s">
+                                <a href="hotel.html" class="theme-btn" style="padding: 14px 30px; font-size: 14px;"><i class="fa-solid fa-hotel me-2"></i> Browse 30 Resorts</a>
+                                <a href="activities.html" class="theme-btn style-2" style="background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.4); padding: 14px 28px; font-size: 14px;"><i class="fa-solid fa-compass me-2"></i> Book Jeep Safaris</a>
+                                <a href="#custom-trip-modal" class="custom-trip-btn btn btn-link text-white text-decoration-underline fw-bold d-flex align-items-center gap-1" style="font-size: 14px;">
+                                    <i class="fa-solid fa-calendar-check text-warning"></i> Custom Trip Planner
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
-                            <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=900&q=85" alt="Royal Bengal Tiger in Jim Corbett" onerror="this.onerror=null;this.src='assets/img/home-1/tour/tour-1.jpg';" style="border-radius: 20px; width: 100%; height: 420px; object-fit: cover; border: 5px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Welcome Section Start -->
-        <section class="about-section section-padding">
-            <div class="container">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6">
-                        <div class="about-image">
-                            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=900&q=85" alt="Jim Corbett Wilderness & Wildlife" onerror="this.onerror=null;this.src='assets/img/home-1/tour/tour-2.jpg';" style="border-radius: 12px; width: 100%; height: 380px; object-fit: cover; box-shadow: 0 8px 25px rgba(0,0,0,0.08);">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-title">
-                                <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase;">About Jim Corbett</span>
-                                <h2 style="font-weight: 800; color: #151515; margin-top: 10px;">India's Premier Wildlife Sanctuary</h2>
-                            </div>
-                            <p style="color: #696969; margin-top: 20px; line-height: 1.7;">
-                                Established in 1936 as Hailey National Park, Jim Corbett is India's oldest and most prestigious national park. Located in the Nainital district of Uttarakhand, it is famed for its rich biodiversity, the magnificent Bengal tigers, and scenic Ramganga riverbanks.
-                            </p>
-                            <p style="color: #696969; line-height: 1.7;">
-                                As a domestic tourism portal backlinked to the main <a href="https://www.honeygoldindia.com/" target="_blank" style="color: #FD7E21; font-weight: 700;">Honeygold India</a> network, our Corbett site provides comprehensive reservation services for stays, safaris, and events with real-time support.
-                            </p>
-                            <div class="row mt-4">
-                                <div class="col-sm-6">
-                                    <div class="feature-item d-flex align-items-center mb-3">
-                                        <i class="fa-solid fa-circle-check" style="color: #63AB45; margin-right: 10px; font-size: 20px;"></i>
-                                        <span style="font-weight: 700; color: #151515;">Authorized Jeep Safaris</span>
+                        <div class="hero-image wow fadeInRight" data-wow-delay=".4s" style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=900&q=85" alt="Royal Bengal Tiger in Jim Corbett" onerror="this.onerror=null;this.src='assets/img/home-1/tour/tour-1.jpg';" style="border-radius: 20px; width: 100%; height: 430px; object-fit: cover; border: 4px solid rgba(255,255,255,0.15); box-shadow: 0 15px 40px rgba(0,0,0,0.4);">
+                            <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(21, 21, 21, 0.85); backdrop-filter: blur(8px); padding: 14px 18px; border-radius: 12px; border-left: 4px solid #FD7E21;">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 style="color: #fff; margin: 0; font-weight: 700; font-size: 14px;"><i class="fa-solid fa-shield-cat me-2 text-warning"></i> Corbett Tiger Population: 260+</h6>
+                                        <small style="color: #bbb; font-size: 11px;">Highest tiger density of any national park in the world</small>
                                     </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="feature-item d-flex align-items-center mb-3">
-                                        <i class="fa-solid fa-circle-check" style="color: #63AB45; margin-right: 10px; font-size: 20px;"></i>
-                                        <span style="font-weight: 700; color: #151515;">Premium Riverside Resorts</span>
-                                    </div>
+                                    <span class="badge bg-success" style="font-size: 11px; padding: 5px 9px;">Verified 2026</span>
                                 </div>
                             </div>
                         </div>
@@ -236,61 +337,728 @@
             </div>
         </section>
 
-        <!-- History & Seasons Section Start -->
-        <section class="tour-details-section section-padding" style="background: #fff;">
+        <!-- Quick Search & Stay Finder Bar Start -->
+        <div class="container">
+            <div class="hero-search-box">
+                <form action="hotel.html" method="GET" class="row g-3 align-items-end">
+                    <div class="col-lg-3 col-md-6">
+                        <label class="search-field-label"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Safari Zone / Region</label>
+                        <select name="zone" id="quick-zone" class="form-select" style="height: 48px; border-color: #ddd; font-size: 13.5px;">
+                            <option value="">All Corbett Zones & Areas</option>
+                            <option value="dhikala">Dhikala (Core Zone)</option>
+                            <option value="bijrani">Bijrani Zone</option>
+                            <option value="jhirna">Jhirna Zone (All Seasons)</option>
+                            <option value="dhela">Dhela Zone</option>
+                            <option value="dhikuli">Dhikuli (Kosi Riverbank)</option>
+                            <option value="mohaan">Mohaan / Bakrakot</option>
+                            <option value="marchula">Marchula Valley (Ramganga)</option>
+                            <option value="sitabani">Sitabani / Pawalgarh</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <label class="search-field-label"><i class="fa-solid fa-crown me-1 text-warning"></i> Resort Category</label>
+                        <select name="category" id="quick-category" class="form-select" style="height: 48px; border-color: #ddd; font-size: 13.5px;">
+                            <option value="">All Tiers & Stays (30)</option>
+                            <option value="luxury">5-Star & Ultra Luxury Lodges</option>
+                            <option value="premium">4-Star Riverfront & Heritage</option>
+                            <option value="mid">Boutique & Eco-Nature Stays</option>
+                            <option value="budget">Budget Comfort Wildlife Stays</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <label class="search-field-label"><i class="fa-solid fa-calendar me-1 text-success"></i> Check-in Date</label>
+                        <input type="date" class="form-control" style="height: 48px; border-color: #ddd; font-size: 13.5px;">
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <label class="search-field-label"><i class="fa-solid fa-users me-1 text-primary"></i> Guests</label>
+                        <select class="form-select" style="height: 48px; border-color: #ddd; font-size: 13.5px;">
+                            <option>2 Adults, 1 Room</option>
+                            <option>4 Adults, 2 Rooms</option>
+                            <option>Family / Group (5+ Pax)</option>
+                            <option>Solo Traveler</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-12">
+                        <button type="submit" class="theme-btn w-100 d-flex align-items-center justify-content-center" style="height: 48px; padding: 0; font-size: 14px; border: none;">
+                            <i class="fa-solid fa-magnifying-glass me-2"></i> Find Stays
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Quick Search Bar End -->
+
+        <!-- Honeygold Corbett Trust & Metric Strip -->
+        <section class="section-padding py-5" style="background: #FAFBF7;">
             <div class="container">
-                <div class="row g-5">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-6">
+                        <div class="stat-badge-box text-center">
+                            <i class="fa-solid fa-hotel" style="font-size: 32px; color: #FD7E21; margin-bottom: 10px;"></i>
+                            <h3 style="font-weight: 800; color: #151515; margin: 0;">30 Resorts</h3>
+                            <p style="color: #696969; font-size: 13px; margin: 4px 0 0;">Handpicked & Verified</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="stat-badge-box text-center" style="border-bottom-color: #FD7E21;">
+                            <i class="fa-solid fa-compass" style="font-size: 32px; color: #63AB45; margin-bottom: 10px;"></i>
+                            <h3 style="font-weight: 800; color: #151515; margin: 0;">8 Safari Zones</h3>
+                            <p style="color: #696969; font-size: 13px; margin: 4px 0 0;">Authorized Forest Permits</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="stat-badge-box text-center">
+                            <i class="fa-solid fa-bed" style="font-size: 32px; color: #FD7E21; margin-bottom: 10px;"></i>
+                            <h3 style="font-weight: 800; color: #151515; margin: 0;">92 RM Types</h3>
+                            <p style="color: #696969; font-size: 13px; margin: 4px 0 0;">Cottages, Villas & Suites</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="stat-badge-box text-center" style="border-bottom-color: #FD7E21;">
+                            <i class="fa-solid fa-award" style="font-size: 32px; color: #63AB45; margin-bottom: 10px;"></i>
+                            <h3 style="font-weight: 800; color: #151515; margin: 0;">Since 1996</h3>
+                            <p style="color: #696969; font-size: 13px; margin: 4px 0 0;">28+ Years Travel Pedigree</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Resorts Showcase Section Start -->
+        <section class="tour-section section-padding" style="background: #ffffff;">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+                    <div>
+                        <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 0.5px;">Handpicked Wilderness Accommodations</span>
+                        <h2 style="font-weight: 800; color: #151515; margin-top: 6px;">Featured Corbett Resorts & Forest Stays</h2>
+                        <p style="color: #696969; font-size: 14.5px; margin: 0; max-width: 600px;">
+                            From secluded forest lodges with open-air star-beds to sprawling riverfront sanctuaries along the Kosi.
+                        </p>
+                    </div>
+                    <div class="mt-3 mt-md-0">
+                        <a href="hotel.html" class="theme-btn" style="padding: 10px 24px; font-size: 13px;">View All 30 Resorts <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <!-- Resort 1: Paatlidun Safari Lodge -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                        <div class="resort-preview-card">
+                            <div class="resort-preview-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Paatlidun Safari Lodge">
+                                <div style="position: absolute; top: 14px; left: 14px;">
+                                    <span class="badge bg-dark" style="font-size: 11px; padding: 5px 9px;"><i class="fa-solid fa-crown text-warning me-1"></i> 5-Star Ultra Luxury</span>
+                                </div>
+                                <div style="position: absolute; top: 14px; right: 14px;">
+                                    <span style="background: #fff; color: #d97706; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                        <i class="fa-solid fa-star text-warning"></i> 4.9 <small style="color: #666; font-weight: 500;">(184)</small>
+                                    </span>
+                                </div>
+                                <div style="position: absolute; bottom: 12px; left: 14px;">
+                                    <span class="badge bg-white text-dark" style="font-size: 11px; font-weight: 700;"><i class="fa-solid fa-location-dot text-danger me-1"></i> Mohaan / Bakrakot</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 style="font-weight: 800; font-size: 18px; color: #151515; margin: 0;">Paatlidun Safari Lodge</h4>
+                                        <span class="badge-verified-hg"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                    </div>
+                                    <p style="color: #696969; font-size: 13px; line-height: 1.55; margin: 8px 0 12px;">
+                                        Nestled along the Kumaon foothills, featuring private plunge pools, open-air star-beds, and handcrafted stone cottages steeped in rustic wildlife heritage.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span style="font-size: 11px; font-weight: 700; color: #666; text-transform: uppercase; display: block; margin-bottom: 4px;">RM Categories:</span>
+                                        <div class="d-flex flex-wrap gap-1">
+                                            <span class="room-pill-chip">Bush Cottage</span>
+                                            <span class="room-pill-chip">Luxury Cottage</span>
+                                            <span class="room-pill-chip">Premium Cottage</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2 mb-3" style="color: #63AB45; font-size: 11.5px; font-weight: 600;">
+                                        <span><i class="fa-solid fa-water-ladder"></i> Plunge Pool</span>
+                                        <span><i class="fa-solid fa-moon"></i> Star Bed</span>
+                                        <span><i class="fa-solid fa-spa"></i> Arijana Spa</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid #f0f0f0;">
+                                    <div>
+                                        <span style="font-size: 11px; color: #888; display: block;">From</span>
+                                        <span style="font-size: 18px; font-weight: 800; color: #151515;">₹24,000 <small style="font-size: 11px; color: #777; font-weight: 400;">/ night</small></span>
+                                    </div>
+                                    <a href="hotel.html" class="theme-btn" style="padding: 6px 16px; font-size: 12px;">Book Stay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resort 2: Saraca Resort Corbett (Lebua) -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="resort-preview-card">
+                            <div class="resort-preview-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Saraca Resort Corbett">
+                                <div style="position: absolute; top: 14px; left: 14px;">
+                                    <span class="badge bg-dark" style="font-size: 11px; padding: 5px 9px;"><i class="fa-solid fa-crown text-warning me-1"></i> 5-Star Eco-Resort</span>
+                                </div>
+                                <div style="position: absolute; top: 14px; right: 14px;">
+                                    <span style="background: #fff; color: #d97706; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                        <i class="fa-solid fa-star text-warning"></i> 4.8 <small style="color: #666; font-weight: 500;">(210)</small>
+                                    </span>
+                                </div>
+                                <div style="position: absolute; bottom: 12px; left: 14px;">
+                                    <span class="badge bg-white text-dark" style="font-size: 11px; font-weight: 700;"><i class="fa-solid fa-location-dot text-danger me-1"></i> Mohaan Valley</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 style="font-weight: 800; font-size: 18px; color: #151515; margin: 0;">Saraca Resort (Lebua)</h4>
+                                        <span class="badge-verified-hg"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                    </div>
+                                    <p style="color: #696969; font-size: 13px; line-height: 1.55; margin: 8px 0 12px;">
+                                        Spread over 9 acres of dense green foliage adjacent to the reserve forest, with panoramic views of landscaped ponds, birding trails, and horse riding stables.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span style="font-size: 11px; font-weight: 700; color: #666; text-transform: uppercase; display: block; margin-bottom: 4px;">RM Categories:</span>
+                                        <div class="d-flex flex-wrap gap-1">
+                                            <span class="room-pill-chip">Premium Room</span>
+                                            <span class="room-pill-chip">Family Cottage</span>
+                                            <span class="room-pill-chip">Forest View Suite</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2 mb-3" style="color: #63AB45; font-size: 11.5px; font-weight: 600;">
+                                        <span><i class="fa-solid fa-water-ladder"></i> Infinity Pool</span>
+                                        <span><i class="fa-solid fa-horse"></i> Horse Riding</span>
+                                        <span><i class="fa-solid fa-spa"></i> Ayurveda Spa</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid #f0f0f0;">
+                                    <div>
+                                        <span style="font-size: 11px; color: #888; display: block;">From</span>
+                                        <span style="font-size: 18px; font-weight: 800; color: #151515;">₹16,500 <small style="font-size: 11px; color: #777; font-weight: 400;">/ night</small></span>
+                                    </div>
+                                    <a href="hotel.html" class="theme-btn" style="padding: 6px 16px; font-size: 12px;">Book Stay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resort 3: Tarangi Resort & Spa -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="resort-preview-card">
+                            <div class="resort-preview-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Tarangi Resort & Spa">
+                                <div style="position: absolute; top: 14px; left: 14px;">
+                                    <span class="badge bg-dark" style="font-size: 11px; padding: 5px 9px;"><i class="fa-solid fa-crown text-warning me-1"></i> 5-Star Riverfront</span>
+                                </div>
+                                <div style="position: absolute; top: 14px; right: 14px;">
+                                    <span style="background: #fff; color: #d97706; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                        <i class="fa-solid fa-star text-warning"></i> 4.9 <small style="color: #666; font-weight: 500;">(380)</small>
+                                    </span>
+                                </div>
+                                <div style="position: absolute; bottom: 12px; left: 14px;">
+                                    <span class="badge bg-white text-dark" style="font-size: 11px; font-weight: 700;"><i class="fa-solid fa-water text-primary me-1"></i> Dhikuli Waterfront</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 style="font-weight: 800; font-size: 18px; color: #151515; margin: 0;">Tarangi Resort & Spa</h4>
+                                        <span class="badge-verified-hg"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                    </div>
+                                    <p style="color: #696969; font-size: 13px; line-height: 1.55; margin: 8px 0 12px;">
+                                        A premier riverfront haven on 13 verdant acres beside the Kosi River. Features private pool villas (Jal), Sarang cottages, and Sansa Ayurvedic Spa.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span style="font-size: 11px; font-weight: 700; color: #666; text-transform: uppercase; display: block; margin-bottom: 4px;">RM Categories:</span>
+                                        <div class="d-flex flex-wrap gap-1">
+                                            <span class="room-pill-chip">Sarang</span>
+                                            <span class="room-pill-chip">Luxury Cottage</span>
+                                            <span class="room-pill-chip">Jal Pool Villa</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2 mb-3" style="color: #63AB45; font-size: 11.5px; font-weight: 600;">
+                                        <span><i class="fa-solid fa-water-ladder"></i> Private Pool</span>
+                                        <span><i class="fa-solid fa-water"></i> Kosi River Deck</span>
+                                        <span><i class="fa-solid fa-spa"></i> Sansa Spa</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid #f0f0f0;">
+                                    <div>
+                                        <span style="font-size: 11px; color: #888; display: block;">From</span>
+                                        <span style="font-size: 18px; font-weight: 800; color: #151515;">₹15,500 <small style="font-size: 11px; color: #777; font-weight: 400;">/ night</small></span>
+                                    </div>
+                                    <a href="hotel.html" class="theme-btn" style="padding: 6px 16px; font-size: 12px;">Book Stay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resort 4: Namah Resort Corbett -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                        <div class="resort-preview-card">
+                            <div class="resort-preview-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Namah Resort Corbett">
+                                <div style="position: absolute; top: 14px; left: 14px;">
+                                    <span class="badge bg-dark" style="font-size: 11px; padding: 5px 9px;"><i class="fa-solid fa-crown text-warning me-1"></i> 5-Star Sanctuary</span>
+                                </div>
+                                <div style="position: absolute; top: 14px; right: 14px;">
+                                    <span style="background: #fff; color: #d97706; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                        <i class="fa-solid fa-star text-warning"></i> 4.8 <small style="color: #666; font-weight: 500;">(328)</small>
+                                    </span>
+                                </div>
+                                <div style="position: absolute; bottom: 12px; left: 14px;">
+                                    <span class="badge bg-white text-dark" style="font-size: 11px; font-weight: 700;"><i class="fa-solid fa-water text-primary me-1"></i> Dhikuli Riverfront</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 style="font-weight: 800; font-size: 18px; color: #151515; margin: 0;">Namah Resort Corbett</h4>
+                                        <span class="badge-verified-hg"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                    </div>
+                                    <p style="color: #696969; font-size: 13px; line-height: 1.55; margin: 8px 0 12px;">
+                                        Situated on the calm Kosi riverbank with manicured lawns, grand riverview balconies, Pratha all-day dining, and top-tier safari assistance.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span style="font-size: 11px; font-weight: 700; color: #666; text-transform: uppercase; display: block; margin-bottom: 4px;">RM Categories:</span>
+                                        <div class="d-flex flex-wrap gap-1">
+                                            <span class="room-pill-chip">Superior</span>
+                                            <span class="room-pill-chip">Premium</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2 mb-3" style="color: #63AB45; font-size: 11.5px; font-weight: 600;">
+                                        <span><i class="fa-solid fa-water"></i> Kosi Riverfront</span>
+                                        <span><i class="fa-solid fa-utensils"></i> Pratha Dining</span>
+                                        <span><i class="fa-solid fa-spa"></i> Wellness Spa</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid #f0f0f0;">
+                                    <div>
+                                        <span style="font-size: 11px; color: #888; display: block;">From</span>
+                                        <span style="font-size: 18px; font-weight: 800; color: #151515;">₹13,500 <small style="font-size: 11px; color: #777; font-weight: 400;">/ night</small></span>
+                                    </div>
+                                    <a href="hotel.html" class="theme-btn" style="padding: 6px 16px; font-size: 12px;">Book Stay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resort 5: The Riverview Retreat -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="resort-preview-card">
+                            <div class="resort-preview-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="The Riverview Retreat">
+                                <div style="position: absolute; top: 14px; left: 14px;">
+                                    <span class="badge bg-dark" style="font-size: 11px; padding: 5px 9px;"><i class="fa-solid fa-hotel me-1 text-info"></i> 4-Star Riverfront</span>
+                                </div>
+                                <div style="position: absolute; top: 14px; right: 14px;">
+                                    <span style="background: #fff; color: #d97706; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                        <i class="fa-solid fa-star text-warning"></i> 4.7 <small style="color: #666; font-weight: 500;">(340)</small>
+                                    </span>
+                                </div>
+                                <div style="position: absolute; bottom: 12px; left: 14px;">
+                                    <span class="badge bg-white text-dark" style="font-size: 11px; font-weight: 700;"><i class="fa-solid fa-location-dot text-danger me-1"></i> Dhikuli</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 style="font-weight: 800; font-size: 18px; color: #151515; margin: 0;">The Riverview Retreat</h4>
+                                        <span class="badge-verified-hg"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                    </div>
+                                    <p style="color: #696969; font-size: 13px; line-height: 1.55; margin: 8px 0 12px;">
+                                        Spread across 8 lush acres on the Kosi River, featuring stone cottages, duplex villas, Gurney House dining, and scenic swimming pools.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span style="font-size: 11px; font-weight: 700; color: #666; text-transform: uppercase; display: block; margin-bottom: 4px;">RM Categories:</span>
+                                        <div class="d-flex flex-wrap gap-1">
+                                            <span class="room-pill-chip">Deluxe</span>
+                                            <span class="room-pill-chip">Duplex</span>
+                                            <span class="room-pill-chip">Suite</span>
+                                            <span class="room-pill-chip">Premium</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2 mb-3" style="color: #63AB45; font-size: 11.5px; font-weight: 600;">
+                                        <span><i class="fa-solid fa-water-ladder"></i> Pool</span>
+                                        <span><i class="fa-solid fa-tree"></i> 8-Acre Lawns</span>
+                                        <span><i class="fa-solid fa-utensils"></i> Gurney House</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid #f0f0f0;">
+                                    <div>
+                                        <span style="font-size: 11px; color: #888; display: block;">From</span>
+                                        <span style="font-size: 18px; font-weight: 800; color: #151515;">₹9,500 <small style="font-size: 11px; color: #777; font-weight: 400;">/ night</small></span>
+                                    </div>
+                                    <a href="hotel.html" class="theme-btn" style="padding: 6px 16px; font-size: 12px;">Book Stay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resort 6: Dhikala Forest Rest House -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="resort-preview-card">
+                            <div class="resort-preview-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80" alt="Dhikala Forest Rest House">
+                                <div style="position: absolute; top: 14px; left: 14px;">
+                                    <span class="badge bg-danger" style="font-size: 11px; padding: 5px 9px;"><i class="fa-solid fa-tree me-1"></i> Core Forest Lodge</span>
+                                </div>
+                                <div style="position: absolute; top: 14px; right: 14px;">
+                                    <span style="background: #fff; color: #d97706; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                        <i class="fa-solid fa-star text-warning"></i> 4.9 <small style="color: #666; font-weight: 500;">(560)</small>
+                                    </span>
+                                </div>
+                                <div style="position: absolute; bottom: 12px; left: 14px;">
+                                    <span class="badge bg-white text-dark" style="font-size: 11px; font-weight: 700;"><i class="fa-solid fa-shield-cat text-danger me-1"></i> Deep Core Zone</span>
+                                </div>
+                            </div>
+                            <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 style="font-weight: 800; font-size: 18px; color: #151515; margin: 0;">Dhikala Forest Rest House</h4>
+                                        <span class="badge-verified-hg"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                                    </div>
+                                    <p style="color: #696969; font-size: 13px; line-height: 1.55; margin: 8px 0 12px;">
+                                        The iconic heart of Jim Corbett. Rare deep-forest night stays overlooking the Ramganga reservoir with direct access to core tiger grasslands.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span style="font-size: 11px; font-weight: 700; color: #666; text-transform: uppercase; display: block; margin-bottom: 4px;">RM Categories:</span>
+                                        <div class="d-flex flex-wrap gap-1">
+                                            <span class="room-pill-chip">Forest Rest House Room</span>
+                                            <span class="room-pill-chip">Dormitory Bed</span>
+                                            <span class="room-pill-chip">Hutment Room</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2 mb-3" style="color: #63AB45; font-size: 11.5px; font-weight: 600;">
+                                        <span><i class="fa-solid fa-shield-cat"></i> Core Access</span>
+                                        <span><i class="fa-solid fa-binoculars"></i> Watchtower</span>
+                                        <span><i class="fa-solid fa-utensils"></i> KMVN Canteen</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid #f0f0f0;">
+                                    <div>
+                                        <span style="font-size: 11px; color: #888; display: block;">From</span>
+                                        <span style="font-size: 18px; font-weight: 800; color: #151515;">₹6,500 <small style="font-size: 11px; color: #777; font-weight: 400;">/ night</small></span>
+                                    </div>
+                                    <a href="hotel.html" class="theme-btn" style="padding: 6px 16px; font-size: 12px;">Book Stay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Callout Banner -->
+                <div class="mt-5 p-4 p-md-5 rounded-4 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4" style="background: linear-gradient(135deg, #1d3e23 0%, #0d2012 100%); color: #fff;">
+                    <div>
+                        <span class="badge bg-warning text-dark mb-2 px-3 py-1 font-weight-bold">COMPLETE PORTFOLIO</span>
+                        <h3 style="font-weight: 800; color: #fff; margin: 0 0 8px;">Explore All 30 Jim Corbett Resorts</h3>
+                        <p style="color: #d1d5db; margin: 0; font-size: 14.5px; max-width: 650px;">
+                            Compare by safari zone (Dhikuli, Mohaan, Marchula, Dhela), filter by amenities (plunge pools, riverside, spas), and pick from 92 verified room categories.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="hotel.html" class="theme-btn" style="padding: 12px 28px; white-space: nowrap;">Open 30 Hotels Directory <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Official Safari Zones & Territory Explorer Section Start -->
+        <section class="section-padding" style="background: #FAFBF7;">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <span style="color: #63AB45; font-weight: 700; text-transform: uppercase; font-size: 13px;">Official Safari Zones</span>
+                    <h2 style="font-weight: 800; color: #151515; margin-top: 8px;">Corbett Tiger Reserve Safari Territory</h2>
+                    <p style="color: #696969; max-width: 650px; margin: 12px auto 0; font-size: 14.5px;">
+                        Jim Corbett is divided into distinct ecotourism zones, each accessed through designated entry gates. Secure your authorized government permits in advance.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Zone 1: Dhikala -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                        <div class="zone-grid-card">
+                            <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=700&q=80" alt="Dhikala Safari Zone">
+                            <div class="zone-grid-overlay">
+                                <span class="badge bg-danger mb-2 align-self-start">Core Zone</span>
+                                <h4 style="font-weight: 800; color: #fff; margin: 0 0 6px;">Dhikala Zone</h4>
+                                <p style="font-size: 12.5px; color: #ddd; margin-bottom: 12px; line-height: 1.5;">
+                                    Entry: <strong>Dhangarhi Gate</strong> | Season: <strong>15 Nov - 15 June</strong><br>
+                                    Famous for vast chaur (grasslands), Ramganga river, & highest tiger sightings.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center pt-2" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                                    <span style="font-size: 12px; color: #FD7E21; font-weight: 700;">Canter & Gypsy Safaris</span>
+                                    <a href="activities.html" class="btn btn-sm btn-light fw-bold" style="font-size: 11px; padding: 4px 12px; border-radius: 20px;">Book Permit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zone 2: Bijrani -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="zone-grid-card">
+                            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80" alt="Bijrani Safari Zone">
+                            <div class="zone-grid-overlay">
+                                <span class="badge bg-warning text-dark mb-2 align-self-start">Prime Tiger Territory</span>
+                                <h4 style="font-weight: 800; color: #fff; margin: 0 0 6px;">Bijrani Zone</h4>
+                                <p style="font-size: 12.5px; color: #ddd; margin-bottom: 12px; line-height: 1.5;">
+                                    Entry: <strong>Amdanda Gate</strong> | Season: <strong>15 Oct - 30 June</strong><br>
+                                    Dense Sal woodlands, perennial streams, and top predator tracking tracks.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center pt-2" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                                    <span style="font-size: 12px; color: #FD7E21; font-weight: 700;">Exclusive 4x4 Gypsy</span>
+                                    <a href="activities.html" class="btn btn-sm btn-light fw-bold" style="font-size: 11px; padding: 4px 12px; border-radius: 20px;">Book Permit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zone 3: Jhirna -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="zone-grid-card">
+                            <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=700&q=80" alt="Jhirna Safari Zone">
+                            <div class="zone-grid-overlay">
+                                <span class="badge bg-success mb-2 align-self-start">Open Round The Year</span>
+                                <h4 style="font-weight: 800; color: #fff; margin: 0 0 6px;">Jhirna Zone</h4>
+                                <p style="font-size: 12.5px; color: #ddd; margin-bottom: 12px; line-height: 1.5;">
+                                    Entry: <strong>Dhela Gate</strong> | Season: <strong>All 12 Months</strong><br>
+                                    Famous for sloth bears, wild elephants, sambar deer, and year-round accessibility.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center pt-2" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                                    <span style="font-size: 12px; color: #FD7E21; font-weight: 700;">Morning & Evening Shifts</span>
+                                    <a href="activities.html" class="btn btn-sm btn-light fw-bold" style="font-size: 11px; padding: 4px 12px; border-radius: 20px;">Book Permit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zone 4: Dhela -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                        <div class="zone-grid-card">
+                            <img src="https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=700&q=80" alt="Dhela Safari Zone">
+                            <div class="zone-grid-overlay">
+                                <span class="badge bg-info text-dark mb-2 align-self-start">Eco-Buffer Zone</span>
+                                <h4 style="font-weight: 800; color: #fff; margin: 0 0 6px;">Dhela Zone</h4>
+                                <p style="font-size: 12.5px; color: #ddd; margin-bottom: 12px; line-height: 1.5;">
+                                    Entry: <strong>Dhela Gate</strong> | Season: <strong>Round the Year</strong><br>
+                                    Rich water bodies, wetlands, royal leopards, and exceptional birdlife.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center pt-2" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                                    <span style="font-size: 12px; color: #FD7E21; font-weight: 700;">4x4 Gypsy Safari</span>
+                                    <a href="activities.html" class="btn btn-sm btn-light fw-bold" style="font-size: 11px; padding: 4px 12px; border-radius: 20px;">Book Permit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zone 5: Durga Devi -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="zone-grid-card">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=700&q=80" alt="Durga Devi Safari Zone">
+                            <div class="zone-grid-overlay">
+                                <span class="badge bg-secondary mb-2 align-self-start">River Ramganga & Hills</span>
+                                <h4 style="font-weight: 800; color: #fff; margin: 0 0 6px;">Durga Devi Zone</h4>
+                                <p style="font-size: 12.5px; color: #ddd; margin-bottom: 12px; line-height: 1.5;">
+                                    Entry: <strong>Durga Devi Gate</strong> | Season: <strong>15 Nov - 15 June</strong><br>
+                                    Hilly terrain, Ramganga river confluences, Golden Mahseer fish & wild otters.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center pt-2" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                                    <span style="font-size: 12px; color: #FD7E21; font-weight: 700;">Birding & Hilly Tracks</span>
+                                    <a href="activities.html" class="btn btn-sm btn-light fw-bold" style="font-size: 11px; padding: 4px 12px; border-radius: 20px;">Book Permit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zone 6: Sitabani / Pawalgarh -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="zone-grid-card">
+                            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700&q=80" alt="Sitabani Forest Zone">
+                            <div class="zone-grid-overlay">
+                                <span class="badge bg-warning text-dark mb-2 align-self-start">Mythological Heritage</span>
+                                <h4 style="font-weight: 800; color: #fff; margin: 0 0 6px;">Sitabani / Pawalgarh</h4>
+                                <p style="font-size: 12.5px; color: #ddd; margin-bottom: 12px; line-height: 1.5;">
+                                    Entry: <strong>Ramnagar / Bailparao</strong> | Season: <strong>All 12 Months</strong><br>
+                                    Ancient ashram hermitage, 500+ bird species, and private vehicle access permitted.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center pt-2" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                                    <span style="font-size: 12px; color: #FD7E21; font-weight: 700;">Open Permit Tracking</span>
+                                    <a href="activities.html" class="btn btn-sm btn-light fw-bold" style="font-size: 11px; padding: 4px 12px; border-radius: 20px;">Book Permit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curated Wildlife Tour Packages Section Start -->
+        <section class="section-padding" style="background: #ffffff;">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase; font-size: 13px;">Curated Expeditions</span>
+                    <h2 style="font-weight: 800; color: #151515; margin-top: 8px;">Jim Corbett Signature Tour Packages</h2>
+                    <p style="color: #696969; max-width: 650px; margin: 12px auto 0; font-size: 14.5px;">
+                        All-inclusive experiences bundling handpicked resorts, authorized safari permits, meals, local transfers, and expert naturalists.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Package 1 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                        <div class="itinerary-card p-4">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-light text-dark fw-bold" style="font-size: 12px;">3 Days / 2 Nights</span>
+                                    <span style="color: #d97706; font-size: 12px; font-weight: 700;"><i class="fa-solid fa-star"></i> 4.9 (98 reviews)</span>
+                                </div>
+                                <h4 style="font-weight: 800; color: #151515; margin-bottom: 12px; font-size: 20px;">Corbett Classic Tiger Trail</h4>
+                                <p style="color: #696969; font-size: 13.5px; line-height: 1.6;">
+                                    The quintessential Corbett experience for families and first-time safari enthusiasts. Includes 2 exclusive jeep safaris in Bijrani / Jhirna.
+                                </p>
+                                <ul style="list-style: none; padding: 0; font-size: 13px; color: #333; margin: 18px 0;">
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> 2 Nights stay in 4-Star Riverside Resort</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> 2 Core Zone Gypsy Safaris with Naturalist</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> All Buffet Meals (Breakfast, Lunch, Dinner)</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Evening Bonfire with Wildlife Documentaries</li>
+                                </ul>
+                            </div>
+                            <div class="pt-3" style="border-top: 1px solid #f0f0f0;">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div>
+                                        <span style="font-size: 11px; color: #888; display: block;">Starting from</span>
+                                        <span style="font-size: 20px; font-weight: 800; color: #151515;">₹8,999 <small style="font-size: 12px; color: #666; font-weight: 400;">/ person</small></span>
+                                    </div>
+                                    <span class="badge bg-success" style="font-size: 11px;">Best Seller</span>
+                                </div>
+                                <a href="#quick-booking" class="theme-btn w-100 text-center" style="padding: 10px; font-size: 13px;">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Package 2 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="itinerary-card p-4" style="border-top-color: #63AB45;">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-light text-dark fw-bold" style="font-size: 12px;">4 Days / 3 Nights</span>
+                                    <span style="color: #d97706; font-size: 12px; font-weight: 700;"><i class="fa-solid fa-star"></i> 5.0 (142 reviews)</span>
+                                </div>
+                                <h4 style="font-weight: 800; color: #151515; margin-bottom: 12px; font-size: 20px;">Luxury Forest & Spa Retreat</h4>
+                                <p style="color: #696969; font-size: 13.5px; line-height: 1.6;">
+                                    Designed for discerning luxury travelers. Stay in 5-star cottages at Tarangi or Paatlidun with private pool access, spa care, and private safaris.
+                                </p>
+                                <ul style="list-style: none; padding: 0; font-size: 13px; color: #333; margin: 18px 0;">
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> 3 Nights in 5-Star Luxury Pool Villa / Cottage</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> 2 Private Gypsy Safaris + 1 River Trek</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Complimentary Couple Ayurvedic Spa Session</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Candlelit Kosi Riverside Dinner Experience</li>
+                                </ul>
+                            </div>
+                            <div class="pt-3" style="border-top: 1px solid #f0f0f0;">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div>
+                                        <span style="font-size: 11px; color: #888; display: block;">Starting from</span>
+                                        <span style="font-size: 20px; font-weight: 800; color: #151515;">₹18,500 <small style="font-size: 12px; color: #666; font-weight: 400;">/ person</small></span>
+                                    </div>
+                                    <span class="badge bg-dark" style="font-size: 11px;">Luxury Tier</span>
+                                </div>
+                                <a href="#quick-booking" class="theme-btn w-100 text-center" style="padding: 10px; font-size: 13px;">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Package 3 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="itinerary-card p-4" style="border-top-color: #2e7d32;">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-light text-dark fw-bold" style="font-size: 12px;">3 Days / 2 Nights</span>
+                                    <span style="color: #d97706; font-size: 12px; font-weight: 700;"><i class="fa-solid fa-star"></i> 4.9 (76 reviews)</span>
+                                </div>
+                                <h4 style="font-weight: 800; color: #151515; margin-bottom: 12px; font-size: 20px;">Dhikala Deep Forest Night Stay</h4>
+                                <p style="color: #696969; font-size: 13.5px; line-height: 1.6;">
+                                    The ultimate wildlife aficionado trip. Sleep deep inside the core tiger reserve at Dhikala FRH, falling asleep to the nocturnal calls of the jungle.
+                                </p>
+                                <ul style="list-style: none; padding: 0; font-size: 13px; color: #333; margin: 18px 0;">
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> 2 Nights inside Dhikala Core Forest Rest House</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> 4 Core Zone Gypsy Safaris (Morning & Afternoon)</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Mandatory Forest Department Naturalist Guide</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Forest Entry, Vehicle & Road Tax Permits included</li>
+                                </ul>
+                            </div>
+                            <div class="pt-3" style="border-top: 1px solid #f0f0f0;">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div>
+                                        <span style="font-size: 11px; color: #888; display: block;">Starting from</span>
+                                        <span style="font-size: 20px; font-weight: 800; color: #151515;">₹14,999 <small style="font-size: 12px; color: #666; font-weight: 400;">/ person</small></span>
+                                    </div>
+                                    <span class="badge bg-danger" style="font-size: 11px;">Rare Permits</span>
+                                </div>
+                                <a href="#quick-booking" class="theme-btn w-100 text-center" style="padding: 10px; font-size: 13px;">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seasonal Matrix & Wildlife Sightings Guide Start -->
+        <section class="tour-details-section section-padding" style="background: #FAFBF7;">
+            <div class="container">
+                <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="tour-details-content">
-                            <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase; font-size: 14px;">Hailey to Corbett</span>
-                            <h2 style="font-weight: 800; color: #151515; margin-top: 10px; margin-bottom: 20px;">The Historic Journey of India's Oldest Sanctuary</h2>
+                            <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase; font-size: 13px;">Wildlife Sightings Planner</span>
+                            <h2 style="font-weight: 800; color: #151515; margin-top: 8px; margin-bottom: 18px;">When Should You Plan Your Corbett Journey?</h2>
                             <p style="color: #696969; line-height: 1.7; margin-bottom: 15px;">
-                                Established in 1936 as Hailey National Park, Jim Corbett National Park stands as India's oldest and most prestigious wildlife reserve. It was renamed in honor of Jim Corbett, a legendary British-Indian hunter-turned-conservationist who played a pivotal role in its creation and spent his life protecting Uttarakhand's wildlife.
+                                Jim Corbett's climate changes dramatically across the year, and understanding animal migration and waterhole visits is the key to extraordinary safari sightings.
                             </p>
-                            <p style="color: #696969; line-height: 1.7; margin-bottom: 20px;">
-                                Encompassing over 520 square kilometers of hills, riverine belts, marshy depressions, grasslands, and large lakes, the park was the very first to launch <strong>Project Tiger</strong> in 1973. It remains a sanctuary where the endangered Bengal Tiger, Asiatic Elephant, and over 600 species of birds roam free.
+                            <p style="color: #696969; line-height: 1.7; margin-bottom: 24px;">
+                                Founded in 1936 as Hailey National Park, this 520 sq km sanctuary features river valleys, sal woodlands, and chaur grasslands that host <strong>260+ Royal Bengal Tigers</strong>, Asian Elephants, leopards, and over 600 species of resident and migratory birds.
                             </p>
                             <div class="row g-3">
                                 <div class="col-sm-6">
-                                    <div class="feature-card p-3" style="background: #F7F7F7; border-radius: 8px; border-left: 4px solid #FD7E21;">
-                                        <h5 style="font-weight: 700; color: #151515; margin-bottom: 5px;">1936</h5>
-                                        <p style="color: #696969; font-size: 13px; margin: 0;">Established as India's 1st national park.</p>
+                                    <div class="p-3" style="background: #fff; border-radius: 10px; border-left: 4px solid #FD7E21; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
+                                        <h6 style="font-weight: 800; color: #151515; margin-bottom: 4px;"><i class="fa-solid fa-camera text-warning me-1"></i> 98% Sighting Season</h6>
+                                        <p style="color: #696969; font-size: 12.5px; margin: 0;">March to June offers exceptional predator sightings near riverbeds.</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="feature-card p-3" style="background: #F7F7F7; border-radius: 8px; border-left: 4px solid #63AB45;">
-                                        <h5 style="font-weight: 700; color: #151515; margin-bottom: 5px;">Project Tiger</h5>
-                                        <p style="color: #696969; font-size: 13px; margin: 0;">Selected as the birthplace of tiger preservation in 1973.</p>
+                                    <div class="p-3" style="background: #fff; border-radius: 10px; border-left: 4px solid #63AB45; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
+                                        <h6 style="font-weight: 800; color: #151515; margin-bottom: 4px;"><i class="fa-solid fa-dove text-success me-1"></i> 600+ Bird Species</h6>
+                                        <p style="color: #696969; font-size: 12.5px; margin: 0;">November to February brings Siberian and Himalayan migrants.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="p-4" style="background: #EDF2DE; border-radius: 16px; border: 1px solid rgba(99, 171, 69, 0.2); height: 100%;">
-                            <span style="color: #63AB45; font-weight: 700; text-transform: uppercase; font-size: 14px;">Seasonal Matrix</span>
-                            <h3 style="font-weight: 800; color: #151515; margin-top: 10px; margin-bottom: 20px;">When is the Best Time to Visit?</h3>
+                        <div class="p-4 p-md-5" style="background: #EDF2DE; border-radius: 20px; border: 1px solid rgba(99, 171, 69, 0.25);">
+                            <span style="color: #63AB45; font-weight: 800; text-transform: uppercase; font-size: 13px;">Seasonality & Weather Guide</span>
+                            <h3 style="font-weight: 800; color: #151515; margin-top: 8px; margin-bottom: 22px;">Corbett Wildlife Calendar</h3>
                             
                             <div class="d-flex flex-column gap-3">
-                                <div class="season-item d-flex gap-3 align-items-start">
-                                    <div style="background: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #FD7E21; flex-shrink: 0;"><i class="fa-solid fa-snowflake"></i></div>
+                                <div class="season-item d-flex gap-3 align-items-start p-3 bg-white rounded-3 shadow-sm">
+                                    <div style="background: #eef7ee; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #2e7d32; flex-shrink: 0;"><i class="fa-solid fa-snowflake"></i></div>
                                     <div>
-                                        <h5 style="font-weight: 700; color: #151515; margin: 0 0 5px;">Winter (November - February)</h5>
-                                        <p style="color: #696969; font-size: 13px; margin: 0;">Cool and pleasant climate (5°C to 20°C). All core tourism zones (Dhikala, Bijrani, Sonanadi) open. Best time for tiger tracking and migratory bird watching.</p>
+                                        <h6 style="font-weight: 800; color: #151515; margin: 0 0 4px;">Winter (Nov – Feb) | 5°C to 20°C</h6>
+                                        <p style="color: #696969; font-size: 12.5px; margin: 0; line-height: 1.5;">All core zones (Dhikala, Bijrani, Durga Devi) open. Crisp misty mornings, roaring campfires, and peak birdwatching.</p>
                                     </div>
                                 </div>
-                                <div class="season-item d-flex gap-3 align-items-start">
-                                    <div style="background: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #FD7E21; flex-shrink: 0;"><i class="fa-solid fa-sun"></i></div>
+                                <div class="season-item d-flex gap-3 align-items-start p-3 bg-white rounded-3 shadow-sm">
+                                    <div style="background: #fff8eb; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #d97706; flex-shrink: 0;"><i class="fa-solid fa-sun"></i></div>
                                     <div>
-                                        <h5 style="font-weight: 700; color: #151515; margin: 0 0 5px;">Spring/Summer (March - June)</h5>
-                                        <p style="color: #696969; font-size: 13px; margin: 0;">Warm temperatures (up to 40°C). Vegetation dries up, forcing wildlife to visit Ramganga riverbanks. Exceptional tiger and elephant sightings.</p>
+                                        <h6 style="font-weight: 800; color: #151515; margin: 0 0 4px;">Summer (Mar – June) | 22°C to 38°C</h6>
+                                        <p style="color: #696969; font-size: 12.5px; margin: 0; line-height: 1.5;">Shrinking forest streams draw tigers, elephants, and leopards to Ramganga banks. Unmatched photo opportunities.</p>
                                     </div>
                                 </div>
-                                <div class="season-item d-flex gap-3 align-items-start">
-                                    <div style="background: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #696969; flex-shrink: 0;"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
+                                <div class="season-item d-flex gap-3 align-items-start p-3 bg-white rounded-3 shadow-sm">
+                                    <div style="background: #edf4fa; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #0284c7; flex-shrink: 0;"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
                                     <div>
-                                        <h5 style="font-weight: 700; color: #151515; margin: 0 0 5px;">Monsoon (July - October)</h5>
-                                        <p style="color: #696969; font-size: 13px; margin: 0;">Heavy rains, lush landscape. Core zones close due to river streams, but buffer zones (Dhela, Jhirna) remain open for eco-tourism and nature walks.</p>
+                                        <h6 style="font-weight: 800; color: #151515; margin: 0 0 4px;">Monsoon (July – Oct) | 24°C to 32°C</h6>
+                                        <p style="color: #696969; font-size: 12.5px; margin: 0; line-height: 1.5;">Lush emerald greenery and swollen waterfalls. Jhirna and Dhela buffer zones stay open for tranquil monsoon ecotourism.</p>
                                     </div>
                                 </div>
                             </div>
@@ -300,12 +1068,68 @@
             </div>
         </section>
 
-        <!-- Hosted Group Trips Section Start -->
+        <!-- Jungle Destination Weddings Highlight Section Start -->
+        <section class="section-padding" style="background: #ffffff;">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <div style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=900&q=85" alt="Jim Corbett Destination Wedding" style="border-radius: 18px; width: 100%; height: 420px; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,0.12);">
+                            <div style="position: absolute; top: -15px; left: -15px; background: #FD7E21; color: #fff; padding: 10px 18px; border-radius: 10px; font-weight: 800; font-size: 13px;">
+                                <i class="fa-solid fa-heart me-1"></i> Forest Nuptials
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase; font-size: 13px;">Wilderness Celebrations</span>
+                        <h2 style="font-weight: 800; color: #151515; margin-top: 8px; margin-bottom: 18px;">Dream Destination Weddings in Jim Corbett</h2>
+                        <p style="color: #696969; line-height: 1.7; margin-bottom: 16px;">
+                            Imagine taking your vows beside the gentle murmur of the Kosi River with misty Himalayan foothills as your backdrop. Jim Corbett has emerged as North India's premier destination wedding location for couples seeking elegance without metropolitan chaos.
+                        </p>
+                        <p style="color: #696969; line-height: 1.7; margin-bottom: 22px;">
+                            Honeygold India manages complete hospitality logistics across flagship wedding properties like <strong>Tarangi Resort & Spa</strong>, <strong>Namah</strong>, <strong>The Riverview Retreat</strong>, and <strong>Anantum Gateway</strong>:
+                        </p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    <span style="font-size: 13.5px; font-weight: 700; color: #222;">Riverside Mandaps & Lawns</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    <span style="font-size: 13.5px; font-weight: 700; color: #222;">100 to 1,000+ Pax Capacity</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    <span style="font-size: 13.5px; font-weight: 700; color: #222;">Forest Themed Sangeet & Decor</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    <span style="font-size: 13.5px; font-weight: 700; color: #222;">Guest Safari Itineraries</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="weddings.html" class="theme-btn" style="padding: 11px 26px; font-size: 13px;">Explore Wedding Packages</a>
+                            <a href="#quick-booking" class="theme-btn style-2" style="padding: 11px 26px; font-size: 13px; background: #eef7ee; color: #2e7d32; border: 1px solid #63AB45;">Speak to Wedding Specialist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hosted Group Departures Section Start -->
         <section class="tour-section section-padding bg-cover" style="background: #EDF2DE;">
             <div class="container">
                 <div class="section-title text-center mb-5">
                     <span style="color: #63AB45; font-weight: 700; text-transform: uppercase;">Social Adventure</span>
-                    <h2 style="font-weight: 800; color: #151515; margin-top: 10px;">Hosted Group Trips & Co-Travellers</h2>
+                    <h2 style="font-weight: 800; color: #151515; margin-top: 10px;">Hosted Group Departures & Co-Travellers</h2>
                     <p style="color: #696969; max-width: 600px; margin: 15px auto 0; font-size: 14px; line-height: 1.6;">
                         Travelling alone or in a duo? Join one of our premium, pre-planned group departures hosted by Honeygold India. Share vehicle/safari costs, meet like-minded travelers, and make lifelong friends in the wild.
                     </p>
@@ -390,8 +1214,81 @@
             </div>
         </section>
 
+        <!-- Traveler Testimonials Section Start -->
+        <section class="section-padding" style="background: #ffffff;">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase; font-size: 13px;">Verified Guest Stories</span>
+                    <h2 style="font-weight: 800; color: #151515; margin-top: 8px;">Memories Crafted in Corbett</h2>
+                    <p style="color: #696969; max-width: 600px; margin: 12px auto 0; font-size: 14.5px;">
+                        Read authentic reviews from guests who booked their Corbett resorts and safaris through Honeygold India.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="p-4 rounded-4" style="background: #FAFBF7; border: 1px solid #eef0ea; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div class="d-flex text-warning mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p style="color: #555; font-style: italic; font-size: 13.5px; line-height: 1.65; margin-bottom: 18px;">
+                                    "We stayed at Paatlidun Safari Lodge in a Luxury Cottage. The plunge pool overlooking the forest and the open-air star bed were pure magic. Honeygold arranged our Bijrani morning gypsy safari and we saw a tigress crossing the track!"
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 pt-3" style="border-top: 1px solid #e8e8e8;">
+                                <div style="width: 44px; height: 44px; background: #FD7E21; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px;">AK</div>
+                                <div>
+                                    <h6 style="font-weight: 800; color: #151515; margin: 0; font-size: 14px;">Ananya & Karan Mehta</h6>
+                                    <small style="color: #777; font-size: 11px;">Stayed at Paatlidun | New Delhi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="p-4 rounded-4" style="background: #FAFBF7; border: 1px solid #eef0ea; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div class="d-flex text-warning mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p style="color: #555; font-style: italic; font-size: 13.5px; line-height: 1.65; margin-bottom: 18px;">
+                                    "Our family of six stayed at Tarangi Resort on the Kosi river. Honeygold generated our WhatsApp ticket in minutes, answered all questions, and secured impossible-to-get Dhikala Canter permits. Everything went flawlessly."
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 pt-3" style="border-top: 1px solid #e8e8e8;">
+                                <div style="width: 44px; height: 44px; background: #63AB45; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px;">RS</div>
+                                <div>
+                                    <h6 style="font-weight: 800; color: #151515; margin: 0; font-size: 14px;">Dr. Rajesh Sharma</h6>
+                                    <small style="color: #777; font-size: 11px;">Stayed at Tarangi Resort | Chandigarh</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="p-4 rounded-4" style="background: #FAFBF7; border: 1px solid #eef0ea; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div class="d-flex text-warning mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p style="color: #555; font-style: italic; font-size: 13.5px; line-height: 1.65; margin-bottom: 18px;">
+                                    "We held our destination wedding at Namah Resort Corbett managed by Honeygold. 250 guests accommodated, seamless riverside sangeet, and morning safaris for our friends. Rajiv ji's team took care of every single detail."
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 pt-3" style="border-top: 1px solid #e8e8e8;">
+                                <div style="width: 44px; height: 44px; background: #2e7d32; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px;">PV</div>
+                                <div>
+                                    <h6 style="font-weight: 800; color: #151515; margin: 0; font-size: 14px;">Pooja & Vikram Singhal</h6>
+                                    <small style="color: #777; font-size: 11px;">Corbett Wedding | Mumbai</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Honeygold Main Info & Board Section Start -->
-        <section class="testimonial-section section-padding bg-cover" style="background: #fff;">
+        <section class="testimonial-section section-padding bg-cover" style="background: #FAFBF7;">
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-5">
@@ -399,25 +1296,25 @@
                             <img src="assets/img/honeygold/about.jpg" alt="Honeygold India" style="border-radius: 12px; width: 100%; border: 4px solid #F7F7F7; box-shadow: 0px 4px 15px rgba(0,0,0,0.08);">
                         </div>
                         <div class="section-title">
-                            <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase;">Honeygold India</span>
-                            <h2 style="font-weight: 800; color: #151515; margin-top: 10px; margin-bottom: 20px;">Boutique Domestic Tour Providers Since 1996</h2>
-                            <p style="color: #696969; line-height: 1.7; margin-bottom: 20px;">
-                                Honeygold India Tours is a complete tour management company engaged in inbound tourism in India, specially to Kashmir, Himachal, Goa & Kerala for more than a decade. The people behind Honeygold have been associated with the hospitality industry for more than twenty years. Right from its inception back in 1996, Honeygold has dedicated itself to the cause of professionalism in providing impeccably designed & customized tours.
+                            <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase;">Honeygold India Heritage</span>
+                            <h2 style="font-weight: 800; color: #151515; margin-top: 10px; margin-bottom: 20px;">Boutique Domestic Tour Management Since 1996</h2>
+                            <p style="color: #696969; line-height: 1.7; margin-bottom: 18px;">
+                                Honeygold India Tours is a complete tour management company engaged in domestic and inbound tourism in India for over 28 years. Backlinked to our parent platform <a href="https://www.honeygoldindia.com/" target="_blank" style="color: #FD7E21; font-weight: 700;">Honeygold Main Site</a>, our dedicated Corbett division brings unmatched on-ground expertise.
                             </p>
                             <p style="color: #696969; line-height: 1.7;">
-                                Having offices in Srinagar, New Delhi, Chandigarh, Ahmedabad & Jaipur with all modern communication facilities, transportation fleet and staff of young and enthusiastic professionals, Honeygold is set with a vast network of leading players in the hospitality industry. Honeygold also operates its own deluxe category houseboats — "Holiday Inn group of Houseboats" near Nehru Park, Dal Lake — which has been catering to elite clientele since the 1960s.
+                                Having established offices in Srinagar, New Delhi, Chandigarh, Ahmedabad & Jaipur with our own transportation fleet and seasoned wildlife specialists, Honeygold ensures transparent bookings, guaranteed permits, and zero surprises.
                             </p>
                             <div class="mt-4">
-                                <a href="https://www.honeygoldindia.com/" target="_blank" class="theme-btn" style="border-radius: 30px;">Visit Honeygold Main Website</a>
+                                <a href="https://www.honeygoldindia.com/" target="_blank" class="theme-btn" style="border-radius: 30px;">Visit Honeygold Parent Portal</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <span style="color: #63AB45; font-weight: 700; text-transform: uppercase; font-size: 14px; display: block; margin-bottom: 20px;">Our Leadership</span>
+                        <span style="color: #63AB45; font-weight: 700; text-transform: uppercase; font-size: 14px; display: block; margin-bottom: 20px;">Executive Leadership</span>
                         <div class="row g-4">
                             <!-- Rajiv Chawla -->
                             <div class="col-12">
-                                <div class="leadership-card p-4 d-flex flex-column flex-sm-row gap-4 align-items-start" style="background: #F7F7F7; border-radius: 12px; border-left: 5px solid #FD7E21;">
+                                <div class="leadership-card p-4 d-flex flex-column flex-sm-row gap-4 align-items-start" style="background: #fff; border-radius: 12px; border-left: 5px solid #FD7E21; box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
                                     <img src="assets/img/honeygold/ib-h1-i12.jpg" alt="Rajiv Chawla" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #FD7E21; flex-shrink: 0;">
                                     <div>
                                         <div class="d-flex justify-content-between align-items-center mb-2">
@@ -435,7 +1332,7 @@
                             </div>
                             <!-- Javed Ratta -->
                             <div class="col-md-6">
-                                <div class="leadership-card p-4 d-flex flex-column flex-sm-row gap-3 align-items-start" style="background: #F7F7F7; border-radius: 12px; border-left: 5px solid #63AB45; height: 100%;">
+                                <div class="leadership-card p-4 d-flex flex-column flex-sm-row gap-3 align-items-start" style="background: #fff; border-radius: 12px; border-left: 5px solid #63AB45; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
                                     <img src="assets/img/honeygold/ib-h1-i14.jpg" alt="Javed Ratta" style="width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 3px solid #63AB45; flex-shrink: 0;">
                                     <div>
                                         <div class="d-flex justify-content-between align-items-center mb-2">
@@ -446,14 +1343,14 @@
                                             <i class="fa-solid fa-quote-right" style="color: rgba(99, 171, 69, 0.15); font-size: 24px;"></i>
                                         </div>
                                         <p style="color: #555; font-style: italic; font-size: 12px; line-height: 1.6; margin: 0;">
-                                            "As a leading travel group we believe in providing utmost comfort to travelers and ensure their well-being for the success of our business, continued progress and extended customer loyalty. Our customers are our priority."
+                                            "As a leading travel group we believe in providing utmost comfort to travelers and ensure their well-being for the success of our business, continued progress and extended customer loyalty."
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Aabroo Ratta -->
                             <div class="col-md-6">
-                                <div class="leadership-card p-4 d-flex flex-column flex-sm-row gap-3 align-items-start" style="background: #F7F7F7; border-radius: 12px; border-left: 5px solid #63AB45; height: 100%;">
+                                <div class="leadership-card p-4 d-flex flex-column flex-sm-row gap-3 align-items-start" style="background: #fff; border-radius: 12px; border-left: 5px solid #63AB45; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
                                     <img src="assets/img/honeygold/ib-h1-i13.jpg" alt="Aabroo Ratta" style="width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 3px solid #63AB45; flex-shrink: 0;">
                                     <div>
                                         <div class="d-flex justify-content-between align-items-center mb-2">
@@ -464,7 +1361,7 @@
                                             <i class="fa-solid fa-quote-right" style="color: rgba(99, 171, 69, 0.15); font-size: 24px;"></i>
                                         </div>
                                         <p style="color: #555; font-style: italic; font-size: 12px; line-height: 1.6; margin: 0;">
-                                            "Our ideology is to provide complete support to customer satisfaction with uncompromising integrity of our diversified work force. We have successfully expanded beyond geographical boundaries in our quest for unrelenting growth and with an enduring respect for human values."
+                                            "Our ideology is to provide complete support to customer satisfaction with uncompromising integrity. We have successfully expanded beyond geographical boundaries with respect for human values."
                                         </p>
                                     </div>
                                 </div>
@@ -475,50 +1372,70 @@
             </div>
         </section>
 
-        <!-- Our Services Grid Start -->
-        <section class="tour-section section-padding bg-cover" style="background: #F7F7F7;">
+        <!-- Jim Corbett Essential Travel FAQs Section Start -->
+        <section class="section-padding" style="background: #ffffff;">
             <div class="container">
-                <div class="section-title text-center">
-                    <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase;">Our Offerings</span>
-                    <h2 style="font-weight: 800; color: #151515; margin-top: 10px;">Select Your Corbett Experience</h2>
+                <div class="section-title text-center mb-5">
+                    <span style="color: #FD7E21; font-weight: 700; text-transform: uppercase; font-size: 13px;">Travel Essentials</span>
+                    <h2 style="font-weight: 800; color: #151515; margin-top: 8px;">Frequently Asked Questions</h2>
+                    <p style="color: #696969; max-width: 600px; margin: 12px auto 0; font-size: 14.5px;">
+                        Key things to know before planning your Jim Corbett national park trip.
+                    </p>
                 </div>
-                <div class="row mt-5 g-4">
-                    <!-- Hotel stays -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="tour-card-item" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0px 4px 15px rgba(0,0,0,0.05);">
-                            <div class="tour-image" style="height: 250px;">
-                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Luxury Corbett forest stays" onerror="this.onerror=null;this.src='assets/img/home-1/tour/tour-6.jpg';" style="object-fit: cover; height: 100%; width: 100%;">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="accordion" id="corbettFaqAccordion">
+                            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                                <h2 class="accordion-header" id="faqOne">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #151515; font-size: 15px;">
+                                        How many days in advance should I book Jim Corbett safari permits?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#corbettFaqAccordion">
+                                    <div class="accordion-body text-secondary" style="font-size: 14px; line-height: 1.7;">
+                                        Core safari zone permits (especially <strong>Dhikala</strong> and <strong>Bijrani</strong>) are released 45 days in advance for Indian citizens and 90 days for foreign nationals on the Uttarakhand Forest Department portal. Due to strict vehicle caps (typically 30 vehicles per shift), permits sell out within minutes. We advise contacting Honeygold India at least 30 to 60 days before your travel dates.
+                                    </div>
+                                </div>
                             </div>
-                            <div class="p-4">
-                                <h4 style="font-weight: 700;"><a href="hotel.html" style="color: #151515; text-decoration: none;">Hotels & Forest Lodges</a></h4>
-                                <p style="color: #696969; font-size: 14px; margin-top: 10px;">Indulge in premium comfort amidst the jungle. Choose from riverview suites to raw wilderness camps.</p>
-                                <a href="hotel.html" class="theme-btn mt-3" style="padding: 8px 20px; font-size: 14px;">View Accommodations</a>
+
+                            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                                <h2 class="accordion-header" id="faqTwo">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #151515; font-size: 15px;">
+                                        What identity documents are required for safari and resort check-in?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#corbettFaqAccordion">
+                                    <div class="accordion-body text-secondary" style="font-size: 14px; line-height: 1.7;">
+                                        Every traveler must carry the exact original Government Photo ID (Aadhaar Card, Passport, Voter ID, or Driving License) used during the permit reservation. Forest gate rangers verify IDs stringently before allowing vehicles inside the reserve. Foreign nationals must carry their original passport and valid Indian visa.
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Weddings -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="tour-card-item" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0px 4px 15px rgba(0,0,0,0.05);">
-                            <div class="tour-image" style="height: 250px;">
-                                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" alt="Corbett forest destination wedding" onerror="this.onerror=null;this.src='assets/img/home-1/tour/tour-7.jpg';" style="object-fit: cover; height: 100%; width: 100%;">
+
+                            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                                <h2 class="accordion-header" id="faqThree">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #151515; font-size: 15px;">
+                                        Which zone has the highest probability of tiger sightings?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#corbettFaqAccordion">
+                                    <div class="accordion-body text-secondary" style="font-size: 14px; line-height: 1.7;">
+                                        <strong>Dhikala Zone</strong> offers the highest tiger and elephant congregation along the Ramganga riverbanks and vast grasslands. <strong>Bijrani Zone</strong> is equally celebrated for dense tiger sightings amidst sal trees. For round-the-year safaris, <strong>Jhirna</strong> and <strong>Dhela</strong> provide consistent predator and sloth bear sightings.
+                                    </div>
+                                </div>
                             </div>
-                            <div class="p-4">
-                                <h4 style="font-weight: 700;"><a href="weddings.html" style="color: #151515; text-decoration: none;">Jungle Destination Weddings</a></h4>
-                                <p style="color: #696969; font-size: 14px; margin-top: 10px;">Tie the knot surrounded by wilderness. Beautiful riverside lawns, forest themes, and luxury banquet decor.</p>
-                                <a href="weddings.html" class="theme-btn mt-3" style="padding: 8px 20px; font-size: 14px;">View Wedding Packages</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Activities -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="tour-card-item" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0px 4px 15px rgba(0,0,0,0.05);">
-                            <div class="tour-image" style="height: 250px;">
-                                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80" alt="Jim Corbett safari activities" onerror="this.onerror=null;this.src='assets/img/home-1/tour/tour-8.jpg';" style="object-fit: cover; height: 100%; width: 100%;">
-                            </div>
-                            <div class="p-4">
-                                <h4 style="font-weight: 700;"><a href="activities.html" style="color: #151515; text-decoration: none;">Safari & Jungle Activities</a></h4>
-                                <p style="color: #696969; font-size: 14px; margin-top: 10px;">Book Jeep or Canter Safaris in zones like Dhikala and Bijrani. Enjoy trekking, river crossing, and birdwatching.</p>
-                                <a href="activities.html" class="theme-btn mt-3" style="padding: 8px 20px; font-size: 14px;">View Activities</a>
+
+                            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                                <h2 class="accordion-header" id="faqFour">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color: #151515; font-size: 15px;">
+                                        How do I reach Jim Corbett from New Delhi or Dehradun?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#corbettFaqAccordion">
+                                    <div class="accordion-body text-secondary" style="font-size: 14px; line-height: 1.7;">
+                                        Corbett's gateway city is <strong>Ramnagar</strong> (Uttarakhand). It is approximately 250 km from New Delhi (5 to 6 hours drive via NH9 / Moradabad). The Ranikhet Express connects Delhi directly to Ramnagar Railway Station overnight. Pantnagar Airport (80 km) and Dehradun Jolly Grant Airport (160 km) are the closest air connections. Honeygold arranges private luxury cab pickups from Delhi and Pantnagar.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -526,59 +1443,72 @@
             </div>
         </section>
 
-        <!-- Booking Form Section Start -->
-        <section id="quick-booking" class="contact-section section-padding">
+        <!-- Fast Booking Form Section Start -->
+        <section id="quick-booking" class="contact-section section-padding" style="background: #FAFBF7;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <div class="booking-form-wrapper" style="background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0px 8px 30px rgba(0,0,0,0.08); border-top: 5px solid #FD7E21;">
+                        <div class="booking-form-wrapper" style="background: #fff; padding: 40px; border-radius: 16px; box-shadow: 0px 10px 35px rgba(0,0,0,0.07); border-top: 5px solid #FD7E21;">
                             <div class="section-title text-center mb-4">
-                                <h3 style="font-weight: 800; color: #151515;">Book Your Corbett Experience</h3>
-                                <p style="color: #696969; font-size: 14px; margin-top: 5px;">Fill out the form below. We will instantly generate a booking ticket and direct you to WhatsApp to confirm your tour details.</p>
+                                <span style="background: #eef7ee; color: #2d7a2d; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">Direct Reservation Desk</span>
+                                <h3 style="font-weight: 800; color: #151515; margin-top: 8px;">Book Your Corbett Experience</h3>
+                                <p style="color: #696969; font-size: 13.5px; margin-top: 5px;">Fill out the form below. We will instantly generate your official booking ticket and redirect to WhatsApp for immediate confirmation.</p>
                             </div>
                             <form class="hg-booking-form contact-form-items">
                                 <div class="row g-4">
                                     <div class="col-md-6">
-                                        <label for="name" style="font-weight: 700; color: #151515;">Full Name *</label>
-                                        <input type="text" name="name" id="name" placeholder="Enter Full Name" required style="width: 100%; padding: 12px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px;">
+                                        <label for="name" style="font-weight: 700; color: #151515; font-size: 13px;">Full Name *</label>
+                                        <input type="text" name="name" id="name" placeholder="e.g. Rahul Sharma" required style="width: 100%; padding: 11px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; font-size: 13.5px;">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="phone" style="font-weight: 700; color: #151515;">WhatsApp Number *</label>
-                                        <input type="tel" name="phone" id="phone" placeholder="e.g. +91 99999 99999" required style="width: 100%; padding: 12px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px;">
+                                        <label for="phone" style="font-weight: 700; color: #151515; font-size: 13px;">WhatsApp Number *</label>
+                                        <input type="tel" name="phone" id="phone" placeholder="e.g. +91 98765 43210" required style="width: 100%; padding: 11px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; font-size: 13.5px;">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="email" style="font-weight: 700; color: #151515;">Email Address</label>
-                                        <input type="email" name="email" id="email" placeholder="Enter Email Address" style="width: 100%; padding: 12px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px;">
+                                        <label for="email" style="font-weight: 700; color: #151515; font-size: 13px;">Email Address</label>
+                                        <input type="email" name="email" id="email" placeholder="e.g. rahul@example.com" style="width: 100%; padding: 11px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; font-size: 13.5px;">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="date" style="font-weight: 700; color: #151515;">Preferred Date</label>
-                                        <input type="date" name="date" id="date" style="width: 100%; padding: 12px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px;">
+                                        <label for="date" style="font-weight: 700; color: #151515; font-size: 13px;">Preferred Travel Date *</label>
+                                        <input type="date" name="date" id="date" required style="width: 100%; padding: 11px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; font-size: 13.5px;">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="guests" style="font-weight: 700; color: #151515;">Number of Guests</label>
-                                        <select name="guests" id="guests" style="width: 100%; padding: 12px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; height: 50px;">
-                                            <option value="1">1 Guest</option>
-                                            <option value="2">2 Guests</option>
+                                        <label for="guests" style="font-weight: 700; color: #151515; font-size: 13px;">Number of Guests</label>
+                                        <select name="guests" id="guests" class="form-select" style="width: 100%; height: 48px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; font-size: 13.5px;">
+                                            <option value="1">1 Guest (Solo)</option>
+                                            <option value="2" selected>2 Guests (Couple)</option>
                                             <option value="3">3 Guests</option>
-                                            <option value="4">4 Guests</option>
-                                            <option value="5+">5+ Guests</option>
+                                            <option value="4">4 Guests (Family)</option>
+                                            <option value="5+">5+ Guests (Group)</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="service" style="font-weight: 700; color: #151515;">Service Required</label>
-                                        <select name="service" id="service" style="width: 100%; padding: 12px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; height: 50px;">
-                                            <option value="Hotel Lodge Stay">Hotel & Resort Booking</option>
+                                        <label for="service" style="font-weight: 700; color: #151515; font-size: 13px;">Preferred Stay or Tour</label>
+                                        <select name="service" id="service" class="form-select" style="width: 100%; height: 48px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; font-size: 13.5px;">
+                                            <option value="Paatlidun Safari Lodge">Paatlidun Safari Lodge (Mohaan)</option>
+                                            <option value="Saraca Resort Corbett (Lebua)">Saraca Resort Corbett - Lebua</option>
+                                            <option value="Tarangi Resort & Spa">Tarangi Resort & Spa (Dhikuli)</option>
+                                            <option value="Namah Resort Corbett">Namah Resort Corbett (Dhikuli)</option>
+                                            <option value="The Riverview Retreat">The Riverview Retreat</option>
+                                            <option value="The Solluna Resort">The Solluna Resort (Marchula)</option>
+                                            <option value="Dhikala Forest Rest House">Dhikala Forest Rest House (Core Zone)</option>
+                                            <option value="The Golden Tusk">The Golden Tusk (Dhela)</option>
+                                            <option value="Jeep / Canter Safari Booking">Jungle Safari Only (Gypsy / Canter)</option>
+                                            <option value="Corbett Classic Tiger Trail">3D/2N Classic Tiger Trail Package</option>
                                             <option value="Destination Wedding Package">Destination Wedding Planning</option>
-                                            <option value="Jeep / Canter Safari Booking">Jungle Safari Booking</option>
-                                            <option value="Combined Wildlife Package">All-Inclusive Tour Package</option>
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <label for="message" style="font-weight: 700; color: #151515;">Message / Special Requests</label>
-                                        <textarea name="message" id="message" placeholder="Provide details of your requirements..." style="width: 100%; padding: 12px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; height: 100px;"></textarea>
+                                        <label for="message" style="font-weight: 700; color: #151515; font-size: 13px;">Special Inclusions / Custom Requests</label>
+                                        <textarea name="message" id="message" placeholder="Specify any preferred room categories, dietary preferences, extra safari shifts, or airport pickup..." style="width: 100%; padding: 12px; border: 1px solid #C9C9C9; border-radius: 8px; margin-top: 5px; height: 90px; font-size: 13.5px;"></textarea>
                                     </div>
-                                    <div class="col-12 text-center mt-3">
-                                        <button type="submit" class="theme-btn color" style="padding: 15px 40px; border-radius: 30px; font-weight: 700; cursor: pointer; border: none;">Generate Ticket & Request WhatsApp Booking</button>
+                                    <div class="col-12 text-center mt-2">
+                                        <button type="submit" class="theme-btn color" style="padding: 14px 38px; border-radius: 30px; font-weight: 700; cursor: pointer; border: none; font-size: 14px;">
+                                            <i class="fa-brands fa-whatsapp me-2" style="font-size: 17px;"></i> Generate Ticket & Confirm via WhatsApp
+                                        </button>
+                                        <p style="font-size: 12px; color: #888; margin-top: 10px;">
+                                            <i class="fa-solid fa-lock me-1 text-success"></i> Instant ticket generation with zero spam. Your information is 100% confidential.
+                                        </p>
                                     </div>
                                 </div>
                             </form>
@@ -602,7 +1532,7 @@
                                     </div>
                                 </div>
                                 <p style="color: #C9C9C9; margin-top: 15px; font-size: 14px; line-height: 1.6;">
-                                    A domestic tourism initiative by Honeygold India. Book forest resorts, reserve safaris, and arrange weddings in the wild.
+                                    A domestic tourism initiative by Honeygold India. Book 30 verified forest resorts, reserve government core safaris, and arrange weddings in the wild.
                                 </p>
                                 <div class="mt-3">
                                     <a href="https://www.honeygoldindia.com/" target="_blank" class="theme-btn" style="padding: 8px 20px; font-size: 13px;">
@@ -619,7 +1549,7 @@
                                 <ul class="list-area">
                                     <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
                                     <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
-                                    <li><a href="hotel.html"><i class="fa-solid fa-chevron-right"></i> Hotels & Stays</a></li>
+                                    <li><a href="hotel.html"><i class="fa-solid fa-chevron-right"></i> Hotels & Stays (30)</a></li>
                                     <li><a href="weddings.html"><i class="fa-solid fa-chevron-right"></i> Weddings</a></li>
                                     <li><a href="activities.html"><i class="fa-solid fa-chevron-right"></i> Safaris & Tours</a></li>
                                     <li><a href="stories.html"><i class="fa-solid fa-chevron-right"></i> Stories</a></li>

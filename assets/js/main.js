@@ -107,7 +107,7 @@
       new WOW().init();
   
       //>> Nice Select Start <<//
-        if ($('.single-select').length) {
+      if ($.fn.niceSelect && $('.single-select').length) {
           $('.single-select').niceSelect();
       }
 
@@ -590,8 +590,10 @@
         });
 
       
- //>> Nice Select Start <<//
-        $('select').niceSelect();
+      //>> Nice Select Start <<//
+      if ($.fn.niceSelect) {
+          $('select:not(.form-select):not(.no-nice-select)').niceSelect();
+      }
       /* ================================
        Custom Accordion Js Start
     ================================ */

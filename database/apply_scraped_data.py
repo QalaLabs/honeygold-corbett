@@ -129,8 +129,8 @@ b_idx1 = booking_js.find(b_start_marker)
 if b_idx1 != -1:
     b_idx2 = booking_js.find(b_end_marker, b_idx1)
     if b_idx2 != -1:
-        new_rooms_block = "window.CORBETT_HOTEL_ROOMS = " + json.dumps(room_map, indent=4)
-        booking_js = booking_js[:b_idx1] + new_rooms_block + booking_js[b_idx2:]
+        new_rooms_block = "window.CORBETT_HOTEL_ROOMS = " + json.dumps(room_map, indent=4) + ";\n"
+        booking_js = booking_js[:b_idx1] + new_rooms_block + booking_js[b_idx2 + len(b_end_marker):]
         with open('assets/js/booking.js', 'w', encoding='utf-8') as f:
             f.write(booking_js)
         print("Successfully synchronized assets/js/booking.js with exact room categories!")
@@ -171,9 +171,9 @@ for idx, h in enumerate(hotels, 1):
                                         </div>
                                         <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-1">
                                             <h4 style="font-weight: 800; color: #151515; margin: 0;">{h['name']}</h4>
-                                            <a href="{h['official_website']}" target="_blank" rel="noopener noreferrer" style="color: #63AB45; font-size: 12.5px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;">
-                                                <i class="fa-solid fa-globe"></i> Official Site <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 10px;"></i>
-                                            </a>
+                                            <span style="color: #2e7d32; font-size: 11.5px; font-weight: 700; background: #e8f5e9; padding: 3px 9px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;">
+                                                <i class="fa-solid fa-circle-check" style="color: #63AB45;"></i> Honeygold Verified Stay
+                                            </span>
                                         </div>
                                         <p style="color: #696969; font-size: 13.5px; line-height: 1.6; margin-bottom: 10px;">
                                             {h['description']}
